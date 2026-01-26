@@ -1,0 +1,270 @@
+*****************************************;
+*** Begin Scoring Code from PROC DMVQ ***;
+*****************************************;
+
+
+*** Begin Class Look-up, Standardization, Replacement ;
+drop _dm_bad; _dm_bad = 0;
+
+*** Standardize households ;
+drop T_households ;
+if missing( households ) then T_households = .;
+else T_households = (households - 460.667173175302) * 0.00373346618036;
+
+*** Standardize housing_median_age ;
+drop T_housing_median_age ;
+if missing( housing_median_age ) then T_housing_median_age = .;
+else T_housing_median_age = (housing_median_age
+         - 29.0152965608063) * 0.08054514381116;
+
+*** Standardize latitude ;
+drop T_latitude ;
+if missing( latitude ) then T_latitude = .;
+else T_latitude = (latitude - 35.6522109101961) * 0.46629910149133;
+
+*** Standardize longitude ;
+drop T_longitude ;
+if missing( longitude ) then T_longitude = .;
+else T_longitude = (longitude - -119.585392290936) * 0.49921170523417;
+
+*** Standardize median_house_value ;
+drop T_median_house_value ;
+if missing( median_house_value ) then T_median_house_value = .;
+else T_median_house_value = (median_house_value
+         - 201774.895355315) * 9.0404194412757E-6;
+
+*** Standardize median_income ;
+drop T_median_income ;
+if missing( median_income ) then T_median_income = .;
+else T_median_income = (median_income - 3.72515609076639) * 0.62428040828707;
+
+*** Standardize population ;
+drop T_population ;
+if missing( population ) then T_population = .;
+else T_population = (population - 1312.21840652383) * 0.00129327358299;
+
+*** Standardize total_bedrooms ;
+drop T_total_bedrooms ;
+if missing( total_bedrooms ) then T_total_bedrooms = .;
+else T_total_bedrooms = (total_bedrooms - 493.8815493246) * 0.00343596145552;
+
+*** Standardize total_rooms ;
+drop T_total_rooms ;
+if missing( total_rooms ) then T_total_rooms = .;
+else T_total_rooms = (total_rooms - 2391.7644228334) * 0.0006967173091;
+
+*** Generate dummy variables for ocean_proximity ;
+drop ocean_proximity_1H_OCEA ocean_proximityINLAND ocean_proximityNEAR_BAY
+        ocean_proximityNEAR_OCE ;
+if missing( ocean_proximity ) then do;
+   ocean_proximity_1H_OCEA = .;
+   ocean_proximityINLAND = .;
+   ocean_proximityNEAR_BAY = .;
+   ocean_proximityNEAR_OCE = .;
+end;
+else do;
+   length _dm8 $ 8; drop _dm8 ;
+   _dm8 = put( ocean_proximity , $8. );
+   %DMNORMIP( _dm8 )
+   if _dm8 = '<1H OCEA'  then do;
+      ocean_proximity_1H_OCEA = 0.5630148015253;
+      ocean_proximityINLAND = -0.34239942333019;
+      ocean_proximityNEAR_BAY = -0.17687796590212;
+      ocean_proximityNEAR_OCE = -0.19207712157532;
+   end;
+   else if _dm8 = 'INLAND'  then do;
+      ocean_proximity_1H_OCEA = -0.44401556869702;
+      ocean_proximityINLAND = 0.73010443432617;
+      ocean_proximityNEAR_BAY = -0.17687796590212;
+      ocean_proximityNEAR_OCE = -0.19207712157532;
+   end;
+   else if _dm8 = 'NEAR OCE'  then do;
+      ocean_proximity_1H_OCEA = -0.44401556869702;
+      ocean_proximityINLAND = -0.34239942333019;
+      ocean_proximityNEAR_BAY = -0.17687796590212;
+      ocean_proximityNEAR_OCE = 1.3014946040102;
+   end;
+   else if _dm8 = 'NEAR BAY'  then do;
+      ocean_proximity_1H_OCEA = -0.44401556869702;
+      ocean_proximityINLAND = -0.34239942333019;
+      ocean_proximityNEAR_BAY = 1.41333227125889;
+      ocean_proximityNEAR_OCE = -0.19207712157532;
+   end;
+   else do;
+      ocean_proximity_1H_OCEA = .;
+      ocean_proximityINLAND = .;
+      ocean_proximityNEAR_BAY = .;
+      ocean_proximityNEAR_OCE = .;
+      _DM_BAD = 1;
+   end;
+end;
+
+*** End Class Look-up, Standardization, Replacement ;
+
+
+*** Omitted Cases;
+if _dm_bad then do;
+   _SEGMENT_ = .; Distance = .;
+   goto CLUS4vlex ;
+end; *** omitted;
+
+*** Compute Distances and Cluster Membership;
+label _SEGMENT_ = 'Segment Id' ;
+label Distance = 'Distance' ;
+array CLUS4vads [6] _temporary_;
+drop _vqclus _vqmvar _vqnvar;
+_vqmvar = 0;
+do _vqclus = 1 to 6; CLUS4vads [_vqclus] = 0; end;
+if not missing( T_households ) then do;
+   CLUS4vads [1] + ( T_households - -0.39887012310084 )**2;
+   CLUS4vads [2] + ( T_households - -0.60413132785096 )**2;
+   CLUS4vads [3] + ( T_households - -0.61360037316883 )**2;
+   CLUS4vads [4] + ( T_households - 0.59685575545403 )**2;
+   CLUS4vads [5] + ( T_households - 0.72304004456594 )**2;
+   CLUS4vads [6] + ( T_households - 2.4330793693092 )**2;
+end;
+else _vqmvar + 1;
+if not missing( T_housing_median_age ) then do;
+   CLUS4vads [1] + ( T_housing_median_age - 0.19749149852725 )**2;
+   CLUS4vads [2] + ( T_housing_median_age - 0.34294395488709 )**2;
+   CLUS4vads [3] + ( T_housing_median_age - 0.16973374454777 )**2;
+   CLUS4vads [4] + ( T_housing_median_age - -0.3434051353562 )**2;
+   CLUS4vads [5] + ( T_housing_median_age - -0.31102652279496 )**2;
+   CLUS4vads [6] + ( T_housing_median_age - -0.85310721581385 )**2;
+end;
+else _vqmvar + 1;
+if not missing( T_latitude ) then do;
+   CLUS4vads [1] + ( T_latitude - -0.19361391243899 )**2;
+   CLUS4vads [2] + ( T_latitude - -0.81497910084126 )**2;
+   CLUS4vads [3] + ( T_latitude - 1.11098929054624 )**2;
+   CLUS4vads [4] + ( T_latitude - -0.80609281462083 )**2;
+   CLUS4vads [5] + ( T_latitude - 1.05973804748011 )**2;
+   CLUS4vads [6] + ( T_latitude - -0.22548946033665 )**2;
+end;
+else _vqmvar + 1;
+if not missing( T_longitude ) then do;
+   CLUS4vads [1] + ( T_longitude - -0.03044968109792 )**2;
+   CLUS4vads [2] + ( T_longitude - 0.80788149466556 )**2;
+   CLUS4vads [3] + ( T_longitude - -0.95406207539426 )**2;
+   CLUS4vads [4] + ( T_longitude - 0.80811814925647 )**2;
+   CLUS4vads [5] + ( T_longitude - -1.12569544880035 )**2;
+   CLUS4vads [6] + ( T_longitude - 0.22389519091348 )**2;
+end;
+else _vqmvar + 1;
+if not missing( T_median_house_value ) then do;
+   CLUS4vads [1] + ( T_median_house_value - 1.6590085302931 )**2;
+   CLUS4vads [2] + ( T_median_house_value - -0.30563673915991 )**2;
+   CLUS4vads [3] + ( T_median_house_value - -0.56246857110565 )**2;
+   CLUS4vads [4] + ( T_median_house_value - -0.12664304921079 )**2;
+   CLUS4vads [5] + ( T_median_house_value - 0.0853409127595 )**2;
+   CLUS4vads [6] + ( T_median_house_value - 0.17695245614331 )**2;
+end;
+else _vqmvar + 1;
+if not missing( T_median_income ) then do;
+   CLUS4vads [1] + ( T_median_income - 1.50659321313798 )**2;
+   CLUS4vads [2] + ( T_median_income - -0.31122590728254 )**2;
+   CLUS4vads [3] + ( T_median_income - -0.45128331181269 )**2;
+   CLUS4vads [4] + ( T_median_income - -0.16750798079795 )**2;
+   CLUS4vads [5] + ( T_median_income - 0.09047472615658 )**2;
+   CLUS4vads [6] + ( T_median_income - 0.18769500784636 )**2;
+end;
+else _vqmvar + 1;
+if not missing( T_population ) then do;
+   CLUS4vads [1] + ( T_population - -0.50148081477698 )**2;
+   CLUS4vads [2] + ( T_population - -0.48127344820403 )**2;
+   CLUS4vads [3] + ( T_population - -0.62004464803763 )**2;
+   CLUS4vads [4] + ( T_population - 0.6764457534377 )**2;
+   CLUS4vads [5] + ( T_population - 0.57716021786419 )**2;
+   CLUS4vads [6] + ( T_population - 2.23241275514944 )**2;
+end;
+else _vqmvar + 1;
+if not missing( T_total_bedrooms ) then do;
+   CLUS4vads [1] + ( T_total_bedrooms - -0.42547623050486 )**2;
+   CLUS4vads [2] + ( T_total_bedrooms - -0.61424336819606 )**2;
+   CLUS4vads [3] + ( T_total_bedrooms - -0.58492364108254 )**2;
+   CLUS4vads [4] + ( T_total_bedrooms - 0.60449091054185 )**2;
+   CLUS4vads [5] + ( T_total_bedrooms - 0.71129719919818 )**2;
+   CLUS4vads [6] + ( T_total_bedrooms - 2.43822290140533 )**2;
+end;
+else _vqmvar + 1;
+if not missing( T_total_rooms ) then do;
+   CLUS4vads [1] + ( T_total_rooms - -0.12258757513547 )**2;
+   CLUS4vads [2] + ( T_total_rooms - -0.67207178607251 )**2;
+   CLUS4vads [3] + ( T_total_rooms - -0.58188319830667 )**2;
+   CLUS4vads [4] + ( T_total_rooms - 0.45010599975657 )**2;
+   CLUS4vads [5] + ( T_total_rooms - 0.75330880730435 )**2;
+   CLUS4vads [6] + ( T_total_rooms - 2.37694395269969 )**2;
+end;
+else _vqmvar + 1;
+if not missing( ocean_proximity_1H_OCEA ) then do;
+   CLUS4vads [1] + ( ocean_proximity_1H_OCEA - 0.14917734020803 )**2;
+   CLUS4vads [2] + ( ocean_proximity_1H_OCEA - 0.21370912752859 )**2;
+   CLUS4vads [3] + ( ocean_proximity_1H_OCEA - -0.33463230692429 )**2;
+   CLUS4vads [4] + ( ocean_proximity_1H_OCEA - 0.14392218529738 )**2;
+   CLUS4vads [5] + ( ocean_proximity_1H_OCEA - -0.20154955688601 )**2;
+   CLUS4vads [6] + ( ocean_proximity_1H_OCEA - 0.07183356187075 )**2;
+end;
+else _vqmvar + 0.25;
+if not missing( ocean_proximityINLAND ) then do;
+   CLUS4vads [1] + ( ocean_proximityINLAND - -0.26591013510105 )**2;
+   CLUS4vads [2] + ( ocean_proximityINLAND - -0.11944088177173 )**2;
+   CLUS4vads [3] + ( ocean_proximityINLAND - 0.30141177943494 )**2;
+   CLUS4vads [4] + ( ocean_proximityINLAND - -0.08415299316615 )**2;
+   CLUS4vads [5] + ( ocean_proximityINLAND - 0.06473736621949 )**2;
+   CLUS4vads [6] + ( ocean_proximityINLAND - -0.01168497730935 )**2;
+end;
+else _vqmvar + 0.25;
+if not missing( ocean_proximityNEAR_BAY ) then do;
+   CLUS4vads [1] + ( ocean_proximityNEAR_BAY - 0.06097923225457 )**2;
+   CLUS4vads [2] + ( ocean_proximityNEAR_BAY - -0.17687796590212 )**2;
+   CLUS4vads [3] + ( ocean_proximityNEAR_BAY - 0.17839220845642 )**2;
+   CLUS4vads [4] + ( ocean_proximityNEAR_BAY - -0.17687796590212 )**2;
+   CLUS4vads [5] + ( ocean_proximityNEAR_BAY - 0.25910234516487 )**2;
+   CLUS4vads [6] + ( ocean_proximityNEAR_BAY - -0.06460087422936 )**2;
+end;
+else _vqmvar + 0.25;
+if not missing( ocean_proximityNEAR_OCE ) then do;
+   CLUS4vads [1] + ( ocean_proximityNEAR_OCE - 0.09178211539987 )**2;
+   CLUS4vads [2] + ( ocean_proximityNEAR_OCE - 0.01550106866806 )**2;
+   CLUS4vads [3] + ( ocean_proximityNEAR_OCE - -0.09098987662209 )**2;
+   CLUS4vads [4] + ( ocean_proximityNEAR_OCE - 0.06986319248052 )**2;
+   CLUS4vads [5] + ( ocean_proximityNEAR_OCE - -0.03458273926401 )**2;
+   CLUS4vads [6] + ( ocean_proximityNEAR_OCE - -0.02959201310024 )**2;
+end;
+else _vqmvar + 0.25;
+_vqnvar = 10 - _vqmvar;
+if _vqnvar <= 1.477928890381E-11 then do;
+   _SEGMENT_ = .; Distance = .;
+end;
+else do;
+   _SEGMENT_ = 1; Distance = CLUS4vads [1];
+   _vqfzdst = Distance * 0.99999999999988; drop _vqfzdst;
+   do _vqclus = 2 to 6;
+      if CLUS4vads [_vqclus] < _vqfzdst then do;
+         _SEGMENT_ = _vqclus; Distance = CLUS4vads [_vqclus];
+         _vqfzdst = Distance * 0.99999999999988;
+      end;
+   end;
+   Distance = sqrt(Distance * (10 / _vqnvar));
+end;
+CLUS4vlex :;
+
+***************************************;
+*** End Scoring Code from PROC DMVQ ***;
+***************************************;
+*------------------------------------------------------------*;
+* Clus4: Creating Segment Label;
+*------------------------------------------------------------*;
+length _SEGMENT_LABEL_ $80;
+label _SEGMENT_LABEL_='Segment Description';
+if _SEGMENT_ = 1 then _SEGMENT_LABEL_="Cluster1";
+else
+if _SEGMENT_ = 2 then _SEGMENT_LABEL_="Cluster2";
+else
+if _SEGMENT_ = 3 then _SEGMENT_LABEL_="Cluster3";
+else
+if _SEGMENT_ = 4 then _SEGMENT_LABEL_="Cluster4";
+else
+if _SEGMENT_ = 5 then _SEGMENT_LABEL_="Cluster5";
+else
+if _SEGMENT_ = 6 then _SEGMENT_LABEL_="Cluster6";

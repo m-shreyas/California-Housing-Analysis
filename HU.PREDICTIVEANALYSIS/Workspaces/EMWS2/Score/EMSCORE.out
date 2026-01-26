@@ -1,0 +1,32 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Score Input Variables
+
+                                                                           Used in
+                                                               Variable     Score
+Variable Name          Role     Creator    Comment    Label     Hidden      Code
+
+housing_median_age    INPUT                                       N           Y   
+latitude              INPUT                                       N           Y   
+longitude             INPUT                                       N           Y   
+median_house_value    TARGET                                      N           N   
+median_income         INPUT                                       N           Y   
+ocean_proximity       INPUT                                       N           Y   
+population            INPUT                                       N           Y   
+total_bedrooms        INPUT                                       N           Y   
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Score Output Variables
+
+Variable Name           Function     Creator    Label
+
+EM_PREDICTION           PREDICT       Score     Prediction for median_house_value
+EM_SEGMENT              TRANSFORM     Score     Node                             
+P_median_house_value    PREDICT       Tree4     Predicted: median_house_value    
+V_median_house_value    PREDICT       Tree4     Validated: median_house_value    
+_NODE_                  TRANSFORM     Tree4     Node                             
+_WARN_                  ASSESS        Tree4     Warnings                         

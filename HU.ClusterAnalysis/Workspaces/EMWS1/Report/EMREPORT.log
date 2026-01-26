@@ -1,0 +1,119 @@
+MPRINT(EM_DIAGRAM):    data _null_;
+MPRINT(EM_DIAGRAM):   call symput('NLDATE', strip(put(date(), NLDATE.)));
+MPRINT(EM_DIAGRAM):   call symput('NLTIME', strip(put(datetime(), NLTIME.)));
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   data _null_;
+MPRINT(EM_DIAGRAM):   nldate= sasmsg("sashelp.dmine", "log_date_note", 'N', "December 09, 2024" );
+MPRINT(EM_DIAGRAM):   nltime= sasmsg("sashelp.dmine", "log_time_note", 'N', "01:28:03" );
+MPRINT(EM_DIAGRAM):   put "*------------------------------------------------------------*";
+MPRINT(EM_DIAGRAM):   put "* Report Log";
+MPRINT(EM_DIAGRAM):   put nldate;
+MPRINT(EM_DIAGRAM):   put nltime;
+MPRINT(EM_DIAGRAM):   put "*------------------------------------------------------------*";
+MPRINT(EM_DIAGRAM):   run;
+*------------------------------------------------------------*
+* Report Log
+Date:                December 09, 2024
+Time:                01:28:03
+*------------------------------------------------------------*
+MPRINT(EM_DIAGRAM):    filename O04RNB2G "C:\Users\skunt\Downloads\HU.Exploratory Analysis\HU.ClusterAnalysis\Workspaces\EMWS1\Report\EMREPORT.out" encoding="UTF-8" NOBOM;
+MPRINT(EM_DIAGRAM):   proc printto print=O04RNB2G new;
+MPRINT(EM_DIAGRAM):   run;
+95298      %let EMEXCEPTIONSTRING=;
+95299      *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):    *------------------------------------------------------------*;
+95300      * REPORT: Report;
+MPRINT(EM_DIAGRAM):   * REPORT: Report;
+95301      *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+95302      %let EM_ACTION = REPORT;
+95303      %let syscc = 0;
+95304      %macro main;
+95305      
+95306        filename temp catalog 'sashelp.emutil.reporter_macros.source';
+95307        %include temp;
+95308        filename temp;
+95309      
+95310        %setProperties;
+95311      
+95312        %if %upcase(&EM_ACTION) = CREATE %then %do;
+95313          filename temp catalog 'sashelp.emutil.reporter_create.source';
+95314          %include temp;
+95315          filename temp;
+95316      
+95317          %create;
+95318        %end;
+95319      
+95320         %else
+95321         %if %upcase(&EM_ACTION) = TRAIN %then %do;
+95322      
+95323             filename temp catalog 'sashelp.emutil.reporter_train.source';
+95324             %include temp;
+95325             filename temp;
+95326             %train;
+95327         %end;
+95328      
+95329         %doendm:
+95330      %mend main;
+95331      
+95332      %main;
+MPRINT(EM_DIAGRAM):    
+MPRINT(MAIN):   filename temp catalog 'sashelp.emutil.reporter_macros.source';
+NOTE: %INCLUDE (level 1) file TEMP is file SASHELP.EMUTIL.REPORTER_MACROS.SOURCE.
+95335     +%macro SetProperties;
+95337     +     /* reporting options */
+95338     +     %em_checkmacro(name=EM_PROPERTY_FORMAT,         value=PDF , global=Y);
+95339     +     %em_checkmacro(name=EM_PROPERTY_NODES ,         value=PATH, global=Y);
+95340     +     %em_checkmacro(name=EM_PROPERTY_STYLE ,         value=DEFAULT, global=Y);
+95341     +     %em_checkmacro(name=EM_PROPERTY_SHOWALL,        value=N, global=Y);
+95343     +     %em_checkmacro(name=EM_PROPERTY_SUMMARIZATION,  value=Y, global=Y);
+95344     +     %em_checkmacro(name=EM_PROPERTY_VARRANKING,     value=Y, global=Y);
+95345     +     %em_checkmacro(name=EM_PROPERTY_CLASSIFICATION, value=Y, global=Y);
+95346     +     %em_checkmacro(name=EM_PROPERTY_CROSSTABS,      value=Y, global=Y);
+95347     +     %em_checkmacro(name=EM_PROPERTY_LIFTCHART,      value=Y, global=Y);
+95348     +     %em_checkmacro(name=EM_PROPERTY_FITSTAT,        value=Y, global=Y);
+95349     +     %em_checkmacro(name=EM_PROPERTY_COMPAREMDL,     value=Y, global=Y);
+95351     +     %em_checkmacro(name=EM_PROPERTY_BASICOUTPUT,    value=N, global=Y);
+95353     +    %em_checkmacro(name=EM_PROPERTY_textfont,   value=Arial, global=Y);
+95354     +    %em_checkmacro(name=EM_PROPERTY_headersize, value=8, global=Y);
+95355     +    %em_checkmacro(name=EM_PROPERTY_textsize,   value=6, global=Y);
+95356     +    %em_checkmacro(name=EM_PROPERTY_titlesize,  value=10, global=Y);
+95358     +%mend SetProperties;
+NOTE: %INCLUDE (level 1) ending.
+MPRINT(MAIN):   filename temp;
+NOTE: Fileref TEMP has been deassigned.
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(SETPROPERTIES):  ;
+MPRINT(MAIN):  ;
+MPRINT(EM_DIAGRAM):  ;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   * End REPORT: Report;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+95359      *------------------------------------------------------------*;
+95360      * End REPORT: Report;
+95361      *------------------------------------------------------------*;
+95362      
+
+95363      /* Reset EM Options */
+95364      options formchar="|----|+|---+=|-/\<>*";
+MPRINT(EM_DIAGRAM):    options formchar="|----|+|---+=|-/\<>*";
+95365      options nocenter ls=256 ps=10000;
+MPRINT(EM_DIAGRAM):   options nocenter ls=256 ps=10000;
+95366      goptions reset=all device=GIF NODISPLAY;
+MPRINT(EM_DIAGRAM):   goptions reset=all device=GIF NODISPLAY;
+MPRINT(EM_DIAGRAM):    proc printto;
+MPRINT(EM_DIAGRAM):   run;

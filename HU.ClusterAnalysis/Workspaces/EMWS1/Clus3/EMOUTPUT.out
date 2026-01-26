@@ -1,0 +1,48 @@
+*------------------------------------------------------------*
+User:                skunt
+Date:                December 09, 2024
+Time:                01:26:30
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+         Measurement    Frequency
+Role        Level         Count
+ 
+INPUT     INTERVAL          9
+INPUT     NOMINAL           1
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Importance
+ 
+                               Number of    Number of
+                               Splitting    Surrogate
+Variable Name         Label      Rules        Rules      Importance
+ 
+population                         2            19         1.00000
+total_rooms                        6            14         0.89898
+households                         6             7         0.85987
+longitude                          2            11         0.83334
+total_bedrooms                     2            10         0.78776
+median_house_value                 7             5         0.71864
+median_income                      4            11         0.67253
+latitude                           1             8         0.64647
+housing_median_age                 0             9         0.63997
+ocean_proximity                    0             4         0.53391

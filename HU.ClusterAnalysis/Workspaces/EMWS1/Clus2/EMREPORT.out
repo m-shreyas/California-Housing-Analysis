@@ -1,0 +1,20 @@
+ 
+                                                                                                
+ 
+ 
+Variable Importance
+
+                               Number of    Number of
+                               Splitting    Surrogate
+Variable Name         Label      Rules        Rules      Importance
+
+total_rooms                        5            18         1.00000 
+population                         1            19         0.95017 
+longitude                          2            18         0.93420 
+housing_median_age                 4            13         0.92456 
+households                         7             8         0.87837 
+median_house_value                 4            12         0.82151 
+total_bedrooms                     3            11         0.82030 
+median_income                      5            15         0.79043 
+ocean_proximity                    2             7         0.68381 
+latitude                           2             9         0.63707 

@@ -1,0 +1,78 @@
+*------------------------------------------------------------*
+User:                smupp
+Date:                December 11, 2024
+Time:                00:18:47
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          9
+INPUT      NOMINAL           1
+TARGET     INTERVAL          1
+ 
+ 
+ 
+ 
+Partition Summary
+ 
+                                     Number of
+Type             Data Set          Observations
+ 
+DATA        EMWS2.Ids2_DATA            16512
+TRAIN       EMWS2.Part_TRAIN            6605
+VALIDATE    EMWS2.Part_VALIDATE         4954
+TEST        EMWS2.Part_TEST             4953
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Summary Statistics for Interval Targets
+ 
+Data=DATA
+ 
+                                                                       Number of                     Standard
+     Variable              Maximum            Mean         Minimum    Observations    Missing       Deviation    Label
+ 
+median_house_value          500001    206772.32752           14999           16512       0       115579.82317
+ 
+ 
+Data=TEST
+ 
+                                                                       Number of                     Standard
+     Variable              Maximum            Mean         Minimum    Observations    Missing       Deviation    Label
+ 
+median_house_value          500001    204329.64466           14999            4953       0       115121.96822
+ 
+ 
+Data=TRAIN
+ 
+                                                                       Number of                     Standard
+     Variable              Maximum            Mean         Minimum    Observations    Missing       Deviation    Label
+ 
+median_house_value          500001    207149.74792           14999            6605       0       114892.29065
+ 
+ 
+Data=VALIDATE
+ 
+                                                                       Number of                     Standard
+     Variable              Maximum            Mean         Minimum    Observations    Missing       Deviation    Label
+ 
+median_house_value          500001     208711.3155           14999            4954       0       116923.28829

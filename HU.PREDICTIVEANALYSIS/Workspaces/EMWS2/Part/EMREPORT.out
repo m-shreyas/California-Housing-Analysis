@@ -1,0 +1,36 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Summary Statistics for Interval Targets
+
+Data=DATA
+
+                                                                       Number of                     Standard
+     Variable              Maximum            Mean         Minimum    Observations    Missing       Deviation    Label
+
+median_house_value          500001    206772.32752           14999           16512       0       115579.82317         
+
+
+Data=TEST
+
+                                                                       Number of                     Standard
+     Variable              Maximum            Mean         Minimum    Observations    Missing       Deviation    Label
+
+median_house_value          500001    204329.64466           14999            4953       0       115121.96822         
+
+
+Data=TRAIN
+
+                                                                       Number of                     Standard
+     Variable              Maximum            Mean         Minimum    Observations    Missing       Deviation    Label
+
+median_house_value          500001    207149.74792           14999            6605       0       114892.29065         
+
+
+Data=VALIDATE
+
+                                                                       Number of                     Standard
+     Variable              Maximum            Mean         Minimum    Observations    Missing       Deviation    Label
+
+median_house_value          500001     208711.3155           14999            4954       0       116923.28829         

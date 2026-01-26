@@ -1,0 +1,21 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variable Summary
+
+         Measurement    Frequency
+Role        Level         Count
+
+ID        INTERVAL          1    
+INPUT     INTERVAL          9    
+INPUT     NOMINAL           1    
+ 
+                                                                                                                                                                                                                                                                
+ 
+Saved Data Properties
+
+ Data                                                                                                          Total           Saved        Number of
+Library                                           Output Location                                           Observations    Observations    Variables
+
+HUDATA     \\uisnutvdiprof1a\redirected$\smupp\Documents\HU.PREDICTIVEANALYSIS\HOUSING_20_TRAIN.sas7bdat        4128            MAX            11    

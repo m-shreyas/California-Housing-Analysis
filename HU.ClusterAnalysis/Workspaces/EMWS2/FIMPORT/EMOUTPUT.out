@@ -1,0 +1,89 @@
+*------------------------------------------------------------*
+User:                skunt
+Date:                December 09, 2024
+Time:                01:24:03
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+         Measurement    Frequency
+Role        Level         Count
+ 
+INPUT     INTERVAL          9
+INPUT     NOMINAL           1
+ 
+ 
+ 
+ 
+ 
+The CONTENTS Procedure
+ 
+Data Set Name        EMWS2.FIMPORT_DATA            Observations          20640
+Member Type          DATA                          Variables             10
+Engine               V9                            Indexes               0
+Created              12/09/2024 01:23:57           Observation Length    80
+Last Modified        12/09/2024 01:23:57           Deleted Observations  0
+Protection                                         Compressed            NO
+Data Set Type                                      Sorted                NO
+Label
+Data Representation  WINDOWS_64
+Encoding             wlatin1  Western (Windows)
+ 
+ 
+                                                  Engine/Host Dependent Information
+ 
+Data Set Page Size          65536
+Number of Data Set Pages    26
+First Data Page             1
+Max Obs per Page            817
+Obs in First Data Page      791
+Number of Data Set Repairs  0
+ExtendObsCounter            YES
+Filename                    C:\Users\skunt\Downloads\HU.Exploratory Analysis\HU.ClusterAnalysis\Workspaces\EMWS2\fimport_data.sas7bdat
+Release Created             9.0401M7
+Host Created                X64_10PRO
+Owner Name                  UISAD\skunt
+File Size                   2MB
+File Size (bytes)           1769472
+ 
+ 
+          Alphabetic List of Variables and Attributes
+ 
+ #    Variable              Type    Len    Format     Informat
+ 
+ 7    households            Num       8    BEST12.    BEST32.
+ 3    housing_median_age    Num       8    BEST12.    BEST32.
+ 2    latitude              Num       8    BEST12.    BEST32.
+ 1    longitude             Num       8    BEST12.    BEST32.
+ 9    median_house_value    Num       8    BEST12.    BEST32.
+ 8    median_income         Num       8    BEST12.    BEST32.
+10    ocean_proximity       Char      8    $8.        $8.
+ 6    population            Num       8    BEST12.    BEST32.
+ 5    total_bedrooms        Num       8    BEST12.    BEST32.
+ 4    total_rooms           Num       8    BEST12.    BEST32.
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Exported Attributes for TRAIN Port
+ 
+         Measurement    Frequency
+Role        Level         Count
+ 
+INPUT     INTERVAL          9
+INPUT     NOMINAL           1

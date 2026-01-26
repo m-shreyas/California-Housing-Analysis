@@ -1,0 +1,114 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variable Summary
+
+         Measurement    Frequency
+Role        Level         Count
+
+ID        INTERVAL          1    
+INPUT     INTERVAL          9    
+INPUT     NOMINAL           1    
+ 
+                                                                                                                                                                                                                                                                
+ 
+The CLUSTER Procedure
+Centroid Hierarchical Cluster Analysis
+
+            Eigenvalues of the Covariance Matrix
+ 
+        Eigenvalue    Difference    Proportion    Cumulative
+
+   1    9176750644    9174562769        0.9998        0.9998
+   2       2187875       2117232        0.0002        1.0000
+   3         70643         65583        0.0000        1.0000
+   4          5061          4547        0.0000        1.0000
+   5           513           454        0.0000        1.0000
+   6            59            53        0.0000        1.0000
+   7             6             6        0.0000        1.0000
+   8             0             0        0.0000        1.0000
+   9             0             0        0.0000        1.0000
+  10             0             0        0.0000        1.0000
+  11             0             0        0.0000        1.0000
+  12             0             0        0.0000        1.0000
+  13            -0                     -0.0000        1.0000
+
+Root-Mean-Square Total-Sample Standard Deviation    26572.13
+
+Root-Mean-Square Distance Between Observations    135491.8
+
+
+                                          Cluster History
+  Number                                                                               Norm
+      of                                                  Pseudo F       Pseudo    Centroid
+Clusters    ------Clusters Joined-------         Freq    Statistic    t-Squared    Distance    Tie
+
+      49    OB16            OB20                 1015         17E7         23E7      0.0088       
+      48    OB5             OB40                  888         68E6         23E7      0.0116       
+      47    OB18            OB33                  534         44E6         23E7      0.0149       
+      46    OB3             OB42                  681         32E6         24E7      0.0168       
+      45    OB15            OB27                  420         26E6         21E7      0.0177       
+      44    OB19            OB25                  883         17E6          7E8      0.0185       
+      43    OB2             OB26                  717         12E6         67E7      0.0232       
+      42    CL44            OB32                 1336         75E5         3779      0.0264       
+      41    CL48            OB49                 1387         52E5         11E3      0.0277       
+      40    CL45            OB22                  505          5E6          910       0.028       
+      39    OB9             CL47                 1193         39E5          1E4       0.029       
+      38    OB23            OB35                  312         38E5          3E8      0.0295       
+      37    OB37            OB43                  732         34E5         14E8      0.0307       
+      36    CL49            OB29                 1926         26E5         46E3      0.0308       
+      35    OB7             OB46                 1272         24E5         32E8      0.0366       
+      34    OB41            OB45                  570         24E5         24E6       0.042       
+      33    OB6             CL39                 1643         19E5         3896      0.0449       
+      32    OB31            OB48                 1053         16E5          5E9       0.045       
+      31    CL43            OB14                  866         15E5         2314       0.045       
+      30    OB28            OB36                  394         15E5         77E7      0.0515       
+      29    OB12            CL36                 2137         14E5         2613      0.0553       
+      28    CL35            OB34                 1577         12E5         5581       0.058       
+      27    CL29            CL30                 2531         97E4         2863      0.0629       
+      26    OB1             CL46                 1120         86E4         42E3      0.0648       
+      25    CL31            OB13                 1073         81E4         2329      0.0669       
+      24    CL33            OB8                  2276         67E4         5201      0.0684       
+      23    OB10            OB47                  364         67E4         27E8      0.0722       
+      22    CL42            CL32                 2389         53E4          1E4      0.0777       
+      21    OB11            OB30                  613         52E4         63E8      0.0801       
+      20    CL28            CL38                 1889         48E4         3521      0.0899       
+      19    OB21            OB39                  388         49E4         41E8      0.0925       
+      18    CL25            OB17                 1460         45E4         3533      0.0964       
+      17    CL40            OB50                  667         45E4         9493      0.1002       
+      16    CL41            CL24                 3663         33E4         11E3      0.1097       
+      15    OB4             OB24                  852         32E4         26E9      0.1215       
+      14    CL27            OB44                 2731         32E4         3080      0.1228       
+      13    CL26            CL22                 3509         25E4         8331      0.1311       
+      12    CL21            CL17                 1280         25E4         3736      0.1415       
+      11    CL18            CL37                 2192         21E4         9201      0.1829       
+      10    CL16            CL14                 6394         12E4         24E3      0.2134       
+       9    CL13            CL34                 4079         11E4         6035      0.2372       
+       8    CL23            OB38                  695         12E4         16E3       0.253       
+       7    CL11            CL15                 3044         11E4         6887      0.2933       
+       6    CL10            CL20                 8283         74E3         15E3       0.342       
+       5    CL12            CL19                 1668         84E3         6764      0.3566       
+       4    CL9             CL6                 12362         38E3          3E4      0.5249       
+       3    CL8             CL5                  2363         49E3         6915      0.5923       
+       2    CL7             CL3                  5407          5E4         17E3      0.8498       
+       1    CL4             CL2                 17769           .           5E4      1.3199       
+ 
+                                                                                                                                                                                                                                                                
+ 
+Candidates for Optimum Number of Clusters
+
+        Number     Clustering
+          of          Cubic
+Obs    Clusters     Criterion
+
+  1        5         -21.752 
+  2        7         -24.688 
+  3       12           9.532 
+  4       14          20.567 
+  5       17          38.498 
+  6       19          37.416 
+  7       21          36.411 
+  8       23          53.691 
+  9       30         115.928 
+ 10       34         151.733 

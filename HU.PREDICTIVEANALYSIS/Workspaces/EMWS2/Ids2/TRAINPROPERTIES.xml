@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  DataSource="housingtrain1" Scope="LOCAL" Role="RAW" Library="HUDATA" Table="HOUSING_80_TRAIN"
+ NCols="11" NObs="16512" NBytes="1508352" Segment="" DataSourceRole="RAW" OutputType="VIEW"
+ ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC"
+ ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y"
+ MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y"
+ VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="housingtrain1"
+ DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="smupp" DsCreateDate="2049495415.8"
+ DsModifiedBy="smupp" DsModifyDate="2049495415.9" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT"
+ SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train"
+ Component="DataSource" RawCreateTime="2049495425.1" CreateTime="11DEC2024:00:17:05"
+ Description="" Data="HUDATA.HOUSING_80_TRAIN" CMeta="WORK.M3IA26CI" RunId="27e6bef8-07d0-4cc6-bc3c-d7adc07f8e87"
+ RawLastTimeRun="2049495518.9" RawRunTime="3.8880000114" LastTimeRun="11DEC2024:00:18:39"
+ RunTime="0 Hr. 0 Min. 3.89 Sec.">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

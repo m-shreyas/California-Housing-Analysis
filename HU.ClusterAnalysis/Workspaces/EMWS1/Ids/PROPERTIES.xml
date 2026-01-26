@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  DataSource="emsavetrain" Scope="LOCAL" Role="RAW" Library="HUDATA" Table="EM_SAVE_TRAIN"
+ NCols="10" NObs="20640" NBytes="1704960" Segment="" DataSourceRole="RAW" OutputType="VIEW"
+ ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC"
+ ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y"
+ MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y"
+ VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="emsavetrain"
+ DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="skunt" DsCreateDate="2049326701.2"
+ DsModifiedBy="skunt" DsModifyDate="2049326701.3" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT"
+ SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train"
+ Component="DataSource" RawCreateTime="2049326719.6" CreateTime="09DEC2024:01:25:20"
+ Description="" Data="HUDATA.EM_SAVE_TRAIN" CMeta="WORK.M28LNUJW" RunId="21c492d4-a835-4d7c-86cb-3ece7902198a"
+>
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

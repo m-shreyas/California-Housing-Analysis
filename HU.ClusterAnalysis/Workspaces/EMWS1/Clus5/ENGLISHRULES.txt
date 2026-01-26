@@ -1,0 +1,1065 @@
+*------------------------------------------------------------*
+ Node = 25
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, <1H OCEA, NEAR OCE
+AND longitude >= -120.69
+AND latitude >= 35.125 or MISSING
+AND households < 521.5 or MISSING
+then 
+ Tree Node Identifier   = 25
+ Number of Observations = 22
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.05
+ Predicted: _SEGMENT_=8  = 0.05
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.23
+ Predicted: _SEGMENT_=10  = 0.36
+ Predicted: _SEGMENT_=5  = 0.14
+ Predicted: _SEGMENT_=6  = 0.18
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 31
+*------------------------------------------------------------*
+if latitude >= 35.125 or MISSING
+AND housing_median_age >= 44.5
+AND households >= 995.5
+then 
+ Tree Node Identifier   = 31
+ Number of Observations = 17
+ Predicted: _SEGMENT_=3  = 0.47
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.06
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.18
+ Predicted: _SEGMENT_=11  = 0.29
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 33
+*------------------------------------------------------------*
+if median_income >= 2.87665 or MISSING
+AND median_house_value < 311600 or MISSING
+AND latitude < 35.125
+AND housing_median_age < 27.5
+AND households < 503.5 or MISSING
+then 
+ Tree Node Identifier   = 33
+ Number of Observations = 1231
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.01
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.06
+ Predicted: _SEGMENT_=5  = 0.03
+ Predicted: _SEGMENT_=6  = 0.88
+ Predicted: _SEGMENT_=12  = 0.01
+ 
+*------------------------------------------------------------*
+ Node = 37
+*------------------------------------------------------------*
+if median_income < 3.1334
+AND median_house_value >= 378250
+AND latitude < 35.125
+AND households < 503.5 or MISSING
+then 
+ Tree Node Identifier   = 37
+ Number of Observations = 34
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.06
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.09
+ Predicted: _SEGMENT_=12  = 0.85
+ 
+*------------------------------------------------------------*
+ Node = 38
+*------------------------------------------------------------*
+if population < 1415 or MISSING
+AND median_income >= 3.1334 or MISSING
+AND median_house_value >= 311600
+AND latitude < 35.125
+AND households < 503.5 or MISSING
+then 
+ Tree Node Identifier   = 38
+ Number of Observations = 955
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.01
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.08
+ Predicted: _SEGMENT_=12  = 0.90
+ 
+*------------------------------------------------------------*
+ Node = 39
+*------------------------------------------------------------*
+if population >= 1415
+AND median_income >= 3.1334 or MISSING
+AND median_house_value >= 311600
+AND latitude < 35.125
+AND households < 503.5 or MISSING
+then 
+ Tree Node Identifier   = 39
+ Number of Observations = 34
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.44
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.03
+ Predicted: _SEGMENT_=6  = 0.21
+ Predicted: _SEGMENT_=12  = 0.32
+ 
+*------------------------------------------------------------*
+ Node = 43
+*------------------------------------------------------------*
+if total_rooms >= 3580.5 or MISSING
+AND median_income >= 4.79605
+AND latitude < 35.125
+AND households < 979.5 AND households >= 503.5 or MISSING
+then 
+ Tree Node Identifier   = 43
+ Number of Observations = 437
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.88
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.03
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.05
+ Predicted: _SEGMENT_=6  = 0.02
+ Predicted: _SEGMENT_=12  = 0.02
+ 
+*------------------------------------------------------------*
+ Node = 45
+*------------------------------------------------------------*
+if total_rooms >= 4280.5 or MISSING
+AND median_house_value < 361300 or MISSING
+AND latitude < 35.125
+AND households >= 979.5
+then 
+ Tree Node Identifier   = 45
+ Number of Observations = 421
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.01
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.98
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.01
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 46
+*------------------------------------------------------------*
+if median_house_value >= 361300
+AND latitude < 35.125
+AND households < 1177.5 AND households >= 979.5 or MISSING
+then 
+ Tree Node Identifier   = 46
+ Number of Observations = 40
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.88
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.08
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.05
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 47
+*------------------------------------------------------------*
+if median_house_value >= 361300
+AND latitude < 35.125
+AND households >= 1177.5
+then 
+ Tree Node Identifier   = 47
+ Number of Observations = 29
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.17
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.83
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 52
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND or MISSING
+AND median_income >= 4.40315
+AND latitude < 36.28 AND latitude >= 35.125
+AND households < 521.5 or MISSING
+then 
+ Tree Node Identifier   = 52
+ Number of Observations = 17
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.06
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.06
+ Predicted: _SEGMENT_=10  = 0.06
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.82
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 55
+*------------------------------------------------------------*
+if total_rooms >= 5761.5
+AND median_house_value < 308450 or MISSING
+AND latitude >= 35.125 or MISSING
+AND households < 995.5 AND households >= 521.5 or MISSING
+then 
+ Tree Node Identifier   = 55
+ Number of Observations = 36
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.08
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.17
+ Predicted: _SEGMENT_=11  = 0.75
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 57
+*------------------------------------------------------------*
+if median_house_value >= 308450
+AND latitude >= 35.125 or MISSING
+AND housing_median_age >= 29.5 or MISSING
+AND households < 995.5 AND households >= 521.5 or MISSING
+then 
+ Tree Node Identifier   = 57
+ Number of Observations = 206
+ Predicted: _SEGMENT_=3  = 0.89
+ Predicted: _SEGMENT_=1  = 0.05
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.05
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.01
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 58
+*------------------------------------------------------------*
+if total_rooms < 5097.5
+AND latitude >= 35.125 or MISSING
+AND housing_median_age < 44.5 or MISSING
+AND households >= 995.5
+then 
+ Tree Node Identifier   = 58
+ Number of Observations = 75
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.04
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.63
+ Predicted: _SEGMENT_=11  = 0.33
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 59
+*------------------------------------------------------------*
+if total_rooms >= 5097.5 or MISSING
+AND latitude >= 35.125 or MISSING
+AND housing_median_age < 44.5 or MISSING
+AND households >= 995.5
+then 
+ Tree Node Identifier   = 59
+ Number of Observations = 279
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.02
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.03
+ Predicted: _SEGMENT_=11  = 0.96
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 60
+*------------------------------------------------------------*
+if median_income < 2.87665
+AND median_house_value < 311600 or MISSING
+AND latitude < 35.125
+AND housing_median_age < 27.5
+AND households < 431.5 or MISSING
+then 
+ Tree Node Identifier   = 60
+ Number of Observations = 373
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.02
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.76
+ Predicted: _SEGMENT_=5  = 0.03
+ Predicted: _SEGMENT_=6  = 0.20
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 61
+*------------------------------------------------------------*
+if median_income < 2.87665
+AND median_house_value < 311600 or MISSING
+AND latitude < 35.125
+AND housing_median_age < 27.5
+AND households < 503.5 AND households >= 431.5
+then 
+ Tree Node Identifier   = 61
+ Number of Observations = 102
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.18
+ Predicted: _SEGMENT_=5  = 0.65
+ Predicted: _SEGMENT_=6  = 0.18
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 64
+*------------------------------------------------------------*
+if population < 1919.5 or MISSING
+AND median_income < 4.3457 or MISSING
+AND median_house_value < 311600 or MISSING
+AND latitude < 35.125
+AND housing_median_age >= 27.5 or MISSING
+AND households < 503.5 or MISSING
+then 
+ Tree Node Identifier   = 64
+ Number of Observations = 2598
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.93
+ Predicted: _SEGMENT_=5  = 0.02
+ Predicted: _SEGMENT_=6  = 0.04
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 65
+*------------------------------------------------------------*
+if population >= 1919.5
+AND median_income < 4.3457 or MISSING
+AND median_house_value < 311600 or MISSING
+AND latitude < 35.125
+AND housing_median_age >= 27.5 or MISSING
+AND households < 503.5 or MISSING
+then 
+ Tree Node Identifier   = 65
+ Number of Observations = 94
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.35
+ Predicted: _SEGMENT_=5  = 0.65
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 66
+*------------------------------------------------------------*
+if median_income >= 4.3457
+AND median_house_value < 254050 or MISSING
+AND latitude < 35.125
+AND housing_median_age >= 27.5 or MISSING
+AND households < 503.5 or MISSING
+then 
+ Tree Node Identifier   = 66
+ Number of Observations = 542
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.47
+ Predicted: _SEGMENT_=5  = 0.01
+ Predicted: _SEGMENT_=6  = 0.49
+ Predicted: _SEGMENT_=12  = 0.03
+ 
+*------------------------------------------------------------*
+ Node = 67
+*------------------------------------------------------------*
+if median_income >= 4.3457
+AND median_house_value < 311600 AND median_house_value >= 254050
+AND latitude < 35.125
+AND housing_median_age >= 27.5 or MISSING
+AND households < 503.5 or MISSING
+then 
+ Tree Node Identifier   = 67
+ Number of Observations = 128
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.04
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.21
+ Predicted: _SEGMENT_=12  = 0.75
+ 
+*------------------------------------------------------------*
+ Node = 68
+*------------------------------------------------------------*
+if median_income < 3.1334
+AND median_house_value < 378250 AND median_house_value >= 311600 or MISSING
+AND latitude < 35.125
+AND housing_median_age < 26.5
+AND households < 503.5 or MISSING
+then 
+ Tree Node Identifier   = 68
+ Number of Observations = 18
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.33
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.61
+ Predicted: _SEGMENT_=12  = 0.06
+ 
+*------------------------------------------------------------*
+ Node = 69
+*------------------------------------------------------------*
+if median_income < 3.1334
+AND median_house_value < 378250 AND median_house_value >= 311600 or MISSING
+AND latitude < 35.125
+AND housing_median_age >= 26.5 or MISSING
+AND households < 503.5 or MISSING
+then 
+ Tree Node Identifier   = 69
+ Number of Observations = 43
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.91
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.09
+ 
+*------------------------------------------------------------*
+ Node = 72
+*------------------------------------------------------------*
+if total_rooms < 4913 or MISSING
+AND median_income < 4.79605 or MISSING
+AND median_house_value < 355050 or MISSING
+AND latitude < 35.125
+AND households < 979.5 AND households >= 503.5 or MISSING
+then 
+ Tree Node Identifier   = 72
+ Number of Observations = 2085
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.02
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.01
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.03
+ Predicted: _SEGMENT_=5  = 0.88
+ Predicted: _SEGMENT_=6  = 0.05
+ Predicted: _SEGMENT_=12  = 0.01
+ 
+*------------------------------------------------------------*
+ Node = 73
+*------------------------------------------------------------*
+if total_rooms >= 4913
+AND median_income < 4.79605 or MISSING
+AND median_house_value < 355050 or MISSING
+AND latitude < 35.125
+AND households < 979.5 AND households >= 503.5 or MISSING
+then 
+ Tree Node Identifier   = 73
+ Number of Observations = 79
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.11
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.66
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.23
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 74
+*------------------------------------------------------------*
+if population < 1244
+AND median_income < 4.79605 or MISSING
+AND median_house_value >= 355050
+AND latitude < 35.125
+AND households < 979.5 AND households >= 503.5 or MISSING
+then 
+ Tree Node Identifier   = 74
+ Number of Observations = 67
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.01
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.03
+ Predicted: _SEGMENT_=12  = 0.96
+ 
+*------------------------------------------------------------*
+ Node = 75
+*------------------------------------------------------------*
+if population >= 1244 or MISSING
+AND median_income < 4.79605 or MISSING
+AND median_house_value >= 355050
+AND latitude < 35.125
+AND households < 979.5 AND households >= 503.5 or MISSING
+then 
+ Tree Node Identifier   = 75
+ Number of Observations = 76
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.62
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.25
+ Predicted: _SEGMENT_=6  = 0.01
+ Predicted: _SEGMENT_=12  = 0.12
+ 
+*------------------------------------------------------------*
+ Node = 76
+*------------------------------------------------------------*
+if total_rooms < 3580.5
+AND median_income >= 4.79605
+AND median_house_value < 298500 or MISSING
+AND latitude < 35.125
+AND households < 979.5 AND households >= 503.5 or MISSING
+then 
+ Tree Node Identifier   = 76
+ Number of Observations = 107
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.10
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.25
+ Predicted: _SEGMENT_=6  = 0.61
+ Predicted: _SEGMENT_=12  = 0.04
+ 
+*------------------------------------------------------------*
+ Node = 77
+*------------------------------------------------------------*
+if total_rooms < 3580.5
+AND median_income >= 4.79605
+AND median_house_value >= 298500
+AND latitude < 35.125
+AND households < 979.5 AND households >= 503.5 or MISSING
+then 
+ Tree Node Identifier   = 77
+ Number of Observations = 58
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.33
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.05
+ Predicted: _SEGMENT_=12  = 0.62
+ 
+*------------------------------------------------------------*
+ Node = 80
+*------------------------------------------------------------*
+if total_rooms < 4280.5
+AND median_house_value < 361300 or MISSING
+AND latitude < 35.125
+AND households < 1067 AND households >= 979.5
+then 
+ Tree Node Identifier   = 80
+ Number of Observations = 46
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.02
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.24
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.74
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 81
+*------------------------------------------------------------*
+if total_rooms < 4280.5
+AND median_house_value < 361300 or MISSING
+AND latitude < 35.125
+AND households >= 1067 or MISSING
+then 
+ Tree Node Identifier   = 81
+ Number of Observations = 50
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.02
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.88
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.10
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 84
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, <1H OCEA, NEAR OCE
+AND median_income < 3.19795
+AND longitude < -120.69 or MISSING
+AND latitude >= 35.125 or MISSING
+AND housing_median_age < 29.5
+AND households < 521.5 or MISSING
+then 
+ Tree Node Identifier   = 84
+ Number of Observations = 221
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.24
+ Predicted: _SEGMENT_=4  = 0.07
+ Predicted: _SEGMENT_=8  = 0.48
+ Predicted: _SEGMENT_=2  = 0.05
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.16
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 85
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, <1H OCEA, NEAR OCE
+AND median_income >= 3.19795 or MISSING
+AND longitude < -120.69 or MISSING
+AND latitude >= 35.125 or MISSING
+AND housing_median_age < 29.5
+AND households < 521.5 or MISSING
+then 
+ Tree Node Identifier   = 85
+ Number of Observations = 640
+ Predicted: _SEGMENT_=3  = 0.06
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.04
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.01
+ Predicted: _SEGMENT_=2  = 0.01
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.87
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.01
+ 
+*------------------------------------------------------------*
+ Node = 86
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, <1H OCEA, NEAR OCE
+AND median_house_value < 297200 or MISSING
+AND longitude < -120.69 or MISSING
+AND latitude >= 35.125 or MISSING
+AND housing_median_age >= 29.5 or MISSING
+AND households < 521.5 or MISSING
+then 
+ Tree Node Identifier   = 86
+ Number of Observations = 1322
+ Predicted: _SEGMENT_=3  = 0.09
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.81
+ Predicted: _SEGMENT_=4  = 0.02
+ Predicted: _SEGMENT_=8  = 0.01
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.07
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 87
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, <1H OCEA, NEAR OCE
+AND median_house_value >= 297200
+AND longitude < -120.69 or MISSING
+AND latitude >= 35.125 or MISSING
+AND housing_median_age >= 29.5 or MISSING
+AND households < 521.5 or MISSING
+then 
+ Tree Node Identifier   = 87
+ Number of Observations = 536
+ Predicted: _SEGMENT_=3  = 0.83
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.10
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.06
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.01
+ 
+*------------------------------------------------------------*
+ Node = 88
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND or MISSING
+AND median_income < 4.40315 or MISSING
+AND latitude < 35.755 AND latitude >= 35.125
+AND households < 431.5 or MISSING
+then 
+ Tree Node Identifier   = 88
+ Number of Observations = 158
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.02
+ Predicted: _SEGMENT_=8  = 0.41
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.51
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.06
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 89
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND or MISSING
+AND median_income < 4.40315 or MISSING
+AND latitude < 35.755 AND latitude >= 35.125
+AND households < 521.5 AND households >= 431.5
+then 
+ Tree Node Identifier   = 89
+ Number of Observations = 28
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.50
+ Predicted: _SEGMENT_=8  = 0.11
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.07
+ Predicted: _SEGMENT_=5  = 0.18
+ Predicted: _SEGMENT_=6  = 0.14
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 90
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND or MISSING
+AND median_income < 4.40315 or MISSING
+AND latitude >= 35.755 or MISSING
+AND households < 458 or MISSING
+then 
+ Tree Node Identifier   = 90
+ Number of Observations = 2146
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.07
+ Predicted: _SEGMENT_=4  = 0.02
+ Predicted: _SEGMENT_=8  = 0.88
+ Predicted: _SEGMENT_=2  = 0.01
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.03
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 91
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND or MISSING
+AND median_income < 4.40315 or MISSING
+AND latitude >= 35.755 or MISSING
+AND households < 521.5 AND households >= 458
+then 
+ Tree Node Identifier   = 91
+ Number of Observations = 270
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.01
+ Predicted: _SEGMENT_=4  = 0.49
+ Predicted: _SEGMENT_=8  = 0.36
+ Predicted: _SEGMENT_=2  = 0.11
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.03
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 92
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND or MISSING
+AND median_income >= 4.40315
+AND latitude >= 36.28 or MISSING
+AND housing_median_age < 36.5 or MISSING
+AND households < 521.5 or MISSING
+then 
+ Tree Node Identifier   = 92
+ Number of Observations = 366
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.01
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.11
+ Predicted: _SEGMENT_=2  = 0.02
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.86
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 93
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND or MISSING
+AND median_income >= 4.40315
+AND latitude >= 36.28 or MISSING
+AND housing_median_age >= 36.5
+AND households < 521.5 or MISSING
+then 
+ Tree Node Identifier   = 93
+ Number of Observations = 25
+ Predicted: _SEGMENT_=3  = 0.20
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.64
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.00
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.16
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 94
+*------------------------------------------------------------*
+if total_rooms < 5761.5 or MISSING
+AND median_house_value < 308450 or MISSING
+AND latitude >= 35.125 or MISSING
+AND housing_median_age < 34.5 or MISSING
+AND households < 995.5 AND households >= 521.5 or MISSING
+then 
+ Tree Node Identifier   = 94
+ Number of Observations = 1289
+ Predicted: _SEGMENT_=3  = 0.00
+ Predicted: _SEGMENT_=1  = 0.01
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.23
+ Predicted: _SEGMENT_=8  = 0.01
+ Predicted: _SEGMENT_=2  = 0.66
+ Predicted: _SEGMENT_=11  = 0.01
+ Predicted: _SEGMENT_=9  = 0.04
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.03
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 95
+*------------------------------------------------------------*
+if total_rooms < 5761.5 or MISSING
+AND median_house_value < 308450 or MISSING
+AND latitude >= 35.125 or MISSING
+AND housing_median_age >= 34.5
+AND households < 995.5 AND households >= 521.5 or MISSING
+then 
+ Tree Node Identifier   = 95
+ Number of Observations = 308
+ Predicted: _SEGMENT_=3  = 0.23
+ Predicted: _SEGMENT_=1  = 0.00
+ Predicted: _SEGMENT_=7  = 0.06
+ Predicted: _SEGMENT_=4  = 0.63
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.08
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.00
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 96
+*------------------------------------------------------------*
+if median_income < 5.55925
+AND median_house_value >= 308450
+AND latitude >= 35.125 or MISSING
+AND housing_median_age < 29.5
+AND households < 995.5 AND households >= 521.5 or MISSING
+then 
+ Tree Node Identifier   = 96
+ Number of Observations = 62
+ Predicted: _SEGMENT_=3  = 0.18
+ Predicted: _SEGMENT_=1  = 0.16
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.55
+ Predicted: _SEGMENT_=11  = 0.00
+ Predicted: _SEGMENT_=9  = 0.10
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.02
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 
+*------------------------------------------------------------*
+ Node = 97
+*------------------------------------------------------------*
+if median_income >= 5.55925 or MISSING
+AND median_house_value >= 308450
+AND latitude >= 35.125 or MISSING
+AND housing_median_age < 29.5
+AND households < 995.5 AND households >= 521.5 or MISSING
+then 
+ Tree Node Identifier   = 97
+ Number of Observations = 99
+ Predicted: _SEGMENT_=3  = 0.08
+ Predicted: _SEGMENT_=1  = 0.79
+ Predicted: _SEGMENT_=7  = 0.00
+ Predicted: _SEGMENT_=4  = 0.00
+ Predicted: _SEGMENT_=8  = 0.00
+ Predicted: _SEGMENT_=2  = 0.02
+ Predicted: _SEGMENT_=11  = 0.02
+ Predicted: _SEGMENT_=9  = 0.09
+ Predicted: _SEGMENT_=10  = 0.00
+ Predicted: _SEGMENT_=5  = 0.00
+ Predicted: _SEGMENT_=6  = 0.00
+ Predicted: _SEGMENT_=12  = 0.00
+ 

@@ -1,0 +1,1276 @@
+﻿<SASReport version="1.0">
+      <Data>
+            <IQData type="2DEmbedded" name="TreeData">
+                  <EmbeddedData>
+                        <Variables>
+                              <Variable name="Var1" varName="Var1" type="String" />
+                              <Variable name="Var2" varName="Var2" type="String" />
+                              <Variable name="Var3" varName="Var3" type="Numeric" />
+                              <Variable name="Var4" varName="Var4" type="Numeric" />
+                              <Variable name="Var5" varName="Var5" type="Numeric" />
+                              <Variable name="Var6" varName="Var6" type="Numeric" />
+                              <Variable name="Var7" varName="Var7" type="String"  />
+                              <Variable name="Var8" varName="Var8" type="String" />
+                              <Variable name="Var9" varName="Var9" type="Numeric" />
+                        </Variables>
+                        <ValuesList>
+    <Values>
+      <Value>Non-Missing Values</Value>
+      <Value>latitude</Value>
+      <Value>10</Value>
+      <Value>18.63</Value>
+      <Value>1</Value>
+      <Value>0</Value>
+      <Value>         10:        18.6%
+ Count:        17769</Value>
+      <Value>Node Id:            1&#10;&#10;3:         5.1%&#10;1:         4.0%&#10;7:         7.8%&#10;4:         4.1%&#10;8:        12.5%&#10;2:         6.0%&#10;11:         5.2%&#10;9:
+ 6.6%&#10;10:        18.6%&#10;5:        12.8%&#10;6:        10.7%&#10;12:         6.7%&#10; Count:        17769</Value>
+      <Value>17769</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 35.125</Value>
+      <Value>households</Value>
+      <Value>5.4291181271</Value>
+      <Value>33.3</Value>
+      <Value>2</Value>
+      <Value>1</Value>
+      <Value>         10:        33.3%
+ Count:         9647</Value>
+      <Value>Node Id:            2&#10;&#10;3:         0.0%&#10;1:         6.0%&#10;7:         0.0%&#10;4:         0.1%&#10;8:         0.1%&#10;2:         0.0%&#10;11:         6.1%&#10;9:
+ 0.1%&#10;10:        33.3%&#10;5:        23.0%&#10;6:        19.3%&#10;12:        12.1%&#10; Count:         9647</Value>
+      <Value>9647</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 35.125 Or Missing</Value>
+      <Value>households</Value>
+      <Value>4.5708818729</Value>
+      <Value>27.26</Value>
+      <Value>3</Value>
+      <Value>1</Value>
+      <Value>          8:        27.3%
+ Count:         8122</Value>
+      <Value>Node Id:            3&#10;&#10;3:        11.1%&#10;1:         1.6%&#10;7:        17.1%&#10;4:         8.9%&#10;8:        27.3%&#10;2:        13.1%&#10;11:         4.2%&#10;9:
+ 14.3%&#10;10:         1.2%&#10;5:         0.6%&#10;6:         0.4%&#10;12:         0.2%&#10; Count:         8122</Value>
+      <Value>8122</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 503.5 Or Missing</Value>
+      <Value>median_house_value</Value>
+      <Value>3.4622094659</Value>
+      <Value>51.17</Value>
+      <Value>4</Value>
+      <Value>2</Value>
+      <Value>         10:        51.2%
+ Count:         6152</Value>
+      <Value>Node Id:            4&#10;&#10;3:         0.0%&#10;1:         0.4%&#10;7:         0.0%&#10;4:         0.1%&#10;8:         0.2%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.1%&#10;10:        51.2%&#10;5:         4.0%&#10;6:        27.2%&#10;12:        16.9%&#10; Count:         6152</Value>
+      <Value>6152</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 503.5</Value>
+      <Value>households</Value>
+      <Value>1.9669086612</Value>
+      <Value>56.48</Value>
+      <Value>5</Value>
+      <Value>2</Value>
+      <Value>          5:        56.5%
+ Count:         3495</Value>
+      <Value>Node Id:            5&#10;&#10;3:         0.0%&#10;1:        15.7%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:        16.7%&#10;9:
+ 0.0%&#10;10:         1.8%&#10;5:        56.5%&#10;6:         5.4%&#10;12:         3.8%&#10; Count:         3495</Value>
+      <Value>3495</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 521.5 Or Missing</Value>
+      <Value>ocean_proximity</Value>
+      <Value>3.2365355394</Value>
+      <Value>38.36</Value>
+      <Value>6</Value>
+      <Value>3</Value>
+      <Value>          8:        38.4%
+ Count:         5751</Value>
+      <Value>Node Id:            6&#10;&#10;3:        10.7%&#10;1:         0.0%&#10;7:        23.8%&#10;4:         4.1%&#10;8:        38.4%&#10;2:         1.3%&#10;11:         0.0%&#10;9:
+ 19.1%&#10;10:         1.7%&#10;5:         0.2%&#10;6:         0.6%&#10;12:         0.2%&#10; Count:         5751</Value>
+      <Value>5751</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 521.5</Value>
+      <Value>households</Value>
+      <Value>1.3343463335</Value>
+      <Value>41.71</Value>
+      <Value>7</Value>
+      <Value>3</Value>
+      <Value>          2:        41.7%
+ Count:         2371</Value>
+      <Value>Node Id:            7&#10;&#10;3:        12.1%&#10;1:         5.3%&#10;7:         0.9%&#10;4:        20.6%&#10;8:         0.3%&#10;2:        41.7%&#10;11:        14.5%&#10;9:
+ 2.7%&#10;10:         0.0%&#10;5:         1.8%&#10;6:         0.1%&#10;12:         0.0%&#10; Count:         2371</Value>
+      <Value>2371</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 311600 Or Missing</Value>
+      <Value>housing_median_age</Value>
+      <Value>2.8521582531</Value>
+      <Value>60.99</Value>
+      <Value>8</Value>
+      <Value>4</Value>
+      <Value>         10:        61.0%
+ Count:         5068</Value>
+      <Value>Node Id:            8&#10;&#10;3:         0.0%&#10;1:         0.2%&#10;7:         0.0%&#10;4:         0.1%&#10;8:         0.2%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.1%&#10;10:        61.0%&#10;5:         4.8%&#10;6:        31.0%&#10;12:         2.6%&#10; Count:         5068</Value>
+      <Value>5068</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 311600</Value>
+      <Value>median_income</Value>
+      <Value>0.6100512128</Value>
+      <Value>83.49</Value>
+      <Value>9</Value>
+      <Value>4</Value>
+      <Value>         12:        83.5%
+ Count:         1084</Value>
+      <Value>Node Id:            9&#10;&#10;3:         0.0%&#10;1:         1.7%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.1%&#10;10:         5.3%&#10;5:         0.1%&#10;6:         9.4%&#10;12:        83.5%&#10; Count:         1084</Value>
+      <Value>1084</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 979.5 Or Missing</Value>
+      <Value>median_income</Value>
+      <Value>1.6371208284</Value>
+      <Value>66.35</Value>
+      <Value>10</Value>
+      <Value>5</Value>
+      <Value>          5:        66.3%
+ Count:         2909</Value>
+      <Value>Node Id:           10&#10;&#10;3:         0.0%&#10;1:        17.3%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         3.1%&#10;9:
+ 0.0%&#10;10:         2.2%&#10;5:        66.3%&#10;6:         6.5%&#10;12:         4.6%&#10; Count:         2909</Value>
+      <Value>2909</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 979.5</Value>
+      <Value>median_house_value</Value>
+      <Value>0.3297878327</Value>
+      <Value>84.3</Value>
+      <Value>11</Value>
+      <Value>5</Value>
+      <Value>         11:        84.3%
+ Count:          586</Value>
+      <Value>Node Id:           11&#10;&#10;3:         0.0%&#10;1:         8.2%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:        84.3%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         7.5%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          586</Value>
+      <Value>586</Value>
+    </Values>
+    <Values>
+      <Value>NEAR BAY, <1H OCEA, NEAR OCE</Value>
+      <Value>longitude</Value>
+      <Value>1.542574146</Value>
+      <Value>43.96</Value>
+      <Value>12</Value>
+      <Value>6</Value>
+      <Value>          7:        44.0%
+ Count:         2741</Value>
+      <Value>Node Id:           12&#10;&#10;3:        22.1%&#10;1:         0.0%&#10;7:        44.0%&#10;4:         1.7%&#10;8:         4.4%&#10;2:         0.8%&#10;11:         0.0%&#10;9:
+ 25.9%&#10;10:         0.3%&#10;5:         0.1%&#10;6:         0.1%&#10;12:         0.5%&#10; Count:         2741</Value>
+      <Value>2741</Value>
+    </Values>
+    <Values>
+      <Value>INLAND Or Missing</Value>
+      <Value>median_income</Value>
+      <Value>1.6939613934</Value>
+      <Value>69.27</Value>
+      <Value>13</Value>
+      <Value>6</Value>
+      <Value>          8:        69.3%
+ Count:         3010</Value>
+      <Value>Node Id:           13&#10;&#10;3:         0.2%&#10;1:         0.0%&#10;7:         5.5%&#10;4:         6.2%&#10;8:        69.3%&#10;2:         1.7%&#10;11:         0.0%&#10;9:
+ 13.0%&#10;10:         2.9%&#10;5:         0.2%&#10;6:         1.0%&#10;12:         0.0%&#10; Count:         3010</Value>
+      <Value>3010</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 995.5 Or Missing</Value>
+      <Value>median_house_value</Value>
+      <Value>1.1255557431</Value>
+      <Value>46.6</Value>
+      <Value>14</Value>
+      <Value>7</Value>
+      <Value>          2:        46.6%
+ Count:         2000</Value>
+      <Value>Node Id:           14&#10;&#10;3:        13.9%&#10;1:         5.9%&#10;7:         1.1%&#10;4:        24.4%&#10;8:         0.4%&#10;2:        46.6%&#10;11:         2.4%&#10;9:
+ 3.2%&#10;10:         0.1%&#10;5:         2.2%&#10;6:         0.1%&#10;12:         0.0%&#10; Count:         2000</Value>
+      <Value>2000</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 995.5</Value>
+      <Value>housing_median_age</Value>
+      <Value>0.2087905904</Value>
+      <Value>80.05</Value>
+      <Value>15</Value>
+      <Value>7</Value>
+      <Value>         11:        80.1%
+ Count:          371</Value>
+      <Value>Node Id:           15&#10;&#10;3:         2.2%&#10;1:         2.2%&#10;7:         0.0%&#10;4:         0.3%&#10;8:         0.0%&#10;2:        15.4%&#10;11:        80.1%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          371</Value>
+      <Value>371</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 27.5</Value>
+      <Value>median_income</Value>
+      <Value>0.9600990489</Value>
+      <Value>68.82</Value>
+      <Value>16</Value>
+      <Value>8</Value>
+      <Value>          6:        68.8%
+ Count:         1706</Value>
+      <Value>Node Id:           16&#10;&#10;3:         0.0%&#10;1:         0.5%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.6%&#10;2:         0.0%&#10;11:         0.1%&#10;9:
+ 0.2%&#10;10:        22.3%&#10;5:         6.9%&#10;6:        68.8%&#10;12:         0.7%&#10; Count:         1706</Value>
+      <Value>1706</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 27.5 Or Missing</Value>
+      <Value>median_income</Value>
+      <Value>1.8920592042</Value>
+      <Value>80.64</Value>
+      <Value>17</Value>
+      <Value>8</Value>
+      <Value>         10:        80.6%
+ Count:         3362</Value>
+      <Value>Node Id:           17&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.1%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        80.6%&#10;5:         3.8%&#10;6:        11.9%&#10;12:         3.6%&#10; Count:         3362</Value>
+      <Value>3362</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 3.1334</Value>
+      <Value>median_house_value</Value>
+      <Value>0.0534638978</Value>
+      <Value>49.47</Value>
+      <Value>18</Value>
+      <Value>9</Value>
+      <Value>         10:        49.5%
+ Count:           95</Value>
+      <Value>Node Id:           18&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        49.5%&#10;5:         0.0%&#10;6:        14.7%&#10;12:        35.8%&#10; Count:           95</Value>
+      <Value>95</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 3.1334 Or Missing</Value>
+      <Value>population</Value>
+      <Value>0.556587315</Value>
+      <Value>88.07</Value>
+      <Value>19</Value>
+      <Value>9</Value>
+      <Value>         12:        88.1%
+ Count:          989</Value>
+      <Value>Node Id:           19&#10;&#10;3:         0.0%&#10;1:         1.8%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.1%&#10;10:         1.0%&#10;5:         0.1%&#10;6:         8.9%&#10;12:        88.1%&#10; Count:          989</Value>
+      <Value>989</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 4.7961 Or Missing</Value>
+      <Value>median_house_value</Value>
+      <Value>1.2983285497</Value>
+      <Value>81.45</Value>
+      <Value>20</Value>
+      <Value>10</Value>
+      <Value>          5:        81.4%
+ Count:         2307</Value>
+      <Value>Node Id:           20&#10;&#10;3:         0.0%&#10;1:         3.9%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         3.4%&#10;9:
+ 0.0%&#10;10:         2.8%&#10;5:        81.4%&#10;6:         4.8%&#10;12:         3.7%&#10; Count:         2307</Value>
+      <Value>2307</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 4.7961</Value>
+      <Value>total_rooms</Value>
+      <Value>0.3387922787</Value>
+      <Value>68.6</Value>
+      <Value>21</Value>
+      <Value>10</Value>
+      <Value>          1:        68.6%
+ Count:          602</Value>
+      <Value>Node Id:           21&#10;&#10;3:         0.0%&#10;1:        68.6%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         1.8%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         8.5%&#10;6:        13.0%&#10;12:         8.1%&#10; Count:          602</Value>
+      <Value>602</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 361300 Or Missing</Value>
+      <Value>total_rooms</Value>
+      <Value>0.2909561596</Value>
+      <Value>90.33</Value>
+      <Value>22</Value>
+      <Value>11</Value>
+      <Value>         11:        90.3%
+ Count:          517</Value>
+      <Value>Node Id:           22&#10;&#10;3:         0.0%&#10;1:         1.5%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:        90.3%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         8.1%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          517</Value>
+      <Value>517</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 361300</Value>
+      <Value>households</Value>
+      <Value>0.0388316731</Value>
+      <Value>57.97</Value>
+      <Value>23</Value>
+      <Value>11</Value>
+      <Value>          1:        58.0%
+ Count:           69</Value>
+      <Value>Node Id:           23&#10;&#10;3:         0.0%&#10;1:        58.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:        39.1%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         2.9%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           69</Value>
+      <Value>69</Value>
+    </Values>
+    <Values>
+      <Value>&lt; -120.685 Or Missing</Value>
+      <Value>housing_median_age</Value>
+      <Value>1.5301930328</Value>
+      <Value>44.32</Value>
+      <Value>24</Value>
+      <Value>12</Value>
+      <Value>          7:        44.3%
+ Count:         2719</Value>
+      <Value>Node Id:           24&#10;&#10;3:        22.3%&#10;1:         0.0%&#10;7:        44.3%&#10;4:         1.7%&#10;8:         4.4%&#10;2:         0.8%&#10;11:         0.0%&#10;9:
+ 25.9%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.5%&#10; Count:         2719</Value>
+      <Value>2719</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= -120.685</Value>
+      <Value></Value>
+      <Value>0.0123811132</Value>
+      <Value>36.36</Value>
+      <Value>25</Value>
+      <Value>12</Value>
+      <Value>         10:        36.4%
+ Count:           22</Value>
+      <Value>Node Id:           25&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         4.5%&#10;8:         4.5%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 22.7%&#10;10:        36.4%&#10;5:        13.6%&#10;6:        18.2%&#10;12:         0.0%&#10; Count:           22</Value>
+      <Value>22</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 4.4032 Or Missing</Value>
+      <Value>latitude</Value>
+      <Value>1.4643480218</Value>
+      <Value>78.55</Value>
+      <Value>26</Value>
+      <Value>13</Value>
+      <Value>          8:        78.6%
+ Count:         2602</Value>
+      <Value>Node Id:           26&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         5.6%&#10;4:         7.2%&#10;8:        78.6%&#10;2:         1.7%&#10;11:         0.0%&#10;9:
+ 2.8%&#10;10:         3.3%&#10;5:         0.2%&#10;6:         0.6%&#10;12:         0.0%&#10; Count:         2602</Value>
+      <Value>2602</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 4.4032</Value>
+      <Value>latitude</Value>
+      <Value>0.2296133716</Value>
+      <Value>78.19</Value>
+      <Value>27</Value>
+      <Value>13</Value>
+      <Value>          9:        78.2%
+ Count:          408</Value>
+      <Value>Node Id:           27&#10;&#10;3:         1.2%&#10;1:         0.0%&#10;7:         4.9%&#10;4:         0.2%&#10;8:        10.0%&#10;2:         1.5%&#10;11:         0.0%&#10;9:
+ 78.2%&#10;10:         0.2%&#10;5:         0.0%&#10;6:         3.7%&#10;12:         0.0%&#10; Count:          408</Value>
+      <Value>408</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 308450 Or Missing</Value>
+      <Value>total_rooms</Value>
+      <Value>0.9190162643</Value>
+      <Value>54.26</Value>
+      <Value>28</Value>
+      <Value>14</Value>
+      <Value>          2:        54.3%
+ Count:         1633</Value>
+      <Value>Node Id:           28&#10;&#10;3:         4.7%&#10;1:         1.2%&#10;7:         1.3%&#10;4:        29.8%&#10;8:         0.5%&#10;2:        54.3%&#10;11:         2.8%&#10;9:
+ 2.8%&#10;10:         0.1%&#10;5:         2.6%&#10;6:         0.1%&#10;12:         0.0%&#10; Count:         1633</Value>
+      <Value>1633</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 308450</Value>
+      <Value>housing_median_age</Value>
+      <Value>0.2065394789</Value>
+      <Value>55.04</Value>
+      <Value>29</Value>
+      <Value>14</Value>
+      <Value>          3:        55.0%
+ Count:          367</Value>
+      <Value>Node Id:           29&#10;&#10;3:        55.0%&#10;1:        27.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:        12.5%&#10;11:         0.5%&#10;9:
+ 4.6%&#10;10:         0.0%&#10;5:         0.3%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          367</Value>
+      <Value>367</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 44.5 Or Missing</Value>
+      <Value>total_rooms</Value>
+      <Value>0.1992233665</Value>
+      <Value>82.49</Value>
+      <Value>30</Value>
+      <Value>15</Value>
+      <Value>         11:        82.5%
+ Count:          354</Value>
+      <Value>Node Id:           30&#10;&#10;3:         0.0%&#10;1:         2.3%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:        15.3%&#10;11:        82.5%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          354</Value>
+      <Value>354</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 44.5</Value>
+      <Value></Value>
+      <Value>0.0095672238</Value>
+      <Value>47.06</Value>
+      <Value>31</Value>
+      <Value>15</Value>
+      <Value>          3:        47.1%
+ Count:           17</Value>
+      <Value>Node Id:           31&#10;&#10;3:        47.1%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         5.9%&#10;8:         0.0%&#10;2:        17.6%&#10;11:        29.4%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           17</Value>
+      <Value>17</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 2.8767</Value>
+      <Value>households</Value>
+      <Value>0.267319489</Value>
+      <Value>63.16</Value>
+      <Value>32</Value>
+      <Value>16</Value>
+      <Value>         10:        63.2%
+ Count:          475</Value>
+      <Value>Node Id:           32&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         1.3%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        63.2%&#10;5:        16.2%&#10;6:        19.4%&#10;12:         0.0%&#10; Count:          475</Value>
+      <Value>475</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 2.8767 Or Missing</Value>
+      <Value></Value>
+      <Value>0.6927795599</Value>
+      <Value>87.9</Value>
+      <Value>33</Value>
+      <Value>16</Value>
+      <Value>          6:        87.9%
+ Count:         1231</Value>
+      <Value>Node Id:           33&#10;&#10;3:         0.0%&#10;1:         0.6%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.3%&#10;2:         0.0%&#10;11:         0.1%&#10;9:
+ 0.3%&#10;10:         6.5%&#10;5:         3.2%&#10;6:        87.9%&#10;12:         1.0%&#10; Count:         1231</Value>
+      <Value>1231</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 4.3457 Or Missing</Value>
+      <Value>population</Value>
+      <Value>1.5149980303</Value>
+      <Value>91.05</Value>
+      <Value>34</Value>
+      <Value>17</Value>
+      <Value>         10:        91.0%
+ Count:         2692</Value>
+      <Value>Node Id:           34&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.1%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        91.0%&#10;5:         4.6%&#10;6:         3.9%&#10;12:         0.3%&#10; Count:         2692</Value>
+      <Value>2692</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 4.3457</Value>
+      <Value>median_house_value</Value>
+      <Value>0.377061174</Value>
+      <Value>43.73</Value>
+      <Value>35</Value>
+      <Value>17</Value>
+      <Value>          6:        43.7%
+ Count:          670</Value>
+      <Value>Node Id:           35&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        38.8%&#10;5:         0.4%&#10;6:        43.7%&#10;12:        17.0%&#10; Count:          670</Value>
+      <Value>670</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 378250 Or Missing</Value>
+      <Value>housing_median_age</Value>
+      <Value>0.0343294502</Value>
+      <Value>73.77</Value>
+      <Value>36</Value>
+      <Value>18</Value>
+      <Value>         10:        73.8%
+ Count:           61</Value>
+      <Value>Node Id:           36&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        73.8%&#10;5:         0.0%&#10;6:        18.0%&#10;12:         8.2%&#10; Count:           61</Value>
+      <Value>61</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 378250</Value>
+      <Value></Value>
+      <Value>0.0191344476</Value>
+      <Value>85.29</Value>
+      <Value>37</Value>
+      <Value>18</Value>
+      <Value>         12:        85.3%
+ Count:           34</Value>
+      <Value>Node Id:           37&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         5.9%&#10;5:         0.0%&#10;6:         8.8%&#10;12:        85.3%&#10; Count:           34</Value>
+      <Value>34</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 1415 Or Missing</Value>
+      <Value></Value>
+      <Value>0.5374528674</Value>
+      <Value>90.05</Value>
+      <Value>38</Value>
+      <Value>19</Value>
+      <Value>         12:        90.1%
+ Count:          955</Value>
+      <Value>Node Id:           38&#10;&#10;3:         0.0%&#10;1:         0.3%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.1%&#10;10:         1.0%&#10;5:         0.0%&#10;6:         8.5%&#10;12:        90.1%&#10; Count:          955</Value>
+      <Value>955</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 1415</Value>
+      <Value></Value>
+      <Value>0.0191344476</Value>
+      <Value>44.12</Value>
+      <Value>39</Value>
+      <Value>19</Value>
+      <Value>          1:        44.1%
+ Count:           34</Value>
+      <Value>Node Id:           39&#10;&#10;3:         0.0%&#10;1:        44.1%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         2.9%&#10;6:        20.6%&#10;12:        32.4%&#10; Count:           34</Value>
+      <Value>34</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 355050 Or Missing</Value>
+      <Value>total_rooms</Value>
+      <Value>1.2178513141</Value>
+      <Value>85.95</Value>
+      <Value>40</Value>
+      <Value>20</Value>
+      <Value>          5:        86.0%
+ Count:         2164</Value>
+      <Value>Node Id:           40&#10;&#10;3:         0.0%&#10;1:         1.9%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         3.6%&#10;9:
+ 0.0%&#10;10:         3.0%&#10;5:        86.0%&#10;6:         4.9%&#10;12:         0.6%&#10; Count:         2164</Value>
+      <Value>2164</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 355050</Value>
+      <Value>population</Value>
+      <Value>0.0804772356</Value>
+      <Value>51.05</Value>
+      <Value>41</Value>
+      <Value>20</Value>
+      <Value>         12:        51.0%
+ Count:          143</Value>
+      <Value>Node Id:           41&#10;&#10;3:         0.0%&#10;1:        33.6%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:        13.3%&#10;6:         2.1%&#10;12:        51.0%&#10; Count:          143</Value>
+      <Value>143</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 3580.5</Value>
+      <Value>median_house_value</Value>
+      <Value>0.0928583488</Value>
+      <Value>41.21</Value>
+      <Value>42</Value>
+      <Value>21</Value>
+      <Value>          6:        41.2%
+ Count:          165</Value>
+      <Value>Node Id:           42&#10;&#10;3:         0.0%&#10;1:        18.2%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:        16.4%&#10;6:        41.2%&#10;12:        24.2%&#10; Count:          165</Value>
+      <Value>165</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 3580.5 Or Missing</Value>
+      <Value></Value>
+      <Value>0.2459339299</Value>
+      <Value>87.64</Value>
+      <Value>43</Value>
+      <Value>21</Value>
+      <Value>          1:        87.6%
+ Count:          437</Value>
+      <Value>Node Id:           43&#10;&#10;3:         0.0%&#10;1:        87.6%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         2.5%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         5.5%&#10;6:         2.3%&#10;12:         2.1%&#10; Count:          437</Value>
+      <Value>437</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 4280.5</Value>
+      <Value>households</Value>
+      <Value>0.0540266757</Value>
+      <Value>57.29</Value>
+      <Value>44</Value>
+      <Value>22</Value>
+      <Value>         11:        57.3%
+ Count:           96</Value>
+      <Value>Node Id:           44&#10;&#10;3:         0.0%&#10;1:         2.1%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:        57.3%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:        40.6%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           96</Value>
+      <Value>96</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 4280.5 Or Missing</Value>
+      <Value></Value>
+      <Value>0.2369294839</Value>
+      <Value>97.86</Value>
+      <Value>45</Value>
+      <Value>22</Value>
+      <Value>         11:        97.9%
+ Count:          421</Value>
+      <Value>Node Id:           45&#10;&#10;3:         0.0%&#10;1:         1.4%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:        97.9%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         0.7%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          421</Value>
+      <Value>421</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 1177.5 Or Missing</Value>
+      <Value></Value>
+      <Value>0.0225111149</Value>
+      <Value>87.5</Value>
+      <Value>46</Value>
+      <Value>23</Value>
+      <Value>          1:        87.5%
+ Count:           40</Value>
+      <Value>Node Id:           46&#10;&#10;3:         0.0%&#10;1:        87.5%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         7.5%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         5.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           40</Value>
+      <Value>40</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 1177.5</Value>
+      <Value></Value>
+      <Value>0.0163205583</Value>
+      <Value>82.76</Value>
+      <Value>47</Value>
+      <Value>23</Value>
+      <Value>         11:        82.8%
+ Count:           29</Value>
+      <Value>Node Id:           47&#10;&#10;3:         0.0%&#10;1:        17.2%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:        82.8%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           29</Value>
+      <Value>29</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 29.5</Value>
+      <Value>median_income</Value>
+      <Value>0.4845517474</Value>
+      <Value>68.41</Value>
+      <Value>48</Value>
+      <Value>24</Value>
+      <Value>          9:        68.4%
+ Count:          861</Value>
+      <Value>Node Id:           48&#10;&#10;3:         4.4%&#10;1:         0.0%&#10;7:         9.2%&#10;4:         2.1%&#10;8:        12.8%&#10;2:         2.4%&#10;11:         0.0%&#10;9:
+ 68.4%&#10;10:         0.1%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.6%&#10; Count:          861</Value>
+      <Value>861</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 29.5 Or Missing</Value>
+      <Value>median_house_value</Value>
+      <Value>1.0456412854</Value>
+      <Value>60.6</Value>
+      <Value>49</Value>
+      <Value>24</Value>
+      <Value>          7:        60.6%
+ Count:         1858</Value>
+      <Value>Node Id:           49&#10;&#10;3:        30.6%&#10;1:         0.0%&#10;7:        60.6%&#10;4:         1.5%&#10;8:         0.5%&#10;2:         0.1%&#10;11:         0.0%&#10;9:
+ 6.2%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.4%&#10; Count:         1858</Value>
+      <Value>1858</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 35.755</Value>
+      <Value>households</Value>
+      <Value>0.1046766841</Value>
+      <Value>44.62</Value>
+      <Value>50</Value>
+      <Value>26</Value>
+      <Value>         10:        44.6%
+ Count:          186</Value>
+      <Value>Node Id:           50&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         9.1%&#10;8:        36.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        44.6%&#10;5:         2.7%&#10;6:         7.5%&#10;12:         0.0%&#10; Count:          186</Value>
+      <Value>186</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 35.755 Or Missing</Value>
+      <Value>households</Value>
+      <Value>1.3596713377</Value>
+      <Value>81.83</Value>
+      <Value>51</Value>
+      <Value>26</Value>
+      <Value>          8:        81.8%
+ Count:         2416</Value>
+      <Value>Node Id:           51&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         6.0%&#10;4:         7.0%&#10;8:        81.8%&#10;2:         1.8%&#10;11:         0.0%&#10;9:
+ 3.0%&#10;10:         0.2%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:         2416</Value>
+      <Value>2416</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 36.28</Value>
+      <Value></Value>
+      <Value>0.0095672238</Value>
+      <Value>82.35</Value>
+      <Value>52</Value>
+      <Value>27</Value>
+      <Value>          6:        82.4%
+ Count:           17</Value>
+      <Value>Node Id:           52&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         5.9%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 5.9%&#10;10:         5.9%&#10;5:         0.0%&#10;6:        82.4%&#10;12:         0.0%&#10; Count:           17</Value>
+      <Value>17</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 36.28 Or Missing</Value>
+      <Value>housing_median_age</Value>
+      <Value>0.2200461478</Value>
+      <Value>81.33</Value>
+      <Value>53</Value>
+      <Value>27</Value>
+      <Value>          9:        81.3%
+ Count:          391</Value>
+      <Value>Node Id:           53&#10;&#10;3:         1.3%&#10;1:         0.0%&#10;7:         5.1%&#10;4:         0.3%&#10;8:        10.2%&#10;2:         1.5%&#10;11:         0.0%&#10;9:
+ 81.3%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.3%&#10;12:         0.0%&#10; Count:          391</Value>
+      <Value>391</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 5761.5 Or Missing</Value>
+      <Value>housing_median_age</Value>
+      <Value>0.8987562609</Value>
+      <Value>55.1</Value>
+      <Value>54</Value>
+      <Value>28</Value>
+      <Value>          2:        55.1%
+ Count:         1597</Value>
+      <Value>Node Id:           54&#10;&#10;3:         4.8%&#10;1:         1.0%&#10;7:         1.3%&#10;4:        30.5%&#10;8:         0.5%&#10;2:        55.1%&#10;11:         1.1%&#10;9:
+ 2.9%&#10;10:         0.1%&#10;5:         2.6%&#10;6:         0.1%&#10;12:         0.0%&#10; Count:         1597</Value>
+      <Value>1597</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 5761.5</Value>
+      <Value></Value>
+      <Value>0.0202600034</Value>
+      <Value>75</Value>
+      <Value>55</Value>
+      <Value>28</Value>
+      <Value>         11:        75.0%
+ Count:           36</Value>
+      <Value>Node Id:           55&#10;&#10;3:         0.0%&#10;1:         8.3%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:        16.7%&#10;11:        75.0%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           36</Value>
+      <Value>36</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 29.5</Value>
+      <Value>median_income</Value>
+      <Value>0.0906072373</Value>
+      <Value>54.66</Value>
+      <Value>56</Value>
+      <Value>29</Value>
+      <Value>          1:        54.7%
+ Count:          161</Value>
+      <Value>Node Id:           56&#10;&#10;3:        11.8%&#10;1:        54.7%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:        22.4%&#10;11:         1.2%&#10;9:
+ 9.3%&#10;10:         0.0%&#10;5:         0.6%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          161</Value>
+      <Value>161</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 29.5 Or Missing</Value>
+      <Value></Value>
+      <Value>0.1159322415</Value>
+      <Value>88.83</Value>
+      <Value>57</Value>
+      <Value>29</Value>
+      <Value>          3:        88.8%
+ Count:          206</Value>
+      <Value>Node Id:           57&#10;&#10;3:        88.8%&#10;1:         5.3%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         4.9%&#10;11:         0.0%&#10;9:
+ 1.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          206</Value>
+      <Value>206</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 5097.5</Value>
+      <Value></Value>
+      <Value>0.0422083404</Value>
+      <Value>62.67</Value>
+      <Value>58</Value>
+      <Value>30</Value>
+      <Value>          2:        62.7%
+ Count:           75</Value>
+      <Value>Node Id:           58&#10;&#10;3:         0.0%&#10;1:         4.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:        62.7%&#10;11:        33.3%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           75</Value>
+      <Value>75</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 5097.5 Or Missing</Value>
+      <Value></Value>
+      <Value>0.1570150262</Value>
+      <Value>95.7</Value>
+      <Value>59</Value>
+      <Value>30</Value>
+      <Value>         11:        95.7%
+ Count:          279</Value>
+      <Value>Node Id:           59&#10;&#10;3:         0.0%&#10;1:         1.8%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         2.5%&#10;11:        95.7%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          279</Value>
+      <Value>279</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 431.5 Or Missing</Value>
+      <Value></Value>
+      <Value>0.2099161461</Value>
+      <Value>75.6</Value>
+      <Value>60</Value>
+      <Value>32</Value>
+      <Value>         10:        75.6%
+ Count:          373</Value>
+      <Value>Node Id:           60&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         1.6%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        75.6%&#10;5:         2.9%&#10;6:        19.8%&#10;12:         0.0%&#10; Count:          373</Value>
+      <Value>373</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 431.5</Value>
+      <Value></Value>
+      <Value>0.0574033429</Value>
+      <Value>64.71</Value>
+      <Value>61</Value>
+      <Value>32</Value>
+      <Value>          5:        64.7%
+ Count:          102</Value>
+      <Value>Node Id:           61&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        17.6%&#10;5:        64.7%&#10;6:        17.6%&#10;12:         0.0%&#10; Count:          102</Value>
+      <Value>102</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 1919.5 Or Missing</Value>
+      <Value></Value>
+      <Value>1.4620969103</Value>
+      <Value>93.07</Value>
+      <Value>64</Value>
+      <Value>34</Value>
+      <Value>         10:        93.1%
+ Count:         2598</Value>
+      <Value>Node Id:           64&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.2%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        93.1%&#10;5:         2.4%&#10;6:         4.1%&#10;12:         0.3%&#10; Count:         2598</Value>
+      <Value>2598</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 1919.5</Value>
+      <Value></Value>
+      <Value>0.0529011199</Value>
+      <Value>64.89</Value>
+      <Value>65</Value>
+      <Value>34</Value>
+      <Value>          5:        64.9%
+ Count:           94</Value>
+      <Value>Node Id:           65&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        35.1%&#10;5:        64.9%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           94</Value>
+      <Value>94</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 254050 Or Missing</Value>
+      <Value></Value>
+      <Value>0.3050256064</Value>
+      <Value>49.08</Value>
+      <Value>66</Value>
+      <Value>35</Value>
+      <Value>          6:        49.1%
+ Count:          542</Value>
+      <Value>Node Id:           66&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        47.0%&#10;5:         0.6%&#10;6:        49.1%&#10;12:         3.3%&#10; Count:          542</Value>
+      <Value>542</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 254050</Value>
+      <Value></Value>
+      <Value>0.0720355676</Value>
+      <Value>75</Value>
+      <Value>67</Value>
+      <Value>35</Value>
+      <Value>         12:        75.0%
+ Count:          128</Value>
+      <Value>Node Id:           67&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         3.9%&#10;5:         0.0%&#10;6:        21.1%&#10;12:        75.0%&#10; Count:          128</Value>
+      <Value>128</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 26.5</Value>
+      <Value></Value>
+      <Value>0.0101300017</Value>
+      <Value>61.11</Value>
+      <Value>68</Value>
+      <Value>36</Value>
+      <Value>          6:        61.1%
+ Count:           18</Value>
+      <Value>Node Id:           68&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        33.3%&#10;5:         0.0%&#10;6:        61.1%&#10;12:         5.6%&#10; Count:           18</Value>
+      <Value>18</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 26.5 Or Missing</Value>
+      <Value></Value>
+      <Value>0.0241994485</Value>
+      <Value>90.7</Value>
+      <Value>69</Value>
+      <Value>36</Value>
+      <Value>         10:        90.7%
+ Count:           43</Value>
+      <Value>Node Id:           69&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        90.7%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         9.3%&#10; Count:           43</Value>
+      <Value>43</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 4913 Or Missing</Value>
+      <Value></Value>
+      <Value>1.1733918622</Value>
+      <Value>88.35</Value>
+      <Value>72</Value>
+      <Value>40</Value>
+      <Value>          5:        88.3%
+ Count:         2085</Value>
+      <Value>Node Id:           72&#10;&#10;3:         0.0%&#10;1:         1.5%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         1.2%&#10;9:
+ 0.0%&#10;10:         3.1%&#10;5:        88.3%&#10;6:         5.1%&#10;12:         0.6%&#10; Count:         2085</Value>
+      <Value>2085</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 4913</Value>
+      <Value></Value>
+      <Value>0.0444594519</Value>
+      <Value>65.82</Value>
+      <Value>73</Value>
+      <Value>40</Value>
+      <Value>         11:        65.8%
+ Count:           79</Value>
+      <Value>Node Id:           73&#10;&#10;3:         0.0%&#10;1:        11.4%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:        65.8%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:        22.8%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           79</Value>
+      <Value>79</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 1244</Value>
+      <Value></Value>
+      <Value>0.0377061174</Value>
+      <Value>95.52</Value>
+      <Value>74</Value>
+      <Value>41</Value>
+      <Value>         12:        95.5%
+ Count:           67</Value>
+      <Value>Node Id:           74&#10;&#10;3:         0.0%&#10;1:         1.5%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         3.0%&#10;12:        95.5%&#10; Count:           67</Value>
+      <Value>67</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 1244 Or Missing</Value>
+      <Value></Value>
+      <Value>0.0427711182</Value>
+      <Value>61.84</Value>
+      <Value>75</Value>
+      <Value>41</Value>
+      <Value>          1:        61.8%
+ Count:           76</Value>
+      <Value>Node Id:           75&#10;&#10;3:         0.0%&#10;1:        61.8%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:        25.0%&#10;6:         1.3%&#10;12:        11.8%&#10; Count:           76</Value>
+      <Value>76</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 298500 Or Missing</Value>
+      <Value></Value>
+      <Value>0.0602172323</Value>
+      <Value>60.75</Value>
+      <Value>76</Value>
+      <Value>42</Value>
+      <Value>          6:        60.7%
+ Count:          107</Value>
+      <Value>Node Id:           76&#10;&#10;3:         0.0%&#10;1:        10.3%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:        25.2%&#10;6:        60.7%&#10;12:         3.7%&#10; Count:          107</Value>
+      <Value>107</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 298500</Value>
+      <Value></Value>
+      <Value>0.0326411166</Value>
+      <Value>62.07</Value>
+      <Value>77</Value>
+      <Value>42</Value>
+      <Value>         12:        62.1%
+ Count:           58</Value>
+      <Value>Node Id:           77&#10;&#10;3:         0.0%&#10;1:        32.8%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         5.2%&#10;12:        62.1%&#10; Count:           58</Value>
+      <Value>58</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 1067</Value>
+      <Value></Value>
+      <Value>0.0258877821</Value>
+      <Value>73.91</Value>
+      <Value>80</Value>
+      <Value>44</Value>
+      <Value>          5:        73.9%
+ Count:           46</Value>
+      <Value>Node Id:           80&#10;&#10;3:         0.0%&#10;1:         2.2%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:        23.9%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:        73.9%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           46</Value>
+      <Value>46</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 1067 Or Missing</Value>
+      <Value></Value>
+      <Value>0.0281388936</Value>
+      <Value>88</Value>
+      <Value>81</Value>
+      <Value>44</Value>
+      <Value>         11:        88.0%
+ Count:           50</Value>
+      <Value>Node Id:           81&#10;&#10;3:         0.0%&#10;1:         2.0%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:        88.0%&#10;9:
+ 0.0%&#10;10:         0.0%&#10;5:        10.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           50</Value>
+      <Value>50</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 3.198</Value>
+      <Value></Value>
+      <Value>0.1243739096</Value>
+      <Value>47.51</Value>
+      <Value>84</Value>
+      <Value>48</Value>
+      <Value>          8:        47.5%
+ Count:          221</Value>
+      <Value>Node Id:           84&#10;&#10;3:         0.5%&#10;1:         0.0%&#10;7:        23.5%&#10;4:         6.8%&#10;8:        47.5%&#10;2:         5.4%&#10;11:         0.0%&#10;9:
+ 15.8%&#10;10:         0.5%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          221</Value>
+      <Value>221</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 3.198 Or Missing</Value>
+      <Value></Value>
+      <Value>0.3601778378</Value>
+      <Value>86.56</Value>
+      <Value>85</Value>
+      <Value>48</Value>
+      <Value>          9:        86.6%
+ Count:          640</Value>
+      <Value>Node Id:           85&#10;&#10;3:         5.8%&#10;1:         0.0%&#10;7:         4.2%&#10;4:         0.5%&#10;8:         0.8%&#10;2:         1.4%&#10;11:         0.0%&#10;9:
+ 86.6%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.8%&#10; Count:          640</Value>
+      <Value>640</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 297200 Or Missing</Value>
+      <Value></Value>
+      <Value>0.7439923462</Value>
+      <Value>81.16</Value>
+      <Value>86</Value>
+      <Value>49</Value>
+      <Value>          7:        81.2%
+ Count:         1322</Value>
+      <Value>Node Id:           86&#10;&#10;3:         9.4%&#10;1:         0.0%&#10;7:        81.2%&#10;4:         2.1%&#10;8:         0.8%&#10;2:         0.1%&#10;11:         0.0%&#10;9:
+ 6.5%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:         1322</Value>
+      <Value>1322</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 297200</Value>
+      <Value></Value>
+      <Value>0.3016489392</Value>
+      <Value>83.02</Value>
+      <Value>87</Value>
+      <Value>49</Value>
+      <Value>          3:        83.0%
+ Count:          536</Value>
+      <Value>Node Id:           87&#10;&#10;3:        83.0%&#10;1:         0.0%&#10;7:         9.9%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 5.6%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         1.5%&#10; Count:          536</Value>
+      <Value>536</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 431.5 Or Missing</Value>
+      <Value></Value>
+      <Value>0.0889189037</Value>
+      <Value>51.27</Value>
+      <Value>88</Value>
+      <Value>50</Value>
+      <Value>         10:        51.3%
+ Count:          158</Value>
+      <Value>Node Id:           88&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:         1.9%&#10;8:        40.5%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:        51.3%&#10;5:         0.0%&#10;6:         6.3%&#10;12:         0.0%&#10; Count:          158</Value>
+      <Value>158</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 431.5</Value>
+      <Value></Value>
+      <Value>0.0157577804</Value>
+      <Value>50</Value>
+      <Value>89</Value>
+      <Value>50</Value>
+      <Value>          4:        50.0%
+ Count:           28</Value>
+      <Value>Node Id:           89&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.0%&#10;4:        50.0%&#10;8:        10.7%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         7.1%&#10;5:        17.9%&#10;6:        14.3%&#10;12:         0.0%&#10; Count:           28</Value>
+      <Value>28</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 458 Or Missing</Value>
+      <Value></Value>
+      <Value>1.2077213124</Value>
+      <Value>87.65</Value>
+      <Value>90</Value>
+      <Value>51</Value>
+      <Value>          8:        87.7%
+ Count:         2146</Value>
+      <Value>Node Id:           90&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         6.7%&#10;4:         1.8%&#10;8:        87.7%&#10;2:         0.6%&#10;11:         0.0%&#10;9:
+ 2.9%&#10;10:         0.2%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:         2146</Value>
+      <Value>2146</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 458</Value>
+      <Value></Value>
+      <Value>0.1519500253</Value>
+      <Value>48.89</Value>
+      <Value>91</Value>
+      <Value>51</Value>
+      <Value>          4:        48.9%
+ Count:          270</Value>
+      <Value>Node Id:           91&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         0.7%&#10;4:        48.9%&#10;8:        35.6%&#10;2:        11.5%&#10;11:         0.0%&#10;9:
+ 3.3%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          270</Value>
+      <Value>270</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 36.5 Or Missing</Value>
+      <Value></Value>
+      <Value>0.205976701</Value>
+      <Value>85.79</Value>
+      <Value>92</Value>
+      <Value>53</Value>
+      <Value>          9:        85.8%
+ Count:          366</Value>
+      <Value>Node Id:           92&#10;&#10;3:         0.0%&#10;1:         0.0%&#10;7:         1.1%&#10;4:         0.3%&#10;8:        10.9%&#10;2:         1.6%&#10;11:         0.0%&#10;9:
+ 85.8%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.3%&#10;12:         0.0%&#10; Count:          366</Value>
+      <Value>366</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 36.5</Value>
+      <Value></Value>
+      <Value>0.0140694468</Value>
+      <Value>64</Value>
+      <Value>93</Value>
+      <Value>53</Value>
+      <Value>          7:        64.0%
+ Count:           25</Value>
+      <Value>Node Id:           93&#10;&#10;3:        20.0%&#10;1:         0.0%&#10;7:        64.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         0.0%&#10;11:         0.0%&#10;9:
+ 16.0%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           25</Value>
+      <Value>25</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 34.5 Or Missing</Value>
+      <Value></Value>
+      <Value>0.7254206765</Value>
+      <Value>66.41</Value>
+      <Value>94</Value>
+      <Value>54</Value>
+      <Value>          2:        66.4%
+ Count:         1289</Value>
+      <Value>Node Id:           94&#10;&#10;3:         0.5%&#10;1:         1.2%&#10;7:         0.2%&#10;4:        22.7%&#10;8:         0.6%&#10;2:        66.4%&#10;11:         1.4%&#10;9:
+ 3.6%&#10;10:         0.0%&#10;5:         3.3%&#10;6:         0.2%&#10;12:         0.0%&#10; Count:         1289</Value>
+      <Value>1289</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 34.5</Value>
+      <Value></Value>
+      <Value>0.1733355844</Value>
+      <Value>63.31</Value>
+      <Value>95</Value>
+      <Value>54</Value>
+      <Value>          4:        63.3%
+ Count:          308</Value>
+      <Value>Node Id:           95&#10;&#10;3:        22.7%&#10;1:         0.0%&#10;7:         5.8%&#10;4:        63.3%&#10;8:         0.0%&#10;2:         7.8%&#10;11:         0.0%&#10;9:
+ 0.0%&#10;10:         0.3%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:          308</Value>
+      <Value>308</Value>
+    </Values>
+    <Values>
+      <Value>&lt; 5.5593</Value>
+      <Value></Value>
+      <Value>0.034892228</Value>
+      <Value>54.84</Value>
+      <Value>96</Value>
+      <Value>56</Value>
+      <Value>          2:        54.8%
+ Count:           62</Value>
+      <Value>Node Id:           96&#10;&#10;3:        17.7%&#10;1:        16.1%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:        54.8%&#10;11:         0.0%&#10;9:
+ 9.7%&#10;10:         0.0%&#10;5:         1.6%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           62</Value>
+      <Value>62</Value>
+    </Values>
+    <Values>
+      <Value>&gt;= 5.5593 Or Missing</Value>
+      <Value></Value>
+      <Value>0.0557150093</Value>
+      <Value>78.79</Value>
+      <Value>97</Value>
+      <Value>56</Value>
+      <Value>          1:        78.8%
+ Count:           99</Value>
+      <Value>Node Id:           97&#10;&#10;3:         8.1%&#10;1:        78.8%&#10;7:         0.0%&#10;4:         0.0%&#10;8:         0.0%&#10;2:         2.0%&#10;11:         2.0%&#10;9:
+ 9.1%&#10;10:         0.0%&#10;5:         0.0%&#10;6:         0.0%&#10;12:         0.0%&#10; Count:           99</Value>
+      <Value>99</Value>
+    </Values>
+                        </ValuesList>
+                  </EmbeddedData>
+            </IQData>
+      </Data>
+
+      <View>
+            <Section>
+                  <Body>
+                        <Graph name="DecisionTree" >
+                              <ChartDataList>
+                                    <ChartData name="DTreeData" data="TreeData" >
+                                          <Roles>
+                                                <Role type="AboveText"   variable="Var1" > </Role>
+                                                <Role type="BelowText"   variable="Var2" > </Role>
+                                                <Role type="LinkWidth"   variable="Var3" > </Role>
+                                                <Role type="NodeColor"   variable="Var4" > </Role>
+                                                <Role type="ID"      variable="Var5" > </Role>
+                                                <Role type="Parent"    variable="Var6" > </Role>
+                                                <Role type="NodeText"    variable="Var7" > </Role>
+                                                <Role type="ToolTipText" variable="Var8" > </Role>
+                                                <Role type="NodeSize"    variable="Var9" > </Role>
+                                          </Roles>
+                                    </ChartData>
+                              </ChartDataList>
+                              <ColorMappers>
+                                    <ColorRamp  name="NodeColorRamp"
+                                                      underFlowColor="Red"
+                                                      overflowColor="Green"
+                                                      low="0"
+                                                      high="1000"
+                                                      beginColor="CX0000FF"
+                                                      endColor="CXFFFFFF" >
+                                    </ColorRamp>
+                                    <ColorRamp  name="LinkColorRamp"
+                                                      low="1"
+                                                      high="10"
+                                                      beginColor="CX000000"
+                                                      endColor="CX000000" >
+                                    </ColorRamp>
+                              </ColorMappers>
+                              <ChartAreas>
+                                    <ChartArea>
+                                          <Charts>
+                                          <DecisionTree name="DTree"
+                                                  chartData="DTreeData"
+                                                  selectionColor="CX00FF00"
+                                                  orientation="Vertical"
+                                                  emptyNodes="False"
+                                                  legendVisible="False"
+                                                  titleAnchor="Root"
+                                                  footnoteAnchor="Chart"
+                                                  displayDepth="4" >
+
+                                    <SplitVarList>
+                                          <SplitVar name="SPLIT VAR A" type="DISCRETE" missingBranch="3" values="1,A:1,B:2,C:3,D"/>
+                                          <SplitVar name="SPLIT VAR B" type="CONTINUOUS" breaks="10:50:100" />
+                                    </SplitVarList>
+
+                                    <IciclePlot isVisible="True"></IciclePlot>
+
+                                    <NodeStyle colorMapper="NodeColorRamp"
+                                                   outlineColor="Black"
+                                                   outlineWidth="1">
+                                          <NodeText textColor="Black"
+                                                        textFont="SansSerif"
+                                                        textSize="12 pt"
+                                                        textFlags="Bold" />
+                                    </NodeStyle>
+                                    <FlaggedNodeStyle color="CXFF8844"
+                                                              outlineColor="Black"
+                                                              outlineWidth="3" >
+                                          <FlaggedNodeText textColor="Black"
+                                                        textFont="SansSerif"
+                                                        textSize="12 pt"
+                                                        textFlags="Italic" />
+                                    </FlaggedNodeStyle>
+                                    <LinkStyle textVisible="True"
+                                                   colorMapper="LinkColorRamp"
+                                                   linkStyle="Manhattan"
+                                                   staticWidth="3" >
+                                          <LinkText textColor="Black"
+                                                        textFont="SansSerif"
+                                                        textSize="10 pt"
+                                                        textFlags="Bold" />
+                                    </LinkStyle>
+                                    <GraphStyle numBars="3"
+                                                      numStacks="3"
+                                                      axisMin="0"
+                                                      axisMax="20"
+                                                      orientation="Vertical"
+                                                      visible="True" >
+                                    </GraphStyle>
+                              </DecisionTree>
+                              </Charts>
+                        </ChartArea>
+                  </ChartAreas>
+            </Graph>
+      </Body>
+      </Section>
+      </View>
+
+  </SASReport>
+

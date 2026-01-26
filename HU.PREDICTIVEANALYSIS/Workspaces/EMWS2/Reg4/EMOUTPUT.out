@@ -1,0 +1,742 @@
+*------------------------------------------------------------*
+User:                smupp
+Date:                December 11, 2024
+Time:                00:18:56
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          8
+INPUT      NOMINAL           1
+TARGET     INTERVAL          1
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type               Variable                      Label
+ 
+TARGET       median_house_value
+PREDICTED    P_median_house_value    Predicted: median_house_value
+RESIDUAL     R_median_house_value    Residual: median_house_value
+ 
+ 
+ 
+ 
+ 
+The DMREG Procedure
+ 
+               Model Information
+ 
+Training Data Set             WORK.EM_DMREG.VIEW
+DMDB Catalog                  WORK.REG4_DMDB
+Target Variable               median_house_value
+Target Measurement Level      Interval
+Error                         Normal
+Link Function                 Identity
+Number of Model Parameters    13
+Number of Observations        6531
+ 
+ 
+ 
+ 
+Stepwise Selection Procedure
+ 
+ 
+Step 0: Intercept entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   0               0               .        .       .
+Error                6530     8.619812E13     13200324662
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.0000     Adj R-Sq        0.0000
+AIC        152196.2059     BIC        152196.1284
+SBC        152202.9902     C(p)        11374.4321
+ 
+ 
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1      207170      1421.7     145.72      <.0001
+ 
+ 
+Step 1: Effect median_income entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   1    3.9309662E13    3.9309662E13    5473.69    <.0001
+Error                6529    4.6888458E13      7181568135
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.4560     Adj R-Sq        0.4560
+AIC        148221.6314     BIC        148222.0969
+SBC        148235.2000     C(p)         3211.7777
+ 
+ 
+                 Type 3 Analysis of Effects
+ 
+                                  Sum of
+Effect                  DF       Squares    F Value    Pr > F
+ 
+median_income            1    3.93097E13    5473.69    <.0001
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1     46702.8      2409.1      19.39      <.0001
+median_income                   1     41363.2       559.1      73.98      <.0001
+ 
+ 
+Step 2: Effect ocean_proximity entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   5    4.9506515E13    9.9013031E12    1760.78    <.0001
+Error                6525    3.6691605E13      5623234427
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5743     Adj R-Sq        0.5740
+AIC        146628.0762     BIC        146628.3191
+SBC        146668.7821     C(p)         1101.8814
+ 
+ 
+                 Type 3 Analysis of Effects
+ 
+                                  Sum of
+Effect                  DF       Squares    F Value    Pr > F
+ 
+median_income            1    2.89799E13    5153.60    <.0001
+ocean_proximity          4    1.01969E13     453.34    <.0001
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1      114149     10809.8      10.56      <.0001
+median_income                   1     36628.9       510.2      71.79      <.0001
+ocean_proximity    <1H OCEA     1    -29997.0     10700.5      -2.80      0.0051
+ocean_proximity    INLAND       1     -105548     10718.0      -9.85      <.0001
+ocean_proximity    ISLAND       1      148644     42430.1       3.50      0.0005
+ocean_proximity    NEAR BAY     1     -3492.9     10866.0      -0.32      0.7479
+ 
+ 
+Step 3: Effect housing_median_age entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   6    5.0397321E13    8.3995535E12    1530.66    <.0001
+Error                6524    3.5800799E13      5487553538
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5847     Adj R-Sq        0.5843
+AIC        146469.5589     BIC        146469.8256
+SBC        146517.0491     C(p)          918.8603
+ 
+ 
+                 Type 3 Analysis of Effects
+ 
+                                  Sum of
+Effect                  DF       Squares    F Value    Pr > F
+ 
+housing_median_age       1    8.90805E11     162.33    <.0001
+median_income            1    2.98565E13    5440.77    <.0001
+ocean_proximity          4    7.75203E12     353.16    <.0001
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1     75142.2     11108.8       6.76      <.0001
+housing_median_age              1       992.6     77.9100      12.74      <.0001
+median_income                   1     37899.7       513.8      73.76      <.0001
+ocean_proximity    <1H OCEA     1    -25151.5     10577.5      -2.38      0.0174
+ocean_proximity    INLAND       1    -94948.1     10620.6      -8.94      <.0001
+ocean_proximity    ISLAND       1      132140     41935.1       3.15      0.0016
+ocean_proximity    NEAR BAY     1     -6837.4     10737.3      -0.64      0.5243
+ 
+ 
+Step 4: Effect total_bedrooms entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   7    5.1036256E13    7.2908937E12    1352.56    <.0001
+Error                6523    3.5161864E13      5390443641
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5921     Adj R-Sq        0.5916
+AIC        146353.9477     BIC        146354.2337
+SBC        146408.2222     C(p)          788.1528
+ 
+ 
+                 Type 3 Analysis of Effects
+ 
+                                  Sum of
+Effect                  DF       Squares    F Value    Pr > F
+ 
+housing_median_age       1    1.35075E12     250.58    <.0001
+median_income            1    3.03852E13    5636.87    <.0001
+ocean_proximity          4    7.19045E12     333.48    <.0001
+total_bedrooms           1    6.38935E11     118.53    <.0001
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1     49835.0     11252.8       4.43      <.0001
+housing_median_age              1      1302.9     82.3095      15.83      <.0001
+median_income                   1     38372.7       511.1      75.08      <.0001
+ocean_proximity    <1H OCEA     1    -24716.4     10483.6      -2.36      0.0184
+ocean_proximity    INLAND       1    -92331.5     10528.9      -8.77      <.0001
+ocean_proximity    ISLAND       1      129963     41562.9       3.13      0.0018
+ocean_proximity    NEAR BAY     1     -8301.3     10642.7      -0.78      0.4354
+total_bedrooms                  1     25.5165      2.3437      10.89      <.0001
+ 
+ 
+Step 5: Effect population entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   8    5.3350899E13    6.6688624E12    1324.14    <.0001
+Error                6522    3.2847221E13      5036372429
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6189     Adj R-Sq        0.6185
+AIC        145911.2197     BIC        145912.4472
+SBC        145972.2785     C(p)          309.3993
+ 
+ 
+                 Type 3 Analysis of Effects
+ 
+                                  Sum of
+Effect                  DF       Squares    F Value    Pr > F
+ 
+housing_median_age       1    1.33204E12     264.48    <.0001
+median_income            1    3.08158E13    6118.64    <.0001
+ocean_proximity          4     7.2415E12     359.46    <.0001
+population               1    2.31464E12     459.59    <.0001
+total_bedrooms           1    2.95352E12     586.44    <.0001
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1     49590.5     10877.0       4.56      <.0001
+housing_median_age              1      1293.9     79.5615      16.26      <.0001
+median_income                   1     38657.5       494.2      78.22      <.0001
+ocean_proximity    <1H OCEA     1    -16744.7     10140.2      -1.65      0.0987
+ocean_proximity    INLAND       1    -87784.9     10179.5      -8.62      <.0001
+ocean_proximity    ISLAND       1      114767     40181.0       2.86      0.0043
+ocean_proximity    NEAR BAY     1     -8331.1     10287.3      -0.81      0.4181
+population                      1    -39.5194      1.8434     -21.44      <.0001
+total_bedrooms                  1       119.0      4.9127      24.22      <.0001
+ 
+ 
+Step 6: Effect households entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   9    5.3500308E13    5.9444787E12    1185.52    <.0001
+Error                6521    3.2697812E13      5014232778
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6207     Adj R-Sq        0.6201
+AIC        145883.4450     BIC        145884.6753
+SBC        145951.2881     C(p)          280.3669
+ 
+ 
+                 Type 3 Analysis of Effects
+ 
+                                  Sum of
+Effect                  DF       Squares    F Value    Pr > F
+ 
+households               1    1.49409E11      29.80    <.0001
+housing_median_age       1    1.26818E12     252.92    <.0001
+median_income            1    3.00139E13    5985.74    <.0001
+ocean_proximity          4    6.94938E12     346.48    <.0001
+population               1    2.28638E12     455.98    <.0001
+total_bedrooms           1    9.98963E10      19.92    <.0001
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1     52646.6     10867.5       4.84      <.0001
+households                      1     85.3240     15.6309       5.46      <.0001
+housing_median_age              1      1265.3     79.5597      15.90      <.0001
+median_income                   1     38369.3       495.9      77.37      <.0001
+ocean_proximity    <1H OCEA     1    -18677.9     10124.1      -1.84      0.0651
+ocean_proximity    INLAND       1    -88702.6     10158.5      -8.73      <.0001
+ocean_proximity    ISLAND       1      122506     40117.6       3.05      0.0023
+ocean_proximity    NEAR BAY     1    -11127.8     10277.4      -1.08      0.2790
+population                      1    -45.2771      2.1203     -21.35      <.0001
+total_bedrooms                  1     55.9687     12.5393       4.46      <.0001
+ 
+ 
+Step 7: Effect total_rooms entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  10    5.3603233E13    5.3603233E12    1072.23    <.0001
+Error                6520    3.2594887E13      4999215728
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6219     Adj R-Sq        0.6213
+AIC        145864.8544     BIC        145866.0753
+SBC        145939.4819     C(p)          260.9892
+ 
+ 
+                 Type 3 Analysis of Effects
+ 
+                                  Sum of
+Effect                  DF       Squares    F Value    Pr > F
+ 
+households               1    1.41711E11      28.35    <.0001
+housing_median_age       1    1.24265E12     248.57    <.0001
+median_income            1    2.08474E13    4170.13    <.0001
+ocean_proximity          4    6.12531E12     306.31    <.0001
+population               1    1.80153E12     360.36    <.0001
+total_bedrooms           1    1.79622E11      35.93    <.0001
+total_rooms              1    1.02925E11      20.59    <.0001
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1     46076.3     10947.4       4.21      <.0001
+households                      1     83.1365     15.6150       5.32      <.0001
+housing_median_age              1      1253.2     79.4851      15.77      <.0001
+median_income                   1     40065.4       620.4      64.58      <.0001
+ocean_proximity    <1H OCEA     1    -19897.9     10112.5      -1.97      0.0492
+ocean_proximity    INLAND       1    -87181.5     10148.8      -8.59      <.0001
+ocean_proximity    ISLAND       1      123067     40057.7       3.07      0.0021
+ocean_proximity    NEAR BAY     1    -11477.9     10262.3      -1.12      0.2634
+population                      1    -42.2009      2.2231     -18.98      <.0001
+total_bedrooms                  1     83.2615     13.8904       5.99      <.0001
+total_rooms                     1     -6.6018      1.4550      -4.54      <.0001
+ 
+ 
+Step 8: Effect longitude entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  11    5.3681172E13    4.8801066E12     978.36    <.0001
+Error                6519    3.2516948E13      4988026947
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6228     Adj R-Sq        0.6221
+AIC        145851.2192     BIC        145852.4253
+SBC        145932.6310     C(p)          246.8012
+ 
+ 
+                 Type 3 Analysis of Effects
+ 
+                                  Sum of
+Effect                  DF       Squares    F Value    Pr > F
+ 
+households               1    1.21966E11      24.45    <.0001
+housing_median_age       1    1.24463E12     249.52    <.0001
+longitude                1    7.79389E10      15.63    <.0001
+median_income            1    2.08632E13    4182.66    <.0001
+ocean_proximity          4     6.1825E12     309.87    <.0001
+population               1    1.72263E12     345.35    <.0001
+total_bedrooms           1    1.99833E11      40.06    <.0001
+total_rooms              1    1.09683E11      21.99    <.0001
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1     -195569     62101.9      -3.15      0.0016
+households                      1     77.4543     15.6636       4.94      <.0001
+housing_median_age              1      1254.2     79.3965      15.80      <.0001
+longitude                       1     -2014.3       509.6      -3.95      <.0001
+median_income                   1     40081.5       619.8      64.67      <.0001
+ocean_proximity    <1H OCEA     1    -18144.8     10110.9      -1.79      0.0728
+ocean_proximity    INLAND       1    -87225.2     10137.4      -8.60      <.0001
+ocean_proximity    ISLAND       1      125566     40017.8       3.14      0.0017
+ocean_proximity    NEAR BAY     1    -16409.4     10326.4      -1.59      0.1121
+population                      1    -41.4267      2.2292     -18.58      <.0001
+total_bedrooms                  1     88.1721     13.9304       6.33      <.0001
+total_rooms                     1     -6.8199      1.4544      -4.69      <.0001
+ 
+ 
+Step 9: Effect latitude entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  12    5.4816464E13    4.5680387E12     948.79    <.0001
+Error                6518    3.1381656E13      4814614292
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6359     Adj R-Sq        0.6353
+AIC        145621.1211     BIC        145623.1730
+SBC        145709.3172     C(p)           13.0000
+ 
+ 
+                 Type 3 Analysis of Effects
+ 
+                                  Sum of
+Effect                  DF       Squares    F Value    Pr > F
+ 
+households               1    5.51132E10      11.45    0.0007
+housing_median_age       1    1.01044E12     209.87    <.0001
+latitude                 1    1.13529E12     235.80    <.0001
+longitude                1    1.21257E12     251.85    <.0001
+median_income            1    1.91076E13    3968.67    <.0001
+ocean_proximity          4    7.50364E11      38.96    <.0001
+population               1    1.92874E12     400.60    <.0001
+total_bedrooms           1    2.83064E11      58.79    <.0001
+total_rooms              1     5.4054E10      11.23    0.0008
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1    -2419685      157165     -15.40      <.0001
+households                      1     52.3588     15.4754       3.38      0.0007
+housing_median_age              1      1135.6     78.3857      14.49      <.0001
+latitude                        1    -27406.0      1784.7     -15.36      <.0001
+longitude                       1    -28788.1      1814.0     -15.87      <.0001
+median_income                   1     38746.9       615.1      63.00      <.0001
+ocean_proximity    <1H OCEA     1    -17930.3      9933.6      -1.81      0.0711
+ocean_proximity    INLAND       1    -54326.5     10187.5      -5.33      <.0001
+ocean_proximity    ISLAND       1      102842     39343.9       2.61      0.0090
+ocean_proximity    NEAR BAY     1    -18337.3     10146.1      -1.81      0.0708
+population                      1    -43.9591      2.1963     -20.02      <.0001
+total_bedrooms                  1       105.3     13.7314       7.67      <.0001
+total_rooms                     1     -4.8078      1.4349      -3.35      0.0008
+ 
+ 
+NOTE: All effects have been entered into the model.
+ 
+ 
+                    Summary of Stepwise Selection
+ 
+                  Effect                  Number
+    Step    Entered                 DF        In    F Value    Pr > F
+ 
+       1    median_income            1         1    5473.69    <.0001
+       2    ocean_proximity          4         2     453.34    <.0001
+       3    housing_median_age       1         3     162.33    <.0001
+       4    total_bedrooms           1         4     118.53    <.0001
+       5    population               1         5     459.59    <.0001
+       6    households               1         6      29.80    <.0001
+       7    total_rooms              1         7      20.59    <.0001
+       8    longitude                1         8      15.63    <.0001
+       9    latitude                 1         9     235.80    <.0001
+ 
+ 
+The selected model is the model trained in the last step (Step 9). It consists of the following effects:
+ 
+Intercept  households  housing_median_age  latitude  longitude  median_income  ocean_proximity  population  total_bedrooms  total_rooms
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  12    5.4816464E13    4.5680387E12     948.79    <.0001
+Error                6518    3.1381656E13      4814614292
+Corrected Total      6530     8.619812E13
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6359     Adj R-Sq        0.6353
+AIC        145621.1211     BIC        145623.1730
+SBC        145709.3172     C(p)           13.0000
+ 
+ 
+                 Type 3 Analysis of Effects
+ 
+                                  Sum of
+Effect                  DF       Squares    F Value    Pr > F
+ 
+households               1    5.51132E10      11.45    0.0007
+housing_median_age       1    1.01044E12     209.87    <.0001
+latitude                 1    1.13529E12     235.80    <.0001
+longitude                1    1.21257E12     251.85    <.0001
+median_income            1    1.91076E13    3968.67    <.0001
+ocean_proximity          4    7.50364E11      38.96    <.0001
+population               1    1.92874E12     400.60    <.0001
+total_bedrooms           1    2.83064E11      58.79    <.0001
+total_rooms              1     5.4054E10      11.23    0.0008
+ 
+ 
+                    Analysis of Maximum Likelihood Estimates
+ 
+                                                 Standard
+Parameter                      DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                       1    -2419685      157165     -15.40      <.0001
+households                      1     52.3588     15.4754       3.38      0.0007
+housing_median_age              1      1135.6     78.3857      14.49      <.0001
+latitude                        1    -27406.0      1784.7     -15.36      <.0001
+longitude                       1    -28788.1      1814.0     -15.87      <.0001
+median_income                   1     38746.9       615.1      63.00      <.0001
+ocean_proximity    <1H OCEA     1    -17930.3      9933.6      -1.81      0.0711
+ocean_proximity    INLAND       1    -54326.5     10187.5      -5.33      <.0001
+ocean_proximity    ISLAND       1      102842     39343.9       2.61      0.0090
+ocean_proximity    NEAR BAY     1    -18337.3     10146.1      -1.81      0.0708
+population                      1    -43.9591      2.1963     -20.02      <.0001
+total_bedrooms                  1       105.3     13.7314       7.67      <.0001
+total_rooms                     1     -4.8078      1.4349      -3.35      0.0008
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=median_house_value Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                          Train       Validation             Test
+ 
+ _AIC_        Akaike's Information Criterion        147398.73              .                .
+ _ASE_        Average Squared Error             4899002782.96    4798889268.60    4828197295.33
+ _AVERR_      Average Error Function            4899002782.96    4798889268.60    4828197295.33
+ _DFE_        Degrees of Freedom for Error            6592.00              .                .
+ _DFM_        Model Degrees of Freedom                  13.00              .                .
+ _DFT_        Total Degrees of Freedom                6605.00              .                .
+ _DIV_        Divisor for ASE                         6605.00          4954.00          4953.00
+ _ERR_        Error Function                    3.23579134E13    2.37736974E13    2.39140612E13
+ _FPE_        Final Prediction Error            4918325306.07              .                .
+ _MAX_        Maximum Absolute Error                497860.93        553715.28        922428.05
+ _MSE_        Mean Square Error                 4908664044.52    4798889268.60    4828197295.33
+ _NOBS_       Sum of Frequencies                      6605.00          4954.00          4953.00
+ _NW_         Number of Estimate Weights                13.00              .                .
+ _RASE_       Root Average Sum of Squares            69992.88         69274.02         69485.23
+ _RFPE_       Root Final Prediction Error            70130.77              .                .
+ _RMSE_       Root Mean Squared Error                70061.86         69274.02         69485.23
+ _SBC_        Schwarz's Bayesian Criterion          147487.07              .                .
+ _SSE_        Sum of Squared Errors             3.23579134E13    2.37736974E13    2.39140612E13
+ _SUMW_       Sum of Case Weights Times Freq          6605.00          4954.00          4953.00
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=median_house_value Target Label=' '
+ 
+           Number of        Mean         Mean
+Depth    Observations      Target     Predicted
+ 
+   5          331        444150.38    430672.99
+  10          330        362035.25    329724.43
+  15          330        317589.15    301003.63
+  20          330        288827.31    283036.84
+  25          331        275771.34    269432.28
+  30          330        247748.80    256172.57
+  35          330        239525.17    244047.47
+  40          330        232870.02    233055.36
+  45          331        207147.44    221177.13
+  50          330        196868.19    209839.45
+  55          330        182472.43    200054.19
+  60          330        175910.31    187857.55
+  65          331        158030.22    174911.69
+  70          330        147523.34    161607.09
+  75          330        140973.04    148886.74
+  80          330        125316.97    135771.91
+  85          331        117499.70    120873.25
+  90          330        104159.70    104195.10
+  95          330         93137.88     84125.14
+ 100          330         84932.73     46408.55
+ 
+ 
+Data Role=VALIDATE Target Variable=median_house_value Target Label=' '
+ 
+           Number of        Mean         Mean
+Depth    Observations      Target     Predicted
+ 
+   5          248        459365.94    438858.69
+  10          248        377060.24    337003.33
+  15          248        325210.56    305272.29
+  20          247        296610.18    285488.48
+  25          248        263702.83    270614.54
+  30          248        254987.12    258021.46
+  35          247        243793.56    245550.39
+  40          248        220030.25    234376.71
+  45          248        205152.43    223071.18
+  50          254        196553.18    211177.60
+  55          241        182256.85    200951.50
+  60          248        175739.12    188573.57
+  65          248        154547.58    175064.52
+  70          247        150143.73    162425.51
+  75          248        141355.25    150450.21
+  80          248        134365.32    136908.02
+  85          247        116271.26    121379.00
+  90          248        104868.55    103336.34
+  95          248         90495.16     83266.91
+ 100          247         80635.22     43540.43
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=median_house_value Target Label=' '
+ 
+                               Mean         Mean         Number of        Model
+  Range for Predicted         Target      Predicted    Observations       Score
+ 
+648018.233 -  684990.121    491667.58     667541.18          12         666504.18
+611046.346 -  648018.233    475000.83     625102.84           6         629532.29
+574074.458 -  611046.346    500001.00     592257.97           4         592560.40
+537102.571 -  574074.458    469770.80     554354.28          10         555588.51
+500130.683 -  537102.571    479874.58     516781.13          19         518616.63
+463158.796 -  500130.683    471463.66     479957.27          35         481644.74
+426186.908 -  463158.796    484832.39     443642.38          38         444672.85
+389215.021 -  426186.908    454862.09     405397.53          78         407700.96
+352243.133 -  389215.021    401036.51     369614.30         135         370729.08
+315271.246 -  352243.133    368635.06     331191.90         289         333757.19
+278299.358 -  315271.246    305487.53     294722.54         631         296785.30
+241327.471 -  278299.358    259104.44     259296.91         974         259813.41
+204355.583 -  241327.471    212569.13     221863.37        1130         222841.53
+167383.696 -  204355.583    169463.66     186128.50         952         185869.64
+130411.808 -  167383.696    138424.84     149215.71         930         148897.75
+93439.921 -  130411.808     111398.08     112841.68         728         111925.86
+56468.033 -  93439.921       91352.84      77405.40         441          74953.98
+19496.146 -  56468.033       77778.23      43100.08         147          37982.09
+-17475.742 -  19496.146      99341.03       9622.13          39           1010.20
+-54447.629 -  -17475.742     69871.43     -30762.16           7         -35961.69
+ 
+ 
+Data Role=VALIDATE Target Variable=median_house_value Target Label=' '
+ 
+                                 Mean         Mean         Number of        Model
+   Range for Predicted          Target      Predicted    Observations       Score
+ 
+638299.716 -  685015.279      469275.92     663601.10          12         661657.50
+591584.152 -  638299.716      500001.00     609310.64           4         614941.93
+544868.589 -  591584.152      500001.00     575958.35           9         568226.37
+498153.025 -  544868.589      500001.00     524230.01          22         521510.81
+451437.462 -  498153.025      484057.57     473287.90          30         474795.24
+404721.898 -  451437.462      473397.02     427213.56          54         428079.68
+358006.335 -  404721.898      427531.67     377361.75         134         381364.12
+311290.771 -  358006.335      371445.59     331373.33         286         334648.55
+264575.208 -  311290.771      291960.96     285224.47         678         287932.99
+217859.644 -  264575.208      231316.14     240840.02         986         241217.43
+171144.081 -  217859.644      179020.93     195762.60         951         194501.86
+124428.517 -  171144.081      140644.01     148948.94         884         147786.30
+77712.954 -  124428.517       103301.00     101959.91         598         101070.74
+30997.390 -  77712.954         79072.51      58446.71         251          54355.17
+-15718.173 -  30997.390        85389.78      18168.97          49           7639.61
+-62433.737 -  -15718.173       94275.00     -32691.11           4         -39075.96
+-109149.300 -  -62433.737     310000.00     -84442.87           1         -85791.52
+-249295.991 -  -202580.427    118800.00    -249295.99           1        -225938.21

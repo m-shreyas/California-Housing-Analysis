@@ -1,0 +1,117 @@
+ 
+                                                                                                
+ 
+ 
+Variable Summary
+
+         Measurement    Frequency
+Role        Level         Count
+
+ID        INTERVAL          1    
+INPUT     INTERVAL          9    
+INPUT     NOMINAL           1    
+ 
+                                                                                                
+ 
+The CLUSTER Procedure
+Ward's Minimum Variance Cluster Analysis
+
+            Eigenvalues of the Covariance Matrix
+ 
+        Eigenvalue    Difference    Proportion    Cumulative
+
+   1    9176750644    9174562769        0.9998        0.9998
+   2       2187875       2117232        0.0002        1.0000
+   3         70643         65583        0.0000        1.0000
+   4          5061          4547        0.0000        1.0000
+   5           513           454        0.0000        1.0000
+   6            59            53        0.0000        1.0000
+   7             6             6        0.0000        1.0000
+   8             0             0        0.0000        1.0000
+   9             0             0        0.0000        1.0000
+  10             0             0        0.0000        1.0000
+  11             0             0        0.0000        1.0000
+  12             0             0        0.0000        1.0000
+  13            -0                     -0.0000        1.0000
+
+Root-Mean-Square Total-Sample Standard Deviation    26572.13
+
+Root-Mean-Square Distance Between Observations    135491.8
+
+
+                                     Cluster History
+  Number
+      of                                     Semipartial           Pseudo F    Pseudo
+Clusters -----Clusters Joined-----      Freq    R-Square R-Square Statistic t-Squared Tie
+
+      49 OB41         OB45               570      0.0000     1.00      19E8      24E6    
+      48 OB16         OB20              1015      0.0000     1.00      16E7      23E7    
+      47 OB18         OB33               534      0.0000     1.00      68E6      23E7    
+      46 OB5          OB40               888      0.0000     1.00      44E6      23E7    
+      45 OB3          OB42               681      0.0000     1.00      33E6      24E7    
+      44 OB15         OB27               420      0.0000     1.00      26E6      21E7    
+      43 CL44         OB22               505      0.0000     1.00      19E6       910    
+      42 OB23         OB35               312      0.0000     1.00      15E6       3E8    
+      41 OB19         OB25               883      0.0000     1.00      12E6       7E8    
+      40 CL46         OB28               933      0.0000     1.00      97E5      2534    
+      39 OB2          OB26               717      0.0000     1.00      81E5      67E7    
+      38 OB37         OB43               732      0.0000     1.00      65E5      14E8    
+      37 CL41         OB32              1336      0.0000     1.00      51E5      3779    
+      36 OB7          OB34               514      0.0000     1.00      42E5      16E8    
+      35 OB6          CL47               984      0.0000     1.00      35E5      7740    
+      34 OB13         OB14               356      0.0000     1.00      31E5      14E8    
+      33 CL40         OB49              1432      0.0000     1.00      27E5      3669    
+      32 OB29         OB36              1260      0.0000     1.00      23E5      46E8    
+      31 OB12         CL48              1226      0.0000     1.00       2E6      26E3    
+      30 OB10         OB47               364      0.0001     1.00      18E5      27E8    
+      29 OB31         OB48              1053      0.0001     1.00      16E5       5E9    
+      28 OB8          OB9               1292      0.0001     1.00      14E5      72E8    
+      27 OB21         OB39               388      0.0001     .999      12E5      41E8    
+      26 CL39         CL34              1073      0.0001     .999      11E5      2483    
+ 
+                                                                                                
+ 
+The CLUSTER Procedure
+Ward's Minimum Variance Cluster Analysis
+
+                                     Cluster History
+  Number
+      of                                     Semipartial           Pseudo F    Pseudo
+Clusters -----Clusters Joined-----      Freq    R-Square R-Square Statistic t-Squared Tie
+
+      25 CL36         OB46              1577      0.0001     .999       1E6      6287    
+      24 OB11         OB30               613      0.0001     .999      92E4      63E8    
+      23 OB1          CL45              1120      0.0001     .999      84E4      42E3    
+      22 CL43         OB50               667      0.0001     .999      77E4      9493    
+      21 CL31         CL32              2486      0.0001     .999      71E4      3980    
+      20 CL29         OB44              1253      0.0002     .999      65E4      3809    
+      19 OB17         OB24               782      0.0002     .998       6E5      19E9    
+      18 CL25         CL42              1889      0.0002     .998      56E4      3521    
+      17 CL35         CL28              2276      0.0002     .998      52E4      5557    
+      16 CL37         CL20              2589      0.0006     .997      43E4      5944    
+      15 CL24         CL22              1280      0.0007     .997      36E4      3736    
+      14 CL23         CL49              1690      0.0009     .996      31E4      12E3    
+      13 OB4          CL19              1239      0.0009     .995      28E4      5561    
+      12 CL27         CL38              1120      0.0011     .994      25E4      13E3    
+      11 CL33         CL17              3708      0.0012     .992      23E4      12E3    
+      10 CL30         OB38               695      0.0012     .991      22E4      16E3    
+       9 CL26         CL13              2312      0.0028     .988      19E4      5092    
+       8 CL14         CL16              4279      0.0042     .984      16E4      9199    
+       7 CL11         CL21              6194      0.0070     .977      13E4      24E3    
+       6 CL9          CL12              3432      0.0097     .967      11E4      6271    
+       5 CL10         CL15              1975      0.0132     .954      93E3      11E3    
+       4 CL7          CL18              8083      0.0182     .936      87E3      16E3    
+       3 CL8          CL4              12362      0.0860     .850       5E4      32E3    
+       2 CL6          CL5               5407      0.1123     .738       5E4       2E4    
+       1 CL3          CL2              17769      0.7376     .000        .        5E4    
+ 
+                                                                                                
+ 
+Candidates for Optimum Number of Clusters
+
+        Number     Clustering
+          of          Cubic
+Obs    Clusters     Criterion
+
+ 1         4         -2.1220 
+ 2        10         12.8406 

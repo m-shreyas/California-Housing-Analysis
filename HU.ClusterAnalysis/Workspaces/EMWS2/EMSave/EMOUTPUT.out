@@ -1,0 +1,37 @@
+*------------------------------------------------------------*
+User:                skunt
+Date:                December 09, 2024
+Time:                01:24:21
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+         Measurement    Frequency
+Role        Level         Count
+ 
+INPUT     INTERVAL          9
+INPUT     NOMINAL           1
+ 
+ 
+ 
+Saved Data Properties
+ 
+ Data                                                                                    Total           Saved        Number of
+Library                                Output Location                                Observations    Observations    Variables
+ 
+HUDATA     C:\Users\skunt\Downloads\HU.Exploratory Analysis\em_save_TRAIN.sas7bdat       20640            MAX            10
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*

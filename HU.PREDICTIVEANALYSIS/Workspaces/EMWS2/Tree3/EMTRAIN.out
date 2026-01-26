@@ -1,0 +1,24 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variable Summary
+
+          Measurement    Frequency
+Role         Level         Count
+
+ID         INTERVAL          1    
+INPUT      INTERVAL          8    
+INPUT      NOMINAL           1    
+TARGET     INTERVAL          1    
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Predicted and decision variables
+
+Type               Variable                      Label
+
+TARGET       median_house_value                                   
+PREDICTED    P_median_house_value    Predicted: median_house_value
+RESIDUAL     R_median_house_value    Residual: median_house_value 

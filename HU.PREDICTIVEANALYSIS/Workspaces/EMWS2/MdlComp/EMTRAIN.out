@@ -1,0 +1,92 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+
+
+
+
+
+
+ 
+Variable Summary
+
+          Measurement    Frequency
+ Role        Level         Count
+
+TARGET     INTERVAL          1    
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+
+
+
+
+
+
+Fit Statistics
+Model Selection based on Valid: Average Squared Error (_VASE_)
+
+                                        Valid:          Train:
+                                        Average         Average
+Selected    Model       Model           Squared         Squared
+ Model      Node     Description         Error           Error
+
+   Y        Tree4    RegTree B3D6    3703212490.8    3214560819.2
+            Tree     RegTree B2D6    4764847246.4    4385963336.4
+            Tree2    RegTree B2D4    5359878164.1    5396391252.2
+            Tree3    RegTree B2D2    6820623269.2    6782970748.6
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+
+
+
+
+
+
+Fit Statistics Table
+Target: median_house_value
+
+Data Role=Train
+
+Statistics                                                   Tree4             Tree            Tree2            Tree3
+
+Train: Average Squared Error                         3214560819.21    4385963336.45    5396391252.18    6782970748.61
+Selection Criterion: Valid: Average Squared Error    3703212490.82    4764847246.40    5359878164.12    6820623269.20
+Train: Total Degrees of Freedom                            6605.00          6605.00          6605.00          6605.00
+Train: Divisor for ASE                                     6605.00          6605.00          6605.00          6605.00
+Train: Maximum Absolute Error                            372213.22        378861.50        386759.47        386276.08
+Train: Sum of Frequencies                                  6605.00          6605.00          6605.00          6605.00
+Train: Root Average Squared Error                         56697.10         66226.61         73460.13         82358.79
+Train: Sum of Squared Errors                         2.12321742E13    2.89692878E13    3.56431642E13    4.48015218E13
+
+
+Data Role=Valid
+
+           Statistics                        Tree4             Tree            Tree2            Tree3
+
+Valid: Average Squared Error         3703212490.82    4764847246.40    5359878164.12    6820623269.20
+Valid: Divisor for VASE                    4954.00          4954.00          4954.00          4954.00
+Valid: Maximum Absolute Error            361742.84        374259.56        367126.11        336275.08
+Valid: Sum of Frequencies                  4954.00          4954.00          4954.00          4954.00
+Valid: Root Average Squared Error         60854.03         69027.87         73211.19         82587.06
+Valid: Sum of Squared Errors         1.83457147E13    2.36050533E13    2.65528364E13    3.37893677E13
+
+
+Data Role=Test
+
+           Statistics                       Tree4             Tree            Tree2            Tree3
+
+Test: Average Squared Error         3656145880.26    4717124991.06    5395146469.85    6722038733.52
+Test: Divisor for TASE                    4953.00          4953.00          4953.00          4953.00
+Test: Maximum Absolute Error            365509.22        378861.50        386759.47        386276.08
+Test: Sum of Frequencies                  4953.00          4953.00          4953.00          4953.00
+Test: Root Average Squared Error         60466.07         68681.33         73451.66         81988.04
+Test: Sum of Squared Errors         1.81088905E13    2.33639201E13    2.67221605E13    3.32942578E13
+Test: Sum of Weights Times Freqs          4953.00          4953.00          4953.00          4953.00

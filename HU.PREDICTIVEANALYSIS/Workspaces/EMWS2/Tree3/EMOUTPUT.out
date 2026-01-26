@@ -1,0 +1,135 @@
+*------------------------------------------------------------*
+User:                smupp
+Date:                December 11, 2024
+Time:                00:19:50
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+Role         Level         Count
+ 
+ID         INTERVAL          1
+INPUT      INTERVAL          8
+INPUT      NOMINAL           1
+TARGET     INTERVAL          1
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type               Variable                      Label
+ 
+TARGET       median_house_value
+PREDICTED    P_median_house_value    Predicted: median_house_value
+RESIDUAL     R_median_house_value    Residual: median_house_value
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+Variable Importance
+ 
+                                                                                      Ratio of
+                            Number of                                               Validation
+                            Splitting                            Validation        to Training
+ Variable Name     Label      Rules           Importance         Importance         Importance
+ 
+median_income                   2                 1.0000             1.0000             1.0000
+ocean_proximity                 1                 0.6270             0.5918             0.9439
+ 
+ 
+ 
+Tree Leaf Report
+ 
+Node               Training       Training     Validation     Validation    Training    Validation
+ Id     Depth    Observations     Average     Observations      Average     Root ASE     Root ASE
+ 
+  4       2          3363        212216.79        2519         210687.12    91112.19     91465.29
+  5       2          1946        113724.92        1407         111894.38    55089.30     52183.57
+  6       2           901        295902.94         725         295963.66    92414.91     96088.57
+  7       2           395        421827.26         303         433088.94    91167.17     85021.79
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=median_house_value Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                      Train       Validation             Test
+ 
+  _NOBS_      Sum of Frequencies                  6605.00          4954.00          4953.00
+  _MAX_       Maximum Absolute Error            386276.08        336275.08        386276.08
+  _SSE_       Sum of Squared Errors         4.48015218E13    3.37893677E13    3.32942578E13
+  _ASE_       Average Squared Error         6782970748.61    6820623269.20    6722038733.52
+  _RASE_      Root Average Squared Error         82358.79         82587.06         81988.04
+  _DIV_       Divisor for ASE                     6605.00          4954.00          4953.00
+  _DFT_       Total Degrees of Freedom            6605.00              .                .
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=median_house_value Target Label=' '
+ 
+           Number of        Mean         Mean
+Depth    Observations      Target     Predicted
+ 
+   5          395        421827.26    421827.26
+  10          901        295902.94    295902.94
+  20         3363        212216.79    212216.79
+  75         1946        113724.92    113724.92
+ 
+ 
+Data Role=VALIDATE Target Variable=median_house_value Target Label=' '
+ 
+           Number of        Mean         Mean
+Depth    Observations      Target     Predicted
+ 
+   5          303        433088.94    421827.26
+  10          725        295963.66    295902.94
+  25         2519        210687.12    212216.79
+  75         1407        111894.38    113724.92
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=median_house_value Target Label=' '
+ 
+                               Mean         Mean        Number of       Model
+  Range for Predicted         Target     Predicted    Observations      Score
+ 
+406422.146 -  421827.263    421827.26    421827.26         395        414124.70
+283181.211 -  298586.328    295902.94    295902.94         901        290883.77
+206155.626 -  221560.743    212216.79    212216.79        3363        213858.18
+113724.924 -  129130.041    113724.92    113724.92        1946        121427.48
+ 
+ 
+Data Role=VALIDATE Target Variable=median_house_value Target Label=' '
+ 
+                               Mean         Mean        Number of       Model
+  Range for Predicted         Target     Predicted    Observations      Score
+ 
+406422.146 -  421827.263    433088.94    421827.26         303        414124.70
+283181.211 -  298586.328    295963.66    295902.94         725        290883.77
+206155.626 -  221560.743    210687.12    212216.79        2519        213858.18
+113724.924 -  129130.041    111894.38    113724.92        1407        121427.48

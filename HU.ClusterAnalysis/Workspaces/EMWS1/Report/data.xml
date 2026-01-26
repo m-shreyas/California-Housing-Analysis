@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SASReport version="1.2" xmlns:style="http://www.sas.com/sasreportmodel/styles">
+<Data version="9.4">
+  <DataModel name="StatGraphDataModelIDX">
+    <IQData type="2DEmbedded" name="StatGraphDataIDX">
+      <EmbeddedData>
+      <Variables>
+        <Variable name="NODE" label="Node" type="Numeric" encoding="Text"/>
+        <Variable name="PARENT" label="Parent Id" type="Numeric" encoding="Text"/>
+        <Variable name="NODETEXT" label="Node Text" type="String" length="800"/>
+        <Variable name="NODECOLOR" label="Node Color" type="Numeric" encoding="Text"/>
+        <Variable name="ABOVETEXT" label="Above Text" type="String" length="256"/>
+        <Variable name="BELOWTEXT" label="Below Text" type="String" length="19"/>
+        <Variable name="LINKWIDTH" label="Link Width" type="Numeric" encoding="Text"/>
+      </Variables>
+        <ValuesList valuesCount="69">
+          <V>1</V>
+          <V M="."></V>
+          <V>          1:        42.9%
+ Count:        19743</V>
+          <V>42.88</V>
+          <V>Non-Missing Values</V>
+          <V>households</V>
+          <V>10</V>
+          <V>2</V>
+          <V>1</V>
+          <V>          1:        52.0%
+ Count:        15772</V>
+          <V>51.98</V>
+          <V>&lt; 638.5 Or Missing</V>
+          <V>latitude</V>
+          <V>7.98865420655422</V>
+          <V>3</V>
+          <V>1</V>
+          <V>          3:        89.1%
+ Count:         3971</V>
+          <V>89.15</V>
+          <V>&gt;= 638.5</V>
+          <V>population</V>
+          <V>2.01134579344577</V>
+          <V>4</V>
+          <V>2</V>
+          <V>          1:        89.7%
+ Count:         8366</V>
+          <V>89.68</V>
+          <V>&lt; 34.895 Or Missing</V>
+          <V>median_house_value</V>
+          <V>4.23745124854378</V>
+          <V>5</V>
+          <V>2</V>
+          <V>          2:        87.6%
+ Count:         7406</V>
+          <V>87.56</V>
+          <V>&gt;= 34.895</V>
+          <V>median_income</V>
+          <V>3.75120295801043</V>
+          <V>6</V>
+          <V>3</V>
+          <V>          3:        56.9%
+ Count:          777</V>
+          <V>56.89</V>
+          <V>&lt; 1743.5</V>
+          <V>latitude</V>
+          <V>0.39355721015043</V>
+          <V>7</V>
+          <V>3</V>
+          <V>          3:        97.0%
+ Count:         3194</V>
+          <V>96.99</V>
+          <V>&gt;= 1743.5 Or Missing</V>
+          <V>households</V>
+          <V>1.61778858329534</V>
+          <V>8</V>
+          <V>4</V>
+          <V>          1:        57.1%
+ Count:         1297</V>
+          <V>57.13</V>
+          <V>&lt; 116150</V>
+          <V>total_bedrooms</V>
+          <V>0.65694170085599</V>
+          <V>9</V>
+          <V>4</V>
+          <V>          1:        95.7%
+ Count:         7069</V>
+          <V>95.66</V>
+          <V>&gt;= 116150 Or Missing</V>
+          <V>population</V>
+          <V>3.58050954768778</V>
+          <V>10</V>
+          <V>5</V>
+          <V>          2:        93.8%
+ Count:         6656</V>
+          <V>93.78</V>
+          <V>&lt; 5.7785 Or Missing</V>
+          <V>total_rooms</V>
+          <V>3.37132148103125</V>
+          <V>11</V>
+          <V>5</V>
+          <V>          1:        63.1%
+ Count:          750</V>
+          <V>63.07</V>
+          <V>&gt;= 5.7785</V>
+          <V>population</V>
+          <V>0.37988147697918</V>
+          <V>12</V>
+          <V>6</V>
+          <V>          3:        52.1%
+ Count:          399</V>
+          <V>52.13</V>
+          <V>&lt; 34.57 Or Missing</V>
+          <V>total_bedrooms</V>
+          <V>0.20209694575292</V>
+          <V>13</V>
+          <V>6</V>
+          <V>          3:        61.9%
+ Count:          378</V>
+          <V>61.9</V>
+          <V>&gt;= 34.57</V>
+          <V>median_house_value</V>
+          <V>0.1914602643975</V>
+          <V>14</V>
+          <V>7</V>
+          <V>          3:        78.0%
+ Count:          277</V>
+          <V>77.98</V>
+          <V>&lt; 670.5</V>
+          <V>latitude</V>
+          <V>0.14030289216431</V>
+          <V>15</V>
+          <V>7</V>
+          <V>          3:        98.8%
+ Count:         2917</V>
+          <V>98.8</V>
+          <V>&gt;= 670.5 Or Missing</V>
+          <V M=" "></V>
+          <V>1.47748569113103</V>
+          <V>16</V>
+          <V>8</V>
+          <V>          1:        58.1%
+ Count:         1180</V>
+          <V>58.14</V>
+          <V>&lt; 617.5 Or Missing</V>
+          <V>households</V>
+          <V>0.59768019044724</V>
+          <V>17</V>
+          <V>8</V>
+          <V>          3:        48.7%
+ Count:          117</V>
+          <V>48.72</V>
+          <V>&gt;= 617.5</V>
+          <V>total_rooms</V>
+          <V>0.05926151040875</V>
+          <V>18</V>
+          <V>9</V>
+          <V>          1:        96.2%
+ Count:         6996</V>
+          <V>96.17</V>
+          <V>&lt; 2519.5 Or Missing</V>
+          <V>total_rooms</V>
+          <V>3.54353441726181</V>
+          <V>19</V>
+          <V>9</V>
+          <V>          3:        53.4%
+ Count:           73</V>
+          <V>53.42</V>
+          <V>&gt;= 2519.5</V>
+          <V>total_bedrooms</V>
+          <V>0.03697513042597</V>
+          <V>20</V>
+          <V>10</V>
+          <V>          2:        95.8%
+ Count:         6423</V>
+          <V>95.81</V>
+          <V>&lt; 3397.5 Or Missing</V>
+          <V>population</V>
+          <V>3.25330496884971</V>
+          <V>21</V>
+          <V>10</V>
+          <V>          3:        54.1%
+ Count:          233</V>
+          <V>54.08</V>
+          <V>&gt;= 3397.5</V>
+          <V>latitude</V>
+          <V>0.11801651218153</V>
+          <V>22</V>
+          <V>11</V>
+          <V>          1:        64.5%
+ Count:          730</V>
+          <V>64.52</V>
+          <V>&lt; 1827 Or Missing</V>
+          <V>households</V>
+          <V>0.36975130425973</V>
+          <V>23</V>
+          <V>11</V>
+          <V>          3:        90.0%
+ Count:           20</V>
+          <V>90</V>
+          <V>&gt;= 1827</V>
+          <V M=" "></V>
+          <V>0.01013017271944</V>
+          <V>24</V>
+          <V>12</V>
+          <V>          1:        72.1%
+ Count:          251</V>
+          <V>72.11</V>
+          <V>&lt; 813.5 Or Missing</V>
+          <V>housing_median_age</V>
+          <V>0.12713366762903</V>
+          <V>25</V>
+          <V>12</V>
+          <V>          3:        93.2%
+ Count:          148</V>
+          <V>93.24</V>
+          <V>&gt;= 813.5</V>
+          <V M=" "></V>
+          <V>0.07496327812389</V>
+          <V>26</V>
+          <V>13</V>
+          <V>          3:        62.2%
+ Count:          341</V>
+          <V>62.17</V>
+          <V>&lt; 500000.5 Or Missing</V>
+          <V>total_bedrooms</V>
+          <V>0.17271944486653</V>
+          <V>27</V>
+          <V>13</V>
+          <V>          3:        59.5%
+ Count:           37</V>
+          <V>59.46</V>
+          <V>&gt;= 500000.5</V>
+          <V M=" "></V>
+          <V>0.01874081953097</V>
+          <V>28</V>
+          <V>14</V>
+          <V>          3:        70.1%
+ Count:          147</V>
+          <V>70.07</V>
+          <V>&lt; 34.245 Or Missing</V>
+          <V>housing_median_age</V>
+          <V>0.07445676948791</V>
+          <V>29</V>
+          <V>14</V>
+          <V>          3:        86.9%
+ Count:          130</V>
+          <V>86.92</V>
+          <V>&gt;= 34.245</V>
+          <V M=" "></V>
+          <V>0.06584612267639</V>
+          <V>32</V>
+          <V>16</V>
+          <V>          1:        58.1%
+ Count:         1161</V>
+          <V>58.14</V>
+          <V>&lt; 569.5 Or Missing</V>
+          <V>latitude</V>
+          <V>0.58805652636377</V>
+          <V>33</V>
+          <V>16</V>
+          <V>          1:        57.9%
+ Count:           19</V>
+          <V>57.89</V>
+          <V>&gt;= 569.5</V>
+          <V M=" "></V>
+          <V>0.00962366408347</V>
+          <V>34</V>
+          <V>17</V>
+          <V>          1:        59.5%
+ Count:           84</V>
+          <V>59.52</V>
+          <V>&lt; 3314 Or Missing</V>
+          <V>population</V>
+          <V>0.04254672542166</V>
+          <V>35</V>
+          <V>17</V>
+          <V>          3:        84.8%
+ Count:           33</V>
+          <V>84.85</V>
+          <V>&gt;= 3314</V>
+          <V M=" "></V>
+          <V>0.01671478498708</V>
+          <V>36</V>
+          <V>18</V>
+          <V>          1:        96.6%
+ Count:         6922</V>
+          <V>96.63</V>
+          <V>&lt; 4326 Or Missing</V>
+          <V M=" "></V>
+          <V>3.50605277819986</V>
+          <V>37</V>
+          <V>18</V>
+          <V>          1:        52.7%
+ Count:           74</V>
+          <V>52.7</V>
+          <V>&gt;= 4326</V>
+          <V>total_bedrooms</V>
+          <V>0.03748163906194</V>
+          <V>38</V>
+          <V>19</V>
+          <V>          1:        95.8%
+ Count:           24</V>
+          <V>95.83</V>
+          <V>&lt; 571.5</V>
+          <V M=" "></V>
+          <V>0.01215620726333</V>
+          <V>39</V>
+          <V>19</V>
+          <V>          3:        77.6%
+ Count:           49</V>
+          <V>77.55</V>
+          <V>&gt;= 571.5 Or Missing</V>
+          <V M=" "></V>
+          <V>0.02481892316263</V>
+          <V>40</V>
+          <V>20</V>
+          <V>          2:        96.3%
+ Count:         6359</V>
+          <V>96.27</V>
+          <V>&lt; 2138 Or Missing</V>
+          <V M=" "></V>
+          <V>3.22088841614749</V>
+          <V>41</V>
+          <V>20</V>
+          <V>          2:        50.0%
+ Count:           64</V>
+          <V>50</V>
+          <V>&gt;= 2138</V>
+          <V>housing_median_age</V>
+          <V>0.03241655270222</V>
+          <V>42</V>
+          <V>21</V>
+          <V>          3:        66.7%
+ Count:           99</V>
+          <V>66.67</V>
+          <V>&lt; 37.9</V>
+          <V M=" "></V>
+          <V>0.05014435496125</V>
+          <V>43</V>
+          <V>21</V>
+          <V>          2:        55.2%
+ Count:          134</V>
+          <V>55.22</V>
+          <V>&gt;= 37.9 Or Missing</V>
+          <V>total_rooms</V>
+          <V>0.06787215722028</V>
+          <V>44</V>
+          <V>22</V>
+          <V>          1:        64.4%
+ Count:          683</V>
+          <V>64.42</V>
+          <V>&lt; 555 Or Missing</V>
+          <V>latitude</V>
+          <V>0.34594539836904</V>
+          <V>45</V>
+          <V>22</V>
+          <V>          1:        66.0%
+ Count:           47</V>
+          <V>65.96</V>
+          <V>&gt;= 555</V>
+          <V>population</V>
+          <V>0.02380590589069</V>
+          <V>46</V>
+          <V>24</V>
+          <V>          1:        54.5%
+ Count:          143</V>
+          <V>54.55</V>
+          <V>&lt; 29.5 Or Missing</V>
+          <V>total_rooms</V>
+          <V>0.07243073494403</V>
+          <V>47</V>
+          <V>24</V>
+          <V>          1:        95.4%
+ Count:          108</V>
+          <V>95.37</V>
+          <V>&gt;= 29.5</V>
+          <V M=" "></V>
+          <V>0.054702932685</V>
+          <V>50</V>
+          <V>26</V>
+          <V>          2:        59.4%
+ Count:          160</V>
+          <V>59.38</V>
+          <V>&lt; 757.5 Or Missing</V>
+          <V>total_rooms</V>
+          <V>0.08104138175555</V>
+          <V>51</V>
+          <V>26</V>
+          <V>          3:        82.9%
+ Count:          181</V>
+          <V>82.87</V>
+          <V>&gt;= 757.5</V>
+          <V>housing_median_age</V>
+          <V>0.09167806311097</V>
+          <V>52</V>
+          <V>28</V>
+          <V>          3:        80.7%
+ Count:          114</V>
+          <V>80.7</V>
+          <V>&lt; 32.5 Or Missing</V>
+          <V M=" "></V>
+          <V>0.05774198450083</V>
+          <V>53</V>
+          <V>28</V>
+          <V>          1:        66.7%
+ Count:           33</V>
+          <V>66.67</V>
+          <V>&gt;= 32.5</V>
+          <V M=" "></V>
+          <V>0.01671478498708</V>
+          <V>60</V>
+          <V>32</V>
+          <V>          1:        85.1%
+ Count:          430</V>
+          <V>85.12</V>
+          <V>&lt; 33.905</V>
+          <V M=" "></V>
+          <V>0.21779871346806</V>
+          <V>61</V>
+          <V>32</V>
+          <V>          2:        57.3%
+ Count:          731</V>
+          <V>57.32</V>
+          <V>&gt;= 33.905 Or Missing</V>
+          <V M=" "></V>
+          <V>0.3702578128957</V>
+          <V>62</V>
+          <V>34</V>
+          <V>          1:        73.4%
+ Count:           64</V>
+          <V>73.44</V>
+          <V>&lt; 2267.5 Or Missing</V>
+          <V M=" "></V>
+          <V>0.03241655270222</V>
+          <V>63</V>
+          <V>34</V>
+          <V>          3:        85.0%
+ Count:           20</V>
+          <V>85</V>
+          <V>&gt;= 2267.5</V>
+          <V M=" "></V>
+          <V>0.01013017271944</V>
+          <V>66</V>
+          <V>37</V>
+          <V>          1:        95.0%
+ Count:           20</V>
+          <V>95</V>
+          <V>&lt; 625.5</V>
+          <V M=" "></V>
+          <V>0.01013017271944</V>
+          <V>67</V>
+          <V>37</V>
+          <V>          3:        63.0%
+ Count:           54</V>
+          <V>62.96</V>
+          <V>&gt;= 625.5 Or Missing</V>
+          <V M=" "></V>
+          <V>0.0273514663425</V>
+          <V>72</V>
+          <V>41</V>
+          <V>          3:        71.4%
+ Count:           35</V>
+          <V>71.43</V>
+          <V>&lt; 23.5 Or Missing</V>
+          <V M=" "></V>
+          <V>0.01772780225902</V>
+          <V>73</V>
+          <V>41</V>
+          <V>          2:        82.8%
+ Count:           29</V>
+          <V>82.76</V>
+          <V>&gt;= 23.5</V>
+          <V M=" "></V>
+          <V>0.01468875044319</V>
+          <V>76</V>
+          <V>43</V>
+          <V>          2:        80.0%
+ Count:           80</V>
+          <V>80</V>
+          <V>&lt; 3862 Or Missing</V>
+          <V M=" "></V>
+          <V>0.04052069087777</V>
+          <V>77</V>
+          <V>43</V>
+          <V>          3:        81.5%
+ Count:           54</V>
+          <V>81.48</V>
+          <V>&gt;= 3862</V>
+          <V M=" "></V>
+          <V>0.0273514663425</V>
+          <V>78</V>
+          <V>44</V>
+          <V>          1:        78.2%
+ Count:          519</V>
+          <V>78.23</V>
+          <V>&lt; 37.905 Or Missing</V>
+          <V M=" "></V>
+          <V>0.26287798206959</V>
+          <V>79</V>
+          <V>44</V>
+          <V>          2:        78.7%
+ Count:          164</V>
+          <V>78.66</V>
+          <V>&gt;= 37.905</V>
+          <V M=" "></V>
+          <V>0.08306741629944</V>
+          <V>80</V>
+          <V>45</V>
+          <V>          1:        85.7%
+ Count:           28</V>
+          <V>85.71</V>
+          <V>&lt; 1624.5 Or Missing</V>
+          <V M=" "></V>
+          <V>0.01418224180722</V>
+          <V>81</V>
+          <V>45</V>
+          <V>          3:        63.2%
+ Count:           19</V>
+          <V>63.16</V>
+          <V>&gt;= 1624.5</V>
+          <V M=" "></V>
+          <V>0.00962366408347</V>
+          <V>82</V>
+          <V>46</V>
+          <V>          1:        91.4%
+ Count:           58</V>
+          <V>91.38</V>
+          <V>&lt; 3051</V>
+          <V M=" "></V>
+          <V>0.02937750088639</V>
+          <V>83</V>
+          <V>46</V>
+          <V>          3:        70.6%
+ Count:           85</V>
+          <V>70.59</V>
+          <V>&gt;= 3051 Or Missing</V>
+          <V M=" "></V>
+          <V>0.04305323405764</V>
+          <V>84</V>
+          <V>50</V>
+          <V>          2:        79.8%
+ Count:          104</V>
+          <V>79.81</V>
+          <V>&lt; 3505 Or Missing</V>
+          <V M=" "></V>
+          <V>0.05267689814111</V>
+          <V>85</V>
+          <V>50</V>
+          <V>          3:        76.8%
+ Count:           56</V>
+          <V>76.79</V>
+          <V>&gt;= 3505</V>
+          <V M=" "></V>
+          <V>0.02836448361444</V>
+          <V>86</V>
+          <V>51</V>
+          <V>          3:        90.8%
+ Count:          152</V>
+          <V>90.79</V>
+          <V>&lt; 45.5 Or Missing</V>
+          <V M=" "></V>
+          <V>0.07698931266778</V>
+          <V>87</V>
+          <V>51</V>
+          <V>          2:        58.6%
+ Count:           29</V>
+          <V>58.62</V>
+          <V>&gt;= 45.5</V>
+          <V M=" "></V>
+          <V>0.01468875044319</V>
+        </ValuesList>
+      </EmbeddedData>
+    </IQData>
+  </DataModel>
+</Data>
+</SASReport>

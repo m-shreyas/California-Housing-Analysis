@@ -1,0 +1,113 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+
+
+
+
+
+
+ 
+Variable Summary
+
+          Measurement    Frequency
+ Role        Level         Count
+
+TARGET     INTERVAL          1    
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+
+
+
+
+
+
+Fit Statistics
+Model Selection based on Valid: Average Squared Error (_VASE_)
+
+                                                 Valid:          Train:
+                                                 Average         Average
+Selected    Model                                Squared         Squared
+ Model      Node     Model Description            Error           Error
+
+   Y        Tree4    RegTree B3D6             3703212490.8    3214560819.2
+            Reg      Exhaustive Regression    4798889268.6    4899002783.0
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+
+
+
+
+
+
+
+Fit Statistics Table
+Target: median_house_value
+
+Data Role=Train
+
+Statistics                                                   Tree4              Reg
+
+Train: Akaike's Information Criterion                          .          147398.73
+Train: Average Squared Error                         3214560819.21    4899002782.96
+Train: Average Error Function                                  .      4899002782.96
+Selection Criterion: Valid: Average Squared Error    3703212490.82    4798889268.60
+Train: Degrees of Freedom for Error                            .            6592.00
+Train: Model Degrees of Freedom                                .              13.00
+Train: Total Degrees of Freedom                            6605.00          6605.00
+Train: Divisor for ASE                                     6605.00          6605.00
+Train: Error Function                                          .      3.23579134E13
+Train: Final Prediction Error                                  .      4918325306.07
+Train: Maximum Absolute Error                            372213.22        497860.93
+Train: Mean Square Error                                       .      4908664044.52
+Train: Sum of Frequencies                                  6605.00          6605.00
+Train: Number of Estimate Weights                              .              13.00
+Train: Root Average Squared Error                         56697.10         69992.88
+Train: Root Final Prediction Error                             .           70130.77
+Train: Root Mean Squared Error                                 .           70061.86
+Train: Schwarz's Bayesian Criterion                            .          147487.07
+Train: Sum of Squared Errors                         2.12321742E13    3.23579134E13
+Train: Sum of Case Weights Times Freq                          .            6605.00
+
+
+Data Role=Valid
+
+Statistics                                       Tree4              Reg
+
+Valid: Average Squared Error             3703212490.82    4798889268.60
+Valid: Average Error Function                      .      4798889268.60
+Valid: Divisor for VASE                        4954.00          4954.00
+Valid: Error Function                              .      2.37736974E13
+Valid: Maximum Absolute Error                361742.84        553715.28
+Valid: Mean Square Error                           .      4798889268.60
+Valid: Sum of Frequencies                      4954.00          4954.00
+Valid: Root Average Squared Error             60854.03         69274.02
+Valid: Root Mean Square Error                      .           69274.02
+Valid: Sum of Squared Errors             1.83457147E13    2.37736974E13
+Valid: Sum of Case Weights Times Freq              .            4954.00
+
+
+Data Role=Test
+
+Statistics                                      Tree4              Reg
+
+Test: Lower 95% Conf. Limit for TASE              .      2830997375.19
+Test: Upper 95% Conf. Limit for TASE              .      7349797594.20
+Test: Average Squared Error             3656145880.26    4828197295.33
+Test: Average Error Function                      .      4828197295.33
+Test: Divisor for TASE                        4953.00          4953.00
+Test: Error Function                              .      2.39140612E13
+Test: Maximum Absolute Error                365509.22        922428.05
+Test: Mean Square Error                           .      4828197295.33
+Test: Sum of Frequencies                      4953.00          4953.00
+Test: Root Average Squared Error             60466.07         69485.23
+Test: Root Mean Square Error                      .           69485.23
+Test: Sum of Squared Errors             1.81088905E13    2.39140612E13
+Test: Sum of Weights Times Freqs              4953.00          4953.00

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  Location="CATALOG" Catalog="SASHELP.EMSAMP.Fimport.SOURCE" ImportType="Local" GuessRows="500"
+ Delimiter="," NameRow="Y" SkipRows="0" MaxRows="1000000" MaxCols="10000" FileType="csv"
+ Role="TRAIN" ForceRun="N" Summarize="N" AdvancedAdvisor="N" RunAction="Train" Component="FileImport"
+ IFileName="C:\Users\skunt\Downloads\housing.csv" AccessTable="NoTableName" UserID="NoUserID"
+ Password="NoPassword" RawCreateTime="2049313715" CreateTime="08DEC2024:21:48:35"
+ RunId="337fa210-81c1-4299-b0a8-3eb0f7b1a3ed" RawLastTimeRun="2049326633.8" RawRunTime="8.8900001049"
+ LastTimeRun="09DEC2024:01:23:54" RunTime="0 Hr. 0 Min. 8.89 Sec.">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES ><![CDATA[
+USERTRAINCODE
+USERSCORECODE
+USERREPORTCODE
+VARIABLESETDELTA
+DELTACODE
+]]>
+</FILEPROPERTIES></_ROOT_>

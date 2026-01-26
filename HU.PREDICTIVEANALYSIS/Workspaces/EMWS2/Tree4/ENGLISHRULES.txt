@@ -1,0 +1,1450 @@
+*------------------------------------------------------------*
+ Node = 24
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude >= -117.17
+then 
+ Tree Node Identifier   = 24
+ Number of Observations = 46
+ Predicted: median_house_value = 169980.43478
+ 
+*------------------------------------------------------------*
+ Node = 32
+*------------------------------------------------------------*
+if median_income < 7.83595 AND median_income >= 6.29175 or MISSING
+AND housing_median_age >= 26.5
+then 
+ Tree Node Identifier   = 32
+ Number of Observations = 139
+ Predicted: median_house_value = 397126.84173
+ 
+*------------------------------------------------------------*
+ Node = 34
+*------------------------------------------------------------*
+if median_income < 9.04475 AND median_income >= 7.83595
+AND housing_median_age >= 28.5
+then 
+ Tree Node Identifier   = 34
+ Number of Observations = 52
+ Predicted: median_house_value = 479862.23077
+ 
+*------------------------------------------------------------*
+ Node = 35
+*------------------------------------------------------------*
+if population < 54
+AND median_income >= 9.04475
+then 
+ Tree Node Identifier   = 35
+ Number of Observations = 5
+ Predicted: median_house_value = 273700
+ 
+*------------------------------------------------------------*
+ Node = 37
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude < -122.41
+AND housing_median_age < 47.5
+then 
+ Tree Node Identifier   = 37
+ Number of Observations = 23
+ Predicted: median_house_value = 250956.52174
+ 
+*------------------------------------------------------------*
+ Node = 38
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude < -122.41
+AND housing_median_age >= 47.5 or MISSING
+then 
+ Tree Node Identifier   = 38
+ Number of Observations = 58
+ Predicted: median_house_value = 365732.87931
+ 
+*------------------------------------------------------------*
+ Node = 39
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude >= -122.41 or MISSING
+AND latitude < 37.445
+then 
+ Tree Node Identifier   = 39
+ Number of Observations = 8
+ Predicted: median_house_value = 335812.5
+ 
+*------------------------------------------------------------*
+ Node = 42
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -122.74
+AND latitude < 38.725
+then 
+ Tree Node Identifier   = 42
+ Number of Observations = 18
+ Predicted: median_house_value = 168616.66667
+ 
+*------------------------------------------------------------*
+ Node = 43
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -122.74
+AND latitude < 39.855 AND latitude >= 38.725
+then 
+ Tree Node Identifier   = 43
+ Number of Observations = 23
+ Predicted: median_house_value = 121730.43478
+ 
+*------------------------------------------------------------*
+ Node = 51
+*------------------------------------------------------------*
+if total_bedrooms < 23.5
+AND ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.05115
+then 
+ Tree Node Identifier   = 51
+ Number of Observations = 5
+ Predicted: median_house_value = 156000
+ 
+*------------------------------------------------------------*
+ Node = 53
+*------------------------------------------------------------*
+if total_bedrooms >= 596
+AND ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.05115
+then 
+ Tree Node Identifier   = 53
+ Number of Observations = 84
+ Predicted: median_house_value = 88366.666667
+ 
+*------------------------------------------------------------*
+ Node = 55
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.6077 AND median_income >= 2.05115
+AND latitude < 37.305 AND latitude >= 34.92
+then 
+ Tree Node Identifier   = 55
+ Number of Observations = 100
+ Predicted: median_house_value = 73202.99
+ 
+*------------------------------------------------------------*
+ Node = 58
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 3.6627 AND median_income >= 2.6077 or MISSING
+AND latitude < 36.825 AND latitude >= 34.855
+then 
+ Tree Node Identifier   = 58
+ Number of Observations = 133
+ Predicted: median_house_value = 84531.578947
+ 
+*------------------------------------------------------------*
+ Node = 62
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -122.33
+AND latitude >= 37.945
+then 
+ Tree Node Identifier   = 62
+ Number of Observations = 27
+ Predicted: median_house_value = 271859.2963
+ 
+*------------------------------------------------------------*
+ Node = 69
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -118.34 AND longitude >= -118.52
+AND latitude < 34.165 AND latitude >= 34.025
+then 
+ Tree Node Identifier   = 69
+ Number of Observations = 53
+ Predicted: median_house_value = 408888.92453
+ 
+*------------------------------------------------------------*
+ Node = 72
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 5.16935
+AND longitude >= -118.34 or MISSING
+then 
+ Tree Node Identifier   = 72
+ Number of Observations = 184
+ Predicted: median_house_value = 270260.90217
+ 
+*------------------------------------------------------------*
+ Node = 73
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 4.19585 AND median_income >= 3.6627
+AND longitude < -119.99 or MISSING
+then 
+ Tree Node Identifier   = 73
+ Number of Observations = 103
+ Predicted: median_house_value = 153890.29126
+ 
+*------------------------------------------------------------*
+ Node = 75
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 4.19585 AND median_income >= 3.6627
+AND longitude >= -118.79
+then 
+ Tree Node Identifier   = 75
+ Number of Observations = 91
+ Predicted: median_house_value = 150064.84615
+ 
+*------------------------------------------------------------*
+ Node = 78
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 5.32055 AND median_income >= 4.19585 or MISSING
+AND longitude >= -117.75
+then 
+ Tree Node Identifier   = 78
+ Number of Observations = 55
+ Predicted: median_house_value = 157280.01818
+ 
+*------------------------------------------------------------*
+ Node = 79
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 6.29175 AND median_income >= 5.32055
+AND longitude < -118.12 or MISSING
+then 
+ Tree Node Identifier   = 79
+ Number of Observations = 61
+ Predicted: median_house_value = 216331.14754
+ 
+*------------------------------------------------------------*
+ Node = 80
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 6.29175 AND median_income >= 5.32055
+AND longitude < -117.74 AND longitude >= -118.12
+then 
+ Tree Node Identifier   = 80
+ Number of Observations = 7
+ Predicted: median_house_value = 369885.85714
+ 
+*------------------------------------------------------------*
+ Node = 81
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 6.29175 AND median_income >= 5.32055
+AND longitude >= -117.74
+then 
+ Tree Node Identifier   = 81
+ Number of Observations = 28
+ Predicted: median_house_value = 205860.75
+ 
+*------------------------------------------------------------*
+ Node = 82
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 7.83595 AND median_income >= 6.29175 or MISSING
+AND housing_median_age < 26.5 or MISSING
+then 
+ Tree Node Identifier   = 82
+ Number of Observations = 53
+ Predicted: median_house_value = 351966.15094
+ 
+*------------------------------------------------------------*
+ Node = 87
+*------------------------------------------------------------*
+if total_bedrooms < 596 or MISSING
+AND median_income < 9.04475 AND median_income >= 7.83595
+AND housing_median_age < 28.5 or MISSING
+then 
+ Tree Node Identifier   = 87
+ Number of Observations = 47
+ Predicted: median_house_value = 366270.29787
+ 
+*------------------------------------------------------------*
+ Node = 88
+*------------------------------------------------------------*
+if total_bedrooms >= 596
+AND median_income < 9.04475 AND median_income >= 7.83595
+AND housing_median_age < 28.5 or MISSING
+then 
+ Tree Node Identifier   = 88
+ Number of Observations = 12
+ Predicted: median_house_value = 444641.83333
+ 
+*------------------------------------------------------------*
+ Node = 89
+*------------------------------------------------------------*
+if population >= 54 or MISSING
+AND ocean_proximity IS ONE OF: NEAR BAY, <1H OCEA, NEAR OCE or MISSING
+AND median_income >= 9.04475
+then 
+ Tree Node Identifier   = 89
+ Number of Observations = 112
+ Predicted: median_house_value = 493042.83929
+ 
+*------------------------------------------------------------*
+ Node = 90
+*------------------------------------------------------------*
+if population >= 54 or MISSING
+AND ocean_proximity IS ONE OF: INLAND
+AND median_income >= 9.04475
+then 
+ Tree Node Identifier   = 90
+ Number of Observations = 7
+ Predicted: median_house_value = 417086.14286
+ 
+*------------------------------------------------------------*
+ Node = 96
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude >= -122.34 or MISSING
+AND latitude >= 37.925
+then 
+ Tree Node Identifier   = 96
+ Number of Observations = 60
+ Predicted: median_house_value = 142715
+ 
+*------------------------------------------------------------*
+ Node = 97
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 2.94745 or MISSING
+AND longitude < -122.74
+AND latitude >= 39.855 or MISSING
+then 
+ Tree Node Identifier   = 97
+ Number of Observations = 33
+ Predicted: median_house_value = 83200
+ 
+*------------------------------------------------------------*
+ Node = 98
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 AND median_income >= 2.94745
+AND longitude < -122.74
+AND latitude >= 39.855 or MISSING
+then 
+ Tree Node Identifier   = 98
+ Number of Observations = 12
+ Predicted: median_house_value = 111900
+ 
+*------------------------------------------------------------*
+ Node = 99
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.31 AND longitude >= -122.74
+AND latitude < 33.885
+then 
+ Tree Node Identifier   = 99
+ Number of Observations = 8
+ Predicted: median_house_value = 261900
+ 
+*------------------------------------------------------------*
+ Node = 102
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.36 AND longitude >= -122.74 or MISSING
+AND latitude < 34.175 AND latitude >= 33.985
+then 
+ Tree Node Identifier   = 102
+ Number of Observations = 90
+ Predicted: median_house_value = 321033.36667
+ 
+*------------------------------------------------------------*
+ Node = 105
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.31 AND longitude >= -122.74
+AND latitude >= 34.175 or MISSING
+then 
+ Tree Node Identifier   = 105
+ Number of Observations = 134
+ Predicted: median_house_value = 245767.1791
+ 
+*------------------------------------------------------------*
+ Node = 106
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.17 AND longitude >= -118.31
+AND latitude < 33.885
+then 
+ Tree Node Identifier   = 106
+ Number of Observations = 60
+ Predicted: median_house_value = 187793.33333
+ 
+*------------------------------------------------------------*
+ Node = 109
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude < -117.15 AND longitude >= -118.17 or MISSING
+then 
+ Tree Node Identifier   = 109
+ Number of Observations = 322
+ Predicted: median_house_value = 183525.47516
+ 
+*------------------------------------------------------------*
+ Node = 110
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -117.15 AND longitude >= -118.17 or MISSING
+then 
+ Tree Node Identifier   = 110
+ Number of Observations = 98
+ Predicted: median_house_value = 215368.37755
+ 
+*------------------------------------------------------------*
+ Node = 112
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 2.57705 AND median_income >= 1.9042
+AND longitude >= -117.15
+then 
+ Tree Node Identifier   = 112
+ Number of Observations = 53
+ Predicted: median_house_value = 121549.0566
+ 
+*------------------------------------------------------------*
+ Node = 113
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 AND median_income >= 2.57705 or MISSING
+AND longitude >= -117.15
+then 
+ Tree Node Identifier   = 113
+ Number of Observations = 71
+ Predicted: median_house_value = 149291.5493
+ 
+*------------------------------------------------------------*
+ Node = 115
+*------------------------------------------------------------*
+if total_bedrooms < 596 AND total_bedrooms >= 23.5 or MISSING
+AND ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.05115
+AND latitude < 39.265 AND latitude >= 37.315
+then 
+ Tree Node Identifier   = 115
+ Number of Observations = 101
+ Predicted: median_house_value = 87500
+ 
+*------------------------------------------------------------*
+ Node = 116
+*------------------------------------------------------------*
+if total_bedrooms < 596 AND total_bedrooms >= 23.5 or MISSING
+AND ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.05115
+AND latitude >= 39.265
+then 
+ Tree Node Identifier   = 116
+ Number of Observations = 48
+ Predicted: median_house_value = 65700
+ 
+*------------------------------------------------------------*
+ Node = 120
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.6077 AND median_income >= 2.05115
+AND longitude < -117.57
+AND latitude < 34.92
+then 
+ Tree Node Identifier   = 120
+ Number of Observations = 28
+ Predicted: median_house_value = 135371.42857
+ 
+*------------------------------------------------------------*
+ Node = 121
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.6077 AND median_income >= 2.05115
+AND longitude >= -117.57 or MISSING
+AND latitude < 34.92
+then 
+ Tree Node Identifier   = 121
+ Number of Observations = 65
+ Predicted: median_house_value = 98333.846154
+ 
+*------------------------------------------------------------*
+ Node = 124
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.6077 AND median_income >= 2.05115
+AND latitude < 38.99 AND latitude >= 37.305 or MISSING
+then 
+ Tree Node Identifier   = 124
+ Number of Observations = 140
+ Predicted: median_house_value = 106808.57143
+ 
+*------------------------------------------------------------*
+ Node = 125
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.6077 AND median_income >= 2.05115
+AND latitude >= 38.99
+then 
+ Tree Node Identifier   = 125
+ Number of Observations = 68
+ Predicted: median_house_value = 83192.647059
+ 
+*------------------------------------------------------------*
+ Node = 126
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 3.6627 AND median_income >= 2.6077 or MISSING
+AND longitude < -118.02
+AND latitude < 34.855
+then 
+ Tree Node Identifier   = 126
+ Number of Observations = 20
+ Predicted: median_house_value = 221920
+ 
+*------------------------------------------------------------*
+ Node = 127
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 3.6627 AND median_income >= 2.6077 or MISSING
+AND longitude < -116.22 AND longitude >= -118.02 or MISSING
+AND latitude < 34.855
+then 
+ Tree Node Identifier   = 127
+ Number of Observations = 158
+ Predicted: median_house_value = 134491.77848
+ 
+*------------------------------------------------------------*
+ Node = 128
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 3.6627 AND median_income >= 2.6077 or MISSING
+AND longitude >= -116.22
+AND latitude < 34.855
+then 
+ Tree Node Identifier   = 128
+ Number of Observations = 16
+ Predicted: median_house_value = 76131.25
+ 
+*------------------------------------------------------------*
+ Node = 129
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 3.6627 AND median_income >= 2.6077 or MISSING
+AND latitude < 39.33 AND latitude >= 36.825 or MISSING
+then 
+ Tree Node Identifier   = 129
+ Number of Observations = 303
+ Predicted: median_house_value = 125776.89769
+ 
+*------------------------------------------------------------*
+ Node = 130
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 3.6627 AND median_income >= 2.6077 or MISSING
+AND latitude >= 39.33
+then 
+ Tree Node Identifier   = 130
+ Number of Observations = 47
+ Predicted: median_house_value = 96182.978723
+ 
+*------------------------------------------------------------*
+ Node = 131
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -122.33
+AND latitude < 37.595
+then 
+ Tree Node Identifier   = 131
+ Number of Observations = 12
+ Predicted: median_house_value = 437325.33333
+ 
+*------------------------------------------------------------*
+ Node = 132
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -122.33
+AND latitude < 37.725 AND latitude >= 37.595
+then 
+ Tree Node Identifier   = 132
+ Number of Observations = 42
+ Predicted: median_house_value = 265771.42857
+ 
+*------------------------------------------------------------*
+ Node = 134
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -122.33
+AND latitude < 37.785 AND latitude >= 37.755 or MISSING
+then 
+ Tree Node Identifier   = 134
+ Number of Observations = 22
+ Predicted: median_house_value = 364286.40909
+ 
+*------------------------------------------------------------*
+ Node = 135
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -122.33
+AND latitude < 37.895 AND latitude >= 37.785
+then 
+ Tree Node Identifier   = 135
+ Number of Observations = 20
+ Predicted: median_house_value = 475500.65
+ 
+*------------------------------------------------------------*
+ Node = 136
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -122.33
+AND latitude < 37.945 AND latitude >= 37.895
+then 
+ Tree Node Identifier   = 136
+ Number of Observations = 9
+ Predicted: median_house_value = 393055.55556
+ 
+*------------------------------------------------------------*
+ Node = 137
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 4.60325 AND median_income >= 3.6627 or MISSING
+AND longitude < -117.17 AND longitude >= -122.33 or MISSING
+AND latitude < 37.365 or MISSING
+then 
+ Tree Node Identifier   = 137
+ Number of Observations = 111
+ Predicted: median_house_value = 264051.37838
+ 
+*------------------------------------------------------------*
+ Node = 138
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 4.60325
+AND longitude < -117.17 AND longitude >= -122.33 or MISSING
+AND latitude < 37.365 or MISSING
+then 
+ Tree Node Identifier   = 138
+ Number of Observations = 91
+ Predicted: median_house_value = 332251.74725
+ 
+*------------------------------------------------------------*
+ Node = 139
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -122.05 AND longitude >= -122.33 or MISSING
+AND latitude < 37.555 AND latitude >= 37.365
+then 
+ Tree Node Identifier   = 139
+ Number of Observations = 47
+ Predicted: median_house_value = 358674.55319
+ 
+*------------------------------------------------------------*
+ Node = 140
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -117.17 AND longitude >= -122.05
+AND latitude < 37.555 AND latitude >= 37.365
+then 
+ Tree Node Identifier   = 140
+ Number of Observations = 5
+ Predicted: median_house_value = 211900
+ 
+*------------------------------------------------------------*
+ Node = 142
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -117.17 AND longitude >= -122.33 or MISSING
+AND latitude < 37.905 AND latitude >= 37.795
+then 
+ Tree Node Identifier   = 142
+ Number of Observations = 28
+ Predicted: median_house_value = 296875
+ 
+*------------------------------------------------------------*
+ Node = 143
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -117.17 AND longitude >= -122.33 or MISSING
+AND latitude >= 37.905
+then 
+ Tree Node Identifier   = 143
+ Number of Observations = 55
+ Predicted: median_house_value = 201770.90909
+ 
+*------------------------------------------------------------*
+ Node = 144
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 5.1093 AND median_income >= 3.6627 or MISSING
+AND longitude < -118.52
+AND latitude < 34.365
+then 
+ Tree Node Identifier   = 144
+ Number of Observations = 39
+ Predicted: median_house_value = 231587.17949
+ 
+*------------------------------------------------------------*
+ Node = 145
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 5.1093 AND median_income >= 3.6627 or MISSING
+AND longitude < -118.52
+AND latitude < 34.66 AND latitude >= 34.365
+then 
+ Tree Node Identifier   = 145
+ Number of Observations = 8
+ Predicted: median_house_value = 346862.5
+ 
+*------------------------------------------------------------*
+ Node = 146
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 5.1093 AND median_income >= 3.6627 or MISSING
+AND longitude < -118.52
+AND latitude >= 34.66 or MISSING
+then 
+ Tree Node Identifier   = 146
+ Number of Observations = 175
+ Predicted: median_house_value = 236406.29143
+ 
+*------------------------------------------------------------*
+ Node = 147
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 5.1093
+AND longitude < -118.52
+AND latitude < 34.175
+then 
+ Tree Node Identifier   = 147
+ Number of Observations = 6
+ Predicted: median_house_value = 378600.16667
+ 
+*------------------------------------------------------------*
+ Node = 148
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 5.1093
+AND longitude < -118.52
+AND latitude < 34.325 AND latitude >= 34.175
+then 
+ Tree Node Identifier   = 148
+ Number of Observations = 41
+ Predicted: median_house_value = 254375.60976
+ 
+*------------------------------------------------------------*
+ Node = 150
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -118.39 AND longitude >= -118.52
+AND latitude < 34.025 or MISSING
+then 
+ Tree Node Identifier   = 150
+ Number of Observations = 41
+ Predicted: median_house_value = 388334.29268
+ 
+*------------------------------------------------------------*
+ Node = 152
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -118.34 AND longitude >= -118.52
+AND latitude < 34.185 AND latitude >= 34.165
+then 
+ Tree Node Identifier   = 152
+ Number of Observations = 10
+ Predicted: median_house_value = 293450
+ 
+*------------------------------------------------------------*
+ Node = 155
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 5.16935 AND median_income >= 3.6627 or MISSING
+AND longitude >= -118.34 or MISSING
+AND latitude < 34.105 AND latitude >= 33.155 or MISSING
+then 
+ Tree Node Identifier   = 155
+ Number of Observations = 385
+ Predicted: median_house_value = 211938.44675
+ 
+*------------------------------------------------------------*
+ Node = 156
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 5.16935 AND median_income >= 3.6627 or MISSING
+AND longitude >= -118.34 or MISSING
+AND latitude >= 34.105
+then 
+ Tree Node Identifier   = 156
+ Number of Observations = 45
+ Predicted: median_house_value = 265913.35556
+ 
+*------------------------------------------------------------*
+ Node = 160
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 4.19585 AND median_income >= 3.6627
+AND longitude < -118.79 AND longitude >= -119.99
+AND latitude < 36.815 or MISSING
+then 
+ Tree Node Identifier   = 160
+ Number of Observations = 26
+ Predicted: median_house_value = 88838.461538
+ 
+*------------------------------------------------------------*
+ Node = 161
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 4.19585 AND median_income >= 3.6627
+AND longitude < -118.79 AND longitude >= -119.99
+AND latitude >= 36.815
+then 
+ Tree Node Identifier   = 161
+ Number of Observations = 8
+ Predicted: median_house_value = 118425
+ 
+*------------------------------------------------------------*
+ Node = 165
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 5.32055 AND median_income >= 4.19585 or MISSING
+AND longitude < -118.65 or MISSING
+AND latitude < 36.975
+then 
+ Tree Node Identifier   = 165
+ Number of Observations = 31
+ Predicted: median_house_value = 115764.51613
+ 
+*------------------------------------------------------------*
+ Node = 166
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 5.32055 AND median_income >= 4.19585 or MISSING
+AND longitude < -118.65 or MISSING
+AND latitude < 39.045 AND latitude >= 36.975 or MISSING
+then 
+ Tree Node Identifier   = 166
+ Number of Observations = 124
+ Predicted: median_house_value = 174197.58065
+ 
+*------------------------------------------------------------*
+ Node = 167
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 5.32055 AND median_income >= 4.19585 or MISSING
+AND longitude < -118.65 or MISSING
+AND latitude >= 39.045
+then 
+ Tree Node Identifier   = 167
+ Number of Observations = 10
+ Predicted: median_house_value = 124580
+ 
+*------------------------------------------------------------*
+ Node = 168
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 5.32055 AND median_income >= 4.19585 or MISSING
+AND longitude < -117.75 AND longitude >= -118.65
+AND latitude < 34.125
+then 
+ Tree Node Identifier   = 168
+ Number of Observations = 8
+ Predicted: median_house_value = 220312.5
+ 
+*------------------------------------------------------------*
+ Node = 169
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 5.32055 AND median_income >= 4.19585 or MISSING
+AND longitude < -117.75 AND longitude >= -118.65
+AND latitude < 34.64 AND latitude >= 34.125 or MISSING
+then 
+ Tree Node Identifier   = 169
+ Number of Observations = 17
+ Predicted: median_house_value = 278341.17647
+ 
+*------------------------------------------------------------*
+ Node = 170
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 5.32055 AND median_income >= 4.19585 or MISSING
+AND longitude < -117.75 AND longitude >= -118.65
+AND latitude >= 34.64
+then 
+ Tree Node Identifier   = 170
+ Number of Observations = 7
+ Predicted: median_house_value = 136057.14286
+ 
+*------------------------------------------------------------*
+ Node = 175
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 7.83595 AND median_income >= 6.29175 or MISSING
+AND longitude < -121.99
+AND housing_median_age < 26.5 or MISSING
+then 
+ Tree Node Identifier   = 175
+ Number of Observations = 10
+ Predicted: median_house_value = 408300.3
+ 
+*------------------------------------------------------------*
+ Node = 176
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 7.83595 AND median_income >= 6.29175 or MISSING
+AND longitude < -117.71 AND longitude >= -121.99 or MISSING
+AND housing_median_age < 26.5 or MISSING
+then 
+ Tree Node Identifier   = 176
+ Number of Observations = 109
+ Predicted: median_house_value = 332267.0367
+ 
+*------------------------------------------------------------*
+ Node = 177
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 7.83595 AND median_income >= 6.29175 or MISSING
+AND longitude >= -117.71
+AND housing_median_age < 26.5 or MISSING
+then 
+ Tree Node Identifier   = 177
+ Number of Observations = 26
+ Predicted: median_house_value = 292273.07692
+ 
+*------------------------------------------------------------*
+ Node = 178
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 7.83595 AND median_income >= 6.29175 or MISSING
+AND latitude < 34.19
+AND housing_median_age < 26.5 or MISSING
+then 
+ Tree Node Identifier   = 178
+ Number of Observations = 14
+ Predicted: median_house_value = 299850
+ 
+*------------------------------------------------------------*
+ Node = 179
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 7.83595 AND median_income >= 6.29175 or MISSING
+AND latitude < 37.495 AND latitude >= 34.19
+AND housing_median_age < 26.5 or MISSING
+then 
+ Tree Node Identifier   = 179
+ Number of Observations = 10
+ Predicted: median_house_value = 197830
+ 
+*------------------------------------------------------------*
+ Node = 180
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: INLAND
+AND median_income < 7.83595 AND median_income >= 6.29175 or MISSING
+AND latitude >= 37.495 or MISSING
+AND housing_median_age < 26.5 or MISSING
+then 
+ Tree Node Identifier   = 180
+ Number of Observations = 21
+ Predicted: median_house_value = 288652.38095
+ 
+*------------------------------------------------------------*
+ Node = 187
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude < -122.34 AND longitude >= -122.41
+AND latitude < 37.855 AND latitude >= 37.445 or MISSING
+then 
+ Tree Node Identifier   = 187
+ Number of Observations = 17
+ Predicted: median_house_value = 239064.70588
+ 
+*------------------------------------------------------------*
+ Node = 188
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude < -122.15 AND longitude >= -122.34 or MISSING
+AND latitude < 37.855 AND latitude >= 37.445 or MISSING
+then 
+ Tree Node Identifier   = 188
+ Number of Observations = 103
+ Predicted: median_house_value = 142343.68932
+ 
+*------------------------------------------------------------*
+ Node = 189
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude >= -122.15
+AND latitude < 37.855 AND latitude >= 37.445 or MISSING
+then 
+ Tree Node Identifier   = 189
+ Number of Observations = 28
+ Predicted: median_house_value = 181635.71429
+ 
+*------------------------------------------------------------*
+ Node = 190
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude < -122.27 AND longitude >= -122.41 or MISSING
+AND latitude < 37.925 AND latitude >= 37.855
+then 
+ Tree Node Identifier   = 190
+ Number of Observations = 18
+ Predicted: median_house_value = 200233.33333
+ 
+*------------------------------------------------------------*
+ Node = 191
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude >= -122.27
+AND latitude < 37.925 AND latitude >= 37.855
+then 
+ Tree Node Identifier   = 191
+ Number of Observations = 6
+ Predicted: median_house_value = 357733.5
+ 
+*------------------------------------------------------------*
+ Node = 192
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 1.84985
+AND longitude < -122.34 AND longitude >= -122.41
+AND latitude >= 37.925
+then 
+ Tree Node Identifier   = 192
+ Number of Observations = 9
+ Predicted: median_house_value = 79988.888889
+ 
+*------------------------------------------------------------*
+ Node = 193
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY or MISSING
+AND median_income < 3.6627 AND median_income >= 1.84985 or MISSING
+AND longitude < -122.34 AND longitude >= -122.41
+AND latitude >= 37.925
+then 
+ Tree Node Identifier   = 193
+ Number of Observations = 10
+ Predicted: median_house_value = 109440
+ 
+*------------------------------------------------------------*
+ Node = 194
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.35 AND longitude >= -122.74
+AND latitude < 33.925 AND latitude >= 33.885
+then 
+ Tree Node Identifier   = 194
+ Number of Observations = 5
+ Predicted: median_house_value = 246800
+ 
+*------------------------------------------------------------*
+ Node = 195
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.31 AND longitude >= -118.35 or MISSING
+AND latitude < 33.925 AND latitude >= 33.885
+then 
+ Tree Node Identifier   = 195
+ Number of Observations = 7
+ Predicted: median_house_value = 192085.71429
+ 
+*------------------------------------------------------------*
+ Node = 196
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.36 AND longitude >= -122.74
+AND latitude < 33.985 AND latitude >= 33.925 or MISSING
+then 
+ Tree Node Identifier   = 196
+ Number of Observations = 9
+ Predicted: median_house_value = 188133.33333
+ 
+*------------------------------------------------------------*
+ Node = 197
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.31 AND longitude >= -118.36 or MISSING
+AND latitude < 33.985 AND latitude >= 33.925 or MISSING
+then 
+ Tree Node Identifier   = 197
+ Number of Observations = 26
+ Predicted: median_house_value = 137680.76923
+ 
+*------------------------------------------------------------*
+ Node = 198
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.31 AND longitude >= -118.36
+AND latitude < 34.045 AND latitude >= 33.985 or MISSING
+then 
+ Tree Node Identifier   = 198
+ Number of Observations = 33
+ Predicted: median_house_value = 145803.0303
+ 
+*------------------------------------------------------------*
+ Node = 199
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.31 AND longitude >= -118.36
+AND latitude < 34.175 AND latitude >= 34.045
+then 
+ Tree Node Identifier   = 199
+ Number of Observations = 31
+ Predicted: median_house_value = 277593.58065
+ 
+*------------------------------------------------------------*
+ Node = 200
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude < -121.87 AND longitude >= -122.74
+AND latitude >= 34.175 or MISSING
+then 
+ Tree Node Identifier   = 200
+ Number of Observations = 86
+ Predicted: median_house_value = 209209.30233
+ 
+*------------------------------------------------------------*
+ Node = 201
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude < -120.44 AND longitude >= -121.87
+AND latitude >= 34.175 or MISSING
+then 
+ Tree Node Identifier   = 201
+ Number of Observations = 73
+ Predicted: median_house_value = 152712.32877
+ 
+*------------------------------------------------------------*
+ Node = 202
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.31 AND longitude >= -120.44 or MISSING
+AND latitude >= 34.175 or MISSING
+then 
+ Tree Node Identifier   = 202
+ Number of Observations = 126
+ Predicted: median_house_value = 205359.53968
+ 
+*------------------------------------------------------------*
+ Node = 203
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.28 AND longitude >= -118.31
+AND latitude < 34.025 AND latitude >= 33.885 or MISSING
+then 
+ Tree Node Identifier   = 203
+ Number of Observations = 49
+ Predicted: median_house_value = 127787.77551
+ 
+*------------------------------------------------------------*
+ Node = 204
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.23 AND longitude >= -118.28 or MISSING
+AND latitude < 34.025 AND latitude >= 33.885 or MISSING
+then 
+ Tree Node Identifier   = 204
+ Number of Observations = 76
+ Predicted: median_house_value = 103044.73684
+ 
+*------------------------------------------------------------*
+ Node = 205
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.17 AND longitude >= -118.23
+AND latitude < 34.025 AND latitude >= 33.885 or MISSING
+then 
+ Tree Node Identifier   = 205
+ Number of Observations = 66
+ Predicted: median_house_value = 144857.57576
+ 
+*------------------------------------------------------------*
+ Node = 206
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.23 AND longitude >= -118.31 or MISSING
+AND latitude >= 34.025
+then 
+ Tree Node Identifier   = 206
+ Number of Observations = 80
+ Predicted: median_house_value = 217493.75
+ 
+*------------------------------------------------------------*
+ Node = 207
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 3.6627 or MISSING
+AND longitude < -118.17 AND longitude >= -118.23
+AND latitude >= 34.025
+then 
+ Tree Node Identifier   = 207
+ Number of Observations = 64
+ Predicted: median_house_value = 149293.75
+ 
+*------------------------------------------------------------*
+ Node = 211
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 1.9042
+AND longitude >= -117.15
+AND latitude < 32.715 or MISSING
+then 
+ Tree Node Identifier   = 211
+ Number of Observations = 26
+ Predicted: median_house_value = 88369.230769
+ 
+*------------------------------------------------------------*
+ Node = 212
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA, NEAR OCE
+AND median_income < 1.9042
+AND longitude >= -117.15
+AND latitude >= 32.715
+then 
+ Tree Node Identifier   = 212
+ Number of Observations = 12
+ Predicted: median_house_value = 117375
+ 
+*------------------------------------------------------------*
+ Node = 213
+*------------------------------------------------------------*
+if total_bedrooms < 596 AND total_bedrooms >= 23.5 or MISSING
+AND ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.05115
+AND longitude < -118.74 or MISSING
+AND latitude < 37.315 or MISSING
+then 
+ Tree Node Identifier   = 213
+ Number of Observations = 106
+ Predicted: median_house_value = 60315.09434
+ 
+*------------------------------------------------------------*
+ Node = 214
+*------------------------------------------------------------*
+if total_bedrooms < 596 AND total_bedrooms >= 23.5 or MISSING
+AND ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.05115
+AND longitude < -116.97 AND longitude >= -118.74
+AND latitude < 37.315 or MISSING
+then 
+ Tree Node Identifier   = 214
+ Number of Observations = 44
+ Predicted: median_house_value = 82988.636364
+ 
+*------------------------------------------------------------*
+ Node = 215
+*------------------------------------------------------------*
+if total_bedrooms < 596 AND total_bedrooms >= 23.5 or MISSING
+AND ocean_proximity IS ONE OF: INLAND
+AND median_income < 2.05115
+AND longitude >= -116.97
+AND latitude < 37.315 or MISSING
+then 
+ Tree Node Identifier   = 215
+ Number of Observations = 27
+ Predicted: median_house_value = 61670.37037
+ 
+*------------------------------------------------------------*
+ Node = 222
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -122.5
+AND latitude < 37.755 AND latitude >= 37.725 or MISSING
+then 
+ Tree Node Identifier   = 222
+ Number of Observations = 7
+ Predicted: median_house_value = 281742.85714
+ 
+*------------------------------------------------------------*
+ Node = 223
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -122.43 AND longitude >= -122.5 or MISSING
+AND latitude < 37.755 AND latitude >= 37.725 or MISSING
+then 
+ Tree Node Identifier   = 223
+ Number of Observations = 31
+ Predicted: median_house_value = 347664.54839
+ 
+*------------------------------------------------------------*
+ Node = 224
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -122.33 AND longitude >= -122.43
+AND latitude < 37.755 AND latitude >= 37.725 or MISSING
+then 
+ Tree Node Identifier   = 224
+ Number of Observations = 8
+ Predicted: median_house_value = 258237.5
+ 
+*------------------------------------------------------------*
+ Node = 225
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 4.7224 AND median_income >= 3.6627 or MISSING
+AND longitude < -117.17 AND longitude >= -122.33 or MISSING
+AND latitude < 37.795 AND latitude >= 37.555 or MISSING
+then 
+ Tree Node Identifier   = 225
+ Number of Observations = 42
+ Predicted: median_house_value = 194857.14286
+ 
+*------------------------------------------------------------*
+ Node = 226
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: NEAR BAY, NEAR OCE
+AND median_income < 6.29175 AND median_income >= 4.7224
+AND longitude < -117.17 AND longitude >= -122.33 or MISSING
+AND latitude < 37.795 AND latitude >= 37.555 or MISSING
+then 
+ Tree Node Identifier   = 226
+ Number of Observations = 28
+ Predicted: median_house_value = 264496.42857
+ 
+*------------------------------------------------------------*
+ Node = 230
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 5.1093
+AND longitude < -118.52
+AND latitude < 37.225 AND latitude >= 34.325
+then 
+ Tree Node Identifier   = 230
+ Number of Observations = 19
+ Predicted: median_house_value = 357747.52632
+ 
+*------------------------------------------------------------*
+ Node = 231
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 5.1093
+AND longitude < -118.52
+AND latitude >= 37.225 or MISSING
+then 
+ Tree Node Identifier   = 231
+ Number of Observations = 84
+ Predicted: median_house_value = 287333.34524
+ 
+*------------------------------------------------------------*
+ Node = 232
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -118.34 AND longitude >= -118.39 or MISSING
+AND latitude < 33.885 or MISSING
+then 
+ Tree Node Identifier   = 232
+ Number of Observations = 22
+ Predicted: median_house_value = 334127.27273
+ 
+*------------------------------------------------------------*
+ Node = 233
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -118.34 AND longitude >= -118.39 or MISSING
+AND latitude < 34.025 AND latitude >= 33.885
+then 
+ Tree Node Identifier   = 233
+ Number of Observations = 22
+ Predicted: median_house_value = 240495.45455
+ 
+*------------------------------------------------------------*
+ Node = 234
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -118.46 AND longitude >= -118.52
+AND latitude >= 34.185 or MISSING
+then 
+ Tree Node Identifier   = 234
+ Number of Observations = 21
+ Predicted: median_house_value = 229633.33333
+ 
+*------------------------------------------------------------*
+ Node = 235
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -118.37 AND longitude >= -118.46 or MISSING
+AND latitude >= 34.185 or MISSING
+then 
+ Tree Node Identifier   = 235
+ Number of Observations = 35
+ Predicted: median_house_value = 186805.71429
+ 
+*------------------------------------------------------------*
+ Node = 236
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 6.29175 AND median_income >= 3.6627
+AND longitude < -118.34 AND longitude >= -118.37
+AND latitude >= 34.185 or MISSING
+then 
+ Tree Node Identifier   = 236
+ Number of Observations = 5
+ Predicted: median_house_value = 252120
+ 
+*------------------------------------------------------------*
+ Node = 237
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 5.16935 AND median_income >= 3.6627 or MISSING
+AND longitude >= -118.34 or MISSING
+AND latitude < 33.155
+AND housing_median_age < 6
+then 
+ Tree Node Identifier   = 237
+ Number of Observations = 5
+ Predicted: median_house_value = 243400
+ 
+*------------------------------------------------------------*
+ Node = 238
+*------------------------------------------------------------*
+if ocean_proximity IS ONE OF: <1H OCEA or MISSING
+AND median_income < 5.16935 AND median_income >= 3.6627 or MISSING
+AND longitude >= -118.34 or MISSING
+AND latitude < 33.155
+AND housing_median_age >= 6 or MISSING
+then 
+ Tree Node Identifier   = 238
+ Number of Observations = 57
+ Predicted: median_house_value = 175384.21053
+ 

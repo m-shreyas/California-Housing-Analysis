@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  NumberOfReportedLevels="1E-6" NormalizeReportingVariables="Y" DecileBin="20" LiftEpsilon="1E-6"
+ ProfitEpsilon="1E-6" RoiEpsilon="1E-6" ScoreDistBin="20" RocChart="Y" RocEpsilon="0.01"
+ AssessAllTargetLevels="N" SelectionData="DEFAULT" HPCriteria="DEFAULT" intervalViyaCriteria="DEFAULT"
+ classViyaCriteria="DEFAULT" SelectionTable="TRAIN" SelectionCriteria="DEFAULT" SelectionDepth="10"
+ NumberofBins="20" RecomputeAssess="N" TargetName="median_house_value" ModelId="Tree4"
+ ModelDescription="RegTree B3D6" ModelCriteria="Valid: Average Squared Error" ForceRun="N"
+ RunAction="Train" Component="ModelCompare" RawCreateTime="2011692039.1" CreateTime="30SEP2023:11:20:39"
+ StatisticUsed="_VASE_" TargetLabel="" RunId="e6bf7464-683c-4b4e-9ef5-7cbefc520c6b"
+ RawLastTimeRun="2049495631.4" RawRunTime="13.322000027" LastTimeRun="11DEC2024:00:20:31"
+ RunTime="0 Hr. 0 Min. 13.32 Sec.">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES ><![CDATA[
+EMNOTES
+]]>
+</FILEPROPERTIES><EMTARGETATTRIBUTES/>
+</_ROOT_>

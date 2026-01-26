@@ -1,0 +1,935 @@
+MPRINT(EM_DIAGRAM):    data _null_;
+MPRINT(EM_DIAGRAM):   call symput('NLDATE', strip(put(date(), NLDATE.)));
+MPRINT(EM_DIAGRAM):   call symput('NLTIME', strip(put(datetime(), NLTIME.)));
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   data _null_;
+MPRINT(EM_DIAGRAM):   nldate= sasmsg("sashelp.dmine", "log_date_note", 'N', "December 09, 2024" 
+);
+MPRINT(EM_DIAGRAM):   nltime= sasmsg("sashelp.dmine", "log_time_note", 'N', "01:30:04" );
+MPRINT(EM_DIAGRAM):   put "*------------------------------------------------------------*";
+MPRINT(EM_DIAGRAM):   put "* Score Log";
+MPRINT(EM_DIAGRAM):   put nldate;
+MPRINT(EM_DIAGRAM):   put nltime;
+MPRINT(EM_DIAGRAM):   put "*------------------------------------------------------------*";
+MPRINT(EM_DIAGRAM):   run;
+*------------------------------------------------------------*
+* Score Log
+Date:                December 09, 2024
+Time:                01:30:04
+*------------------------------------------------------------*
+MPRINT(EM_DIAGRAM):    filename O2862WDG "C:\Users\skunt\Downloads\HU.Exploratory 
+Analysis\HU.ClusterAnalysis\Workspaces\EMWS1\Clus6\EMSCORE.out" encoding="UTF-8" NOBOM;
+MPRINT(EM_DIAGRAM):   proc printto print=O2862WDG new;
+MPRINT(EM_DIAGRAM):   run;
+30393      proc transpose data=EMWS1.Clus6_OUTVAR out=WORK.Clus6_OUTVAR(rename=(COl2=NAME)
+30393    ! where=(COL1='IMPUTED'));
+MPRINT(EM_DIAGRAM):    proc transpose data=EMWS1.Clus6_OUTVAR 
+out=WORK.Clus6_OUTVAR(rename=(COl2=NAME) where=(COL1='IMPUTED'));
+30394      var households--ocean_proximityNEAR_OCE;
+MPRINT(EM_DIAGRAM):   var households--ocean_proximityNEAR_OCE;
+30395      where _TYPE_ in('TYPE' 'VARIABLE');
+MPRINT(EM_DIAGRAM):   where _TYPE_ in('TYPE' 'VARIABLE');
+30396      run;
+The SAS System
+
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: There were 2 observations read from the data set EMWS1.CLUS6_OUTVAR.
+      WHERE _TYPE_ in ('TYPE', 'VARIABLE');
+NOTE: The data set WORK.CLUS6_OUTVAR has 0 observations and 4 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.03 seconds
+      
+
+30397      proc sort data=WORK.Clus6_OUTVAR;
+MPRINT(EM_DIAGRAM):   proc sort data=WORK.Clus6_OUTVAR;
+30398      by NAME;
+MPRINT(EM_DIAGRAM):   by NAME;
+30399      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: Input data set is empty.
+NOTE: The data set WORK.CLUS6_OUTVAR has 0 observations and 4 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+30400      proc sort data=EMWS1.Clus6_VariableSet(KEEP=NAME ROLE LEVEL)
+30400    ! out=WORK.Clus6_SORTEDVARS;
+MPRINT(EM_DIAGRAM):   proc sort data=EMWS1.Clus6_VariableSet(KEEP=NAME ROLE LEVEL) 
+out=WORK.Clus6_SORTEDVARS;
+30401      by NAME;
+MPRINT(EM_DIAGRAM):   by NAME;
+30402      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: There were 11 observations read from the data set EMWS1.CLUS6_VARIABLESET.
+NOTE: The data set WORK.CLUS6_SORTEDVARS has 11 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.03 seconds
+      
+
+30403      data WORK.Clus6_OUTVAR;
+MPRINT(EM_DIAGRAM):   data WORK.Clus6_OUTVAR;
+30404      merge WORK.Clus6_OUTVAR(in=INVAR) WORK.Clus6_SORTEDVARS;
+MPRINT(EM_DIAGRAM):   merge WORK.Clus6_OUTVAR(in=INVAR) WORK.Clus6_SORTEDVARS;
+30405      by NAME;
+MPRINT(EM_DIAGRAM):   by NAME;
+30406      if INVAR then output;
+MPRINT(EM_DIAGRAM):   if INVAR then output;
+30407      run;
+MPRINT(EM_DIAGRAM):   run;
+
+WARNING: Multiple lengths were specified for the BY variable NAME by input data sets. This 
+         might cause unexpected results.
+The SAS System
+
+NOTE: There were 0 observations read from the data set WORK.CLUS6_OUTVAR.
+NOTE: There were 11 observations read from the data set WORK.CLUS6_SORTEDVARS.
+NOTE: The data set WORK.CLUS6_OUTVAR has 0 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+30408      filename emflow "C:\Users\skunt\Downloads\HU.Exploratory
+30408    ! Analysis\HU.ClusterAnalysis\Workspaces\EMWS1\Clus6\EMFLOWSCORE.sas";
+MPRINT(EM_DIAGRAM):    filename emflow "C:\Users\skunt\Downloads\HU.Exploratory 
+Analysis\HU.ClusterAnalysis\Workspaces\EMWS1\Clus6\EMFLOWSCORE.sas";
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   * Clus6: Scoring DATA data;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+30409      *------------------------------------------------------------*;
+30410      * Clus6: Scoring DATA data;
+30411      *------------------------------------------------------------*;
+30412      data EMWS1.Clus6_TRAIN
+30413      / view=EMWS1.Clus6_TRAIN
+30414      ;
+MPRINT(EM_DIAGRAM):   data EMWS1.Clus6_TRAIN / view=EMWS1.Clus6_TRAIN ;
+30415      set EMWS1.Smpl_DATA
+30416      ;
+MPRINT(EM_DIAGRAM):   set EMWS1.Smpl_DATA ;
+30417      %inc emflow;
+MPRINT(EM_DIAGRAM):   *****************************************;
+MPRINT(EM_DIAGRAM):   *** Begin Scoring Code from PROC DMVQ ***;
+MPRINT(EM_DIAGRAM):   *****************************************;
+MPRINT(EM_DIAGRAM):   *** Begin Class Look-up, Standardization, Replacement ;
+MPRINT(EM_DIAGRAM):   drop _dm_bad;
+MPRINT(EM_DIAGRAM):   _dm_bad = 0;
+MPRINT(EM_DIAGRAM):   *** Standardize households ;
+MPRINT(EM_DIAGRAM):   drop T_households ;
+MPRINT(EM_DIAGRAM):   if missing( households ) then T_households = .;
+MPRINT(EM_DIAGRAM):   else T_households = (households - 460.311835218639) * 0.00373139928103;
+MPRINT(EM_DIAGRAM):   *** Standardize housing_median_age ;
+MPRINT(EM_DIAGRAM):   drop T_housing_median_age ;
+MPRINT(EM_DIAGRAM):   if missing( housing_median_age ) then T_housing_median_age = .;
+MPRINT(EM_DIAGRAM):   else T_housing_median_age = (housing_median_age - 29.047554730148) * 
+0.08055032108804;
+MPRINT(EM_DIAGRAM):   *** Standardize latitude ;
+MPRINT(EM_DIAGRAM):   drop T_latitude ;
+MPRINT(EM_DIAGRAM):   if missing( latitude ) then T_latitude = .;
+MPRINT(EM_DIAGRAM):   else T_latitude = (latitude - 35.6533051944396) * 0.46628991581626;
+MPRINT(EM_DIAGRAM):   *** Standardize longitude ;
+MPRINT(EM_DIAGRAM):   drop T_longitude ;
+MPRINT(EM_DIAGRAM):   if missing( longitude ) then T_longitude = .;
+MPRINT(EM_DIAGRAM):   else T_longitude = (longitude - -119.588626259213) * 0.49878312433611;
+MPRINT(EM_DIAGRAM):   *** Standardize median_house_value ;
+MPRINT(EM_DIAGRAM):   drop T_median_house_value ;
+MPRINT(EM_DIAGRAM):   if missing( median_house_value ) then T_median_house_value = .;
+MPRINT(EM_DIAGRAM):   else T_median_house_value = (median_house_value - 201603.887556981) * 
+The SAS System
+
+9.0595395076474E-6;
+MPRINT(EM_DIAGRAM):   *** Standardize median_income ;
+MPRINT(EM_DIAGRAM):   drop T_median_income ;
+MPRINT(EM_DIAGRAM):   if missing( median_income ) then T_median_income = .;
+MPRINT(EM_DIAGRAM):   else T_median_income = (median_income - 3.72346686363894) * 
+0.62580604791285;
+MPRINT(EM_DIAGRAM):   *** Standardize population ;
+MPRINT(EM_DIAGRAM):   drop T_population ;
+MPRINT(EM_DIAGRAM):   if missing( population ) then T_population = .;
+MPRINT(EM_DIAGRAM):   else T_population = (population - 1311.04884911925) * 0.00129044268979;
+MPRINT(EM_DIAGRAM):   *** Standardize total_bedrooms ;
+MPRINT(EM_DIAGRAM):   drop T_total_bedrooms ;
+MPRINT(EM_DIAGRAM):   if missing( total_bedrooms ) then T_total_bedrooms = .;
+MPRINT(EM_DIAGRAM):   else T_total_bedrooms = (total_bedrooms - 493.40729794248) * 
+0.00343578800584;
+MPRINT(EM_DIAGRAM):   *** Standardize total_rooms ;
+MPRINT(EM_DIAGRAM):   drop T_total_rooms ;
+MPRINT(EM_DIAGRAM):   if missing( total_rooms ) then T_total_rooms = .;
+MPRINT(EM_DIAGRAM):   else T_total_rooms = (total_rooms - 2390.54353086836) * 0.00069505461008;
+MPRINT(EM_DIAGRAM):   *** Generate dummy variables for ocean_proximity ;
+MPRINT(EM_DIAGRAM):   drop ocean_proximity_1H_OCEA ocean_proximityINLAND 
+ocean_proximityNEAR_BAY ocean_proximityNEAR_OCE ;
+MPRINT(EM_DIAGRAM):   if missing( ocean_proximity ) then do;
+MPRINT(EM_DIAGRAM):   ocean_proximity_1H_OCEA = .;
+MPRINT(EM_DIAGRAM):   ocean_proximityINLAND = .;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_BAY = .;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_OCE = .;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else do;
+MPRINT(EM_DIAGRAM):   length _dm8 $ 8;
+MPRINT(EM_DIAGRAM):   drop _dm8 ;
+MPRINT(EM_DIAGRAM):   _dm8 = put( ocean_proximity , $8. );
+MPRINT(DMNORMIP):   call dmnorm(_dm8,
+MPRINT(DMNORLEN):  32
+MPRINT(DMNORMIP):  );
+MPRINT(EM_DIAGRAM):   if _dm8 = '<1H OCEA' then do;
+MPRINT(EM_DIAGRAM):   ocean_proximity_1H_OCEA = 0.56595539231303;
+MPRINT(EM_DIAGRAM):   ocean_proximityINLAND = -0.34267353703912;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_BAY = -0.17720790501365;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_OCE = -0.19365833916502;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else if _dm8 = 'INLAND' then do;
+MPRINT(EM_DIAGRAM):   ocean_proximity_1H_OCEA = -0.44170606720704;
+MPRINT(EM_DIAGRAM):   ocean_proximityINLAND = 0.7295162991377;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_BAY = -0.17720790501365;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_OCE = -0.19365833916502;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else if _dm8 = 'NEAR OCE' then do;
+MPRINT(EM_DIAGRAM):   ocean_proximity_1H_OCEA = -0.44170606720704;
+MPRINT(EM_DIAGRAM):   ocean_proximityINLAND = -0.34267353703912;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_BAY = -0.17720790501365;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_OCE = 1.2908606550642;
+MPRINT(EM_DIAGRAM):   end;
+The SAS System
+
+MPRINT(EM_DIAGRAM):   else if _dm8 = 'NEAR BAY' then do;
+MPRINT(EM_DIAGRAM):   ocean_proximity_1H_OCEA = -0.44170606720704;
+MPRINT(EM_DIAGRAM):   ocean_proximityINLAND = -0.34267353703912;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_BAY = 1.41069288378497;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_OCE = -0.19365833916502;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else do;
+MPRINT(EM_DIAGRAM):   ocean_proximity_1H_OCEA = .;
+MPRINT(EM_DIAGRAM):   ocean_proximityINLAND = .;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_BAY = .;
+MPRINT(EM_DIAGRAM):   ocean_proximityNEAR_OCE = .;
+MPRINT(EM_DIAGRAM):   _DM_BAD = 1;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   *** End Class Look-up, Standardization, Replacement ;
+MPRINT(EM_DIAGRAM):   *** Omitted Cases;
+MPRINT(EM_DIAGRAM):   if _dm_bad then do;
+MPRINT(EM_DIAGRAM):   _SEGMENT_ = .;
+MPRINT(EM_DIAGRAM):   Distance = .;
+MPRINT(EM_DIAGRAM):   goto CLUS6vlex ;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   *** omitted;
+MPRINT(EM_DIAGRAM):   *** Compute Distances and Cluster Membership;
+MPRINT(EM_DIAGRAM):   label _SEGMENT_ = 'Segment Id' ;
+MPRINT(EM_DIAGRAM):   label Distance = 'Distance' ;
+MPRINT(EM_DIAGRAM):   array CLUS6vads [15] _temporary_;
+MPRINT(EM_DIAGRAM):   drop _vqclus _vqmvar _vqnvar;
+MPRINT(EM_DIAGRAM):   _vqmvar = 0;
+MPRINT(EM_DIAGRAM):   do _vqclus = 1 to 15;
+MPRINT(EM_DIAGRAM):   CLUS6vads [_vqclus] = 0;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   if not missing( T_households ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( T_households - 0.98133769627444 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( T_households - -0.44966081438518 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( T_households - -0.44811117653986 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( T_households - 0.07239708925084 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( T_households - 1.16271877087484 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( T_households - 2.55999737394542 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( T_households - -0.38312200707689 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( T_households - 0.41485610906302 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( T_households - 2.72660944511761 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( T_households - 1.04083605690063 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( T_households - 0.81572714226245 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( T_households - -0.70419172544977 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( T_households - -0.52297608890783 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( T_households - -1.00861662166557 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( T_households - -0.16916412083431 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 1;
+MPRINT(EM_DIAGRAM):   if not missing( T_housing_median_age ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( T_housing_median_age - -0.68108916950975 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( T_housing_median_age - -0.85862506410162 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( T_housing_median_age - -0.2976076499324 )**2;
+The SAS System
+
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( T_housing_median_age - 0.85773133150359 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( T_housing_median_age - -0.88423142663968 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( T_housing_median_age - -0.80953167199991 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( T_housing_median_age - 1.26198011980326 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( T_housing_median_age - 0.30060022466355 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( T_housing_median_age - -0.79679730539714 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( T_housing_median_age - -0.50423562567893 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( T_housing_median_age - -0.61251480367882 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( T_housing_median_age - 0.51733822716291 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( T_housing_median_age - 0.51089348442387 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( T_housing_median_age - 0.53679516819539 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( T_housing_median_age - -0.71854750767547 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 1;
+MPRINT(EM_DIAGRAM):   if not missing( T_latitude ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( T_latitude - 1.10082252421047 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( T_latitude - 1.06279999588237 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( T_latitude - 0.88822619423396 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( T_latitude - 1.15289918470037 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( T_latitude - -0.83843613827078 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( T_latitude - 1.01893487476459 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( T_latitude - 0.95975420565619 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( T_latitude - -0.82177943075165 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( T_latitude - -0.78097104885263 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( T_latitude - -0.75637991773008 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( T_latitude - 0.94905076611502 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( T_latitude - -0.81485075366286 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( T_latitude - -0.81587392996025 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( T_latitude - 1.13132667747631 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( T_latitude - -0.87356204137995 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 1;
+MPRINT(EM_DIAGRAM):   if not missing( T_longitude ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( T_longitude - -0.70591953354406 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( T_longitude - -0.62959970659885 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( T_longitude - -1.20672817289128 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( T_longitude - -1.17029792372718 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( T_longitude - 0.96263127541301 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( T_longitude - -1.13030029664974 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( T_longitude - -1.34340850648769 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( T_longitude - 0.77619190057744 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( T_longitude - 0.82056701530171 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( T_longitude - 0.62342572641102 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( T_longitude - -1.18609032182938 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( T_longitude - 0.81817898668273 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( T_longitude - 0.68080619903148 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( T_longitude - -0.93133873489517 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( T_longitude - 0.84070226078399 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 1;
+MPRINT(EM_DIAGRAM):   if not missing( T_median_house_value ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( T_median_house_value - -0.90096044464567 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( T_median_house_value - -0.7760522101058 )**2;
+The SAS System
+
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( T_median_house_value - 1.26248773351657 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( T_median_house_value - -0.62900395197861 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( T_median_house_value - -0.37956846832117 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( T_median_house_value - 0.28459256250475 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( T_median_house_value - 0.8273701726658 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( T_median_house_value - -0.325637791964 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( T_median_house_value - -0.02576645096081 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( T_median_house_value - 1.52090481449158 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( T_median_house_value - 0.32265112393816 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( T_median_house_value - -0.41448581441579 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( T_median_house_value - 1.6455296637583 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( T_median_house_value - -0.82269286442036 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( T_median_house_value - 0.13457129407009 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 1;
+MPRINT(EM_DIAGRAM):   if not missing( T_median_income ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( T_median_income - -0.70413881609613 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( T_median_income - -0.38900455243182 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( T_median_income - 1.5857798201742 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( T_median_income - -0.69784109855522 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( T_median_income - -0.24749792474795 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( T_median_income - 0.38823313768885 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( T_median_income - 0.25388513171473 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( T_median_income - -0.64087524502056 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( T_median_income - -0.10489055322727 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( T_median_income - 1.44989065338676 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( T_median_income - 0.35664321508499 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( T_median_income - -0.47377158793676 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( T_median_income - 1.21290435080316 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( T_median_income - -0.74726589490147 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( T_median_income - 0.55800749924018 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 1;
+MPRINT(EM_DIAGRAM):   if not missing( T_population ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( T_population - 0.96177521365112 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( T_population - -0.42593918606917 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( T_population - -0.45831131130226 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( T_population - -0.01631709271555 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( T_population - 1.14120145928366 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( T_population - 2.23635658056274 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( T_population - -0.54844313255532 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( T_population - 0.68157090936407 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( T_population - 2.57643622254007 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( T_population - 0.81063327658933 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( T_population - 0.64388261313373 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( T_population - -0.56577603763381 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( T_population - -0.65615026889887 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( T_population - -0.99396941956693 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( T_population - -0.15607512059974 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 1;
+MPRINT(EM_DIAGRAM):   if not missing( T_total_bedrooms ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( T_total_bedrooms - 0.98562651467438 )**2;
+The SAS System
+
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( T_total_bedrooms - -0.38302162625191 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( T_total_bedrooms - -0.48983241944466 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( T_total_bedrooms - 0.07371996199752 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( T_total_bedrooms - 1.25161104796265 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( T_total_bedrooms - 2.48865805427081 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( T_total_bedrooms - -0.40587032442639 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( T_total_bedrooms - 0.39293390397029 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( T_total_bedrooms - 2.73259455838266 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( T_total_bedrooms - 1.018732434854 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( T_total_bedrooms - 0.80066843953876 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( T_total_bedrooms - -0.71259426656389 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( T_total_bedrooms - -0.54301207553669 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( T_total_bedrooms - -0.98312385185526 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( T_total_bedrooms - -0.17797746880357 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 1;
+MPRINT(EM_DIAGRAM):   if not missing( T_total_rooms ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( T_total_rooms - 0.87080261945482 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( T_total_rooms - -0.33659425965324 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( T_total_rooms - -0.14084698821206 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( T_total_rooms - -0.05749906216627 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( T_total_rooms - 1.04800763425956 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( T_total_rooms - 2.6780262567228 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( T_total_rooms - -0.38333423478709 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( T_total_rooms - 0.03463453588053 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( T_total_rooms - 2.38509937376093 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( T_total_rooms - 1.52942075090198 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( T_total_rooms - 0.90360865354967 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( T_total_rooms - -0.78445133605321 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( T_total_rooms - -0.35339612769356 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( T_total_rooms - -0.9915717895658 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( T_total_rooms - -0.02701146466794 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 1;
+MPRINT(EM_DIAGRAM):   if not missing( ocean_proximity_1H_OCEA ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( ocean_proximity_1H_OCEA - -0.40571815793846 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( ocean_proximity_1H_OCEA - -0.36498638790268 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( ocean_proximity_1H_OCEA - 0.01043515138257 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( ocean_proximity_1H_OCEA - -0.28170576789134 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( ocean_proximity_1H_OCEA - -0.01035624944756 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( ocean_proximity_1H_OCEA - -0.16936513220161 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( ocean_proximity_1H_OCEA - -0.37545842799984 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( ocean_proximity_1H_OCEA - 0.20069999355241 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( ocean_proximity_1H_OCEA - 0.19461682225734 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( ocean_proximity_1H_OCEA - 0.36062711545878 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( ocean_proximity_1H_OCEA - -0.05476406675132 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( ocean_proximity_1H_OCEA - 0.20635101649194 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( ocean_proximity_1H_OCEA - 0.32339911219635 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( ocean_proximity_1H_OCEA - -0.33767022330379 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( ocean_proximity_1H_OCEA - 0.21987818812753 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 0.25;
+MPRINT(EM_DIAGRAM):   if not missing( ocean_proximityINLAND ) then do;
+The SAS System
+
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( ocean_proximityINLAND - 0.64688512755264 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( ocean_proximityINLAND - 0.60767654502669 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( ocean_proximityINLAND - -0.20003723414299 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( ocean_proximityINLAND - 0.07026444040735 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( ocean_proximityINLAND - 0.10250469903429 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( ocean_proximityINLAND - 0.02350431855935 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( ocean_proximityINLAND - -0.33339853845627 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( ocean_proximityINLAND - -0.16449259726915 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( ocean_proximityINLAND - -0.04921191819287 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( ocean_proximityINLAND - -0.30595470703307 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( ocean_proximityINLAND - -0.12210877073989 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( ocean_proximityINLAND - -0.11077497196271 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( ocean_proximityINLAND - -0.27296460032174 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( ocean_proximityINLAND - 0.41244541100576 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( ocean_proximityINLAND - -0.15548527142153 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 0.25;
+MPRINT(EM_DIAGRAM):   if not missing( ocean_proximityNEAR_BAY ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( ocean_proximityNEAR_BAY - -0.12945149031294 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( ocean_proximityNEAR_BAY - -0.14743476522368 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( ocean_proximityNEAR_BAY - 0.21126387758983 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( ocean_proximityNEAR_BAY - 0.39322041889037 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( ocean_proximityNEAR_BAY - -0.17720790501365 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( ocean_proximityNEAR_BAY - 0.27536332717464 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( ocean_proximityNEAR_BAY - 1.02470661937977 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( ocean_proximityNEAR_BAY - -0.17720790501365 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( ocean_proximityNEAR_BAY - -0.17720790501365 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( ocean_proximityNEAR_BAY - -0.17448889681366 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( ocean_proximityNEAR_BAY - 0.21114725933252 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( ocean_proximityNEAR_BAY - -0.17720790501364 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( ocean_proximityNEAR_BAY - -0.17720790501365 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( ocean_proximityNEAR_BAY - 0.04762760490473 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( ocean_proximityNEAR_BAY - -0.17720790501365 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 0.25;
+MPRINT(EM_DIAGRAM):   if not missing( ocean_proximityNEAR_OCE ) then do;
+MPRINT(EM_DIAGRAM):   CLUS6vads [1] + ( ocean_proximityNEAR_OCE - -0.17691564374138 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [2] + ( ocean_proximityNEAR_OCE - -0.16582360802323 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [3] + ( ocean_proximityNEAR_OCE - 0.06408227539111 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [4] + ( ocean_proximityNEAR_OCE - -0.04988735548967 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [5] + ( ocean_proximityNEAR_OCE - 0.03900311724049 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [6] + ( ocean_proximityNEAR_OCE - -0.04046473288092 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [7] + ( ocean_proximityNEAR_OCE - 0.05675792716256 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [8] + ( ocean_proximityNEAR_OCE - 0.09774405750185 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [9] + ( ocean_proximityNEAR_OCE - -0.05290787996261 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [10] + ( ocean_proximityNEAR_OCE - 0.05545614959261 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [11] + ( ocean_proximityNEAR_OCE - 0.05234766559296 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [12] + ( ocean_proximityNEAR_OCE - 0.01504312249187 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [13] + ( ocean_proximityNEAR_OCE - 0.0671665924836 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [14] + ( ocean_proximityNEAR_OCE - -0.11811865583035 )**2;
+MPRINT(EM_DIAGRAM):   CLUS6vads [15] + ( ocean_proximityNEAR_OCE - 0.05701888081071 )**2;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else _vqmvar + 0.25;
+The SAS System
+
+MPRINT(EM_DIAGRAM):   _vqnvar = 10 - _vqmvar;
+MPRINT(EM_DIAGRAM):   if _vqnvar <= 1.477928890381E-11 then do;
+MPRINT(EM_DIAGRAM):   _SEGMENT_ = .;
+MPRINT(EM_DIAGRAM):   Distance = .;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else do;
+MPRINT(EM_DIAGRAM):   _SEGMENT_ = 1;
+MPRINT(EM_DIAGRAM):   Distance = CLUS6vads [1];
+MPRINT(EM_DIAGRAM):   _vqfzdst = Distance * 0.99999999999988;
+MPRINT(EM_DIAGRAM):   drop _vqfzdst;
+MPRINT(EM_DIAGRAM):   do _vqclus = 2 to 15;
+MPRINT(EM_DIAGRAM):   if CLUS6vads [_vqclus] < _vqfzdst then do;
+MPRINT(EM_DIAGRAM):   _SEGMENT_ = _vqclus;
+MPRINT(EM_DIAGRAM):   Distance = CLUS6vads [_vqclus];
+MPRINT(EM_DIAGRAM):   _vqfzdst = Distance * 0.99999999999988;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   Distance = sqrt(Distance * (10 / _vqnvar));
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   CLUS6vlex :;
+MPRINT(EM_DIAGRAM):   ***************************************;
+MPRINT(EM_DIAGRAM):   *** End Scoring Code from PROC DMVQ ***;
+MPRINT(EM_DIAGRAM):   ***************************************;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   * Clus6: Creating Segment Label;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   length _SEGMENT_LABEL_ $80;
+MPRINT(EM_DIAGRAM):   label _SEGMENT_LABEL_= 'Segment Description';
+MPRINT(EM_DIAGRAM):   if _SEGMENT_ = 1 then _SEGMENT_LABEL_="Cluster1";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 2 then _SEGMENT_LABEL_="Cluster2";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 3 then _SEGMENT_LABEL_="Cluster3";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 4 then _SEGMENT_LABEL_="Cluster4";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 5 then _SEGMENT_LABEL_="Cluster5";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 6 then _SEGMENT_LABEL_="Cluster6";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 7 then _SEGMENT_LABEL_="Cluster7";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 8 then _SEGMENT_LABEL_="Cluster8";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 9 then _SEGMENT_LABEL_="Cluster9";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 10 then _SEGMENT_LABEL_="Cluster10";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 11 then _SEGMENT_LABEL_="Cluster11";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 12 then _SEGMENT_LABEL_="Cluster12";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 13 then _SEGMENT_LABEL_="Cluster13";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 14 then _SEGMENT_LABEL_="Cluster14";
+MPRINT(EM_DIAGRAM):   else if _SEGMENT_ = 15 then _SEGMENT_LABEL_="Cluster15";
+30823      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: DATA STEP view saved on file EMWS1.CLUS6_TRAIN.
+NOTE: A stored DATA STEP view cannot run under a different operating system.
+NOTE: DATA statement used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.03 seconds
+      
+
+The SAS System
+
+MPRINT(EM_DIAGRAM):   quit;
+30824      quit;
+30825      filename emflow;
+MPRINT(EM_DIAGRAM):   filename emflow;
+NOTE: Fileref EMFLOW has been deassigned.
+30826      *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):    *------------------------------------------------------------*;
+30827      * Clus6: Computing metadata for TRAIN data;
+MPRINT(EM_DIAGRAM):   * Clus6: Computing metadata for TRAIN data;
+30828      *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+
+NOTE: View EMWS1.CLUS6_TRAIN.VIEW used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.03 seconds
+      
+MPRINT(EM_DIAGRAM):    *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   * &nodeid: Computing Metadata for TRAIN data;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   filename _delta "C:\Users\skunt\Downloads\HU.Exploratory 
+Analysis\HU.ClusterAnalysis\Workspaces\EMWS1\Clus6\CDELTA_TRAIN.sas";
+MPRINT(EMADVISECOLUMNS):   proc display c=sashelp.emmeta.advisecolumns.scl;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    options validvarname=any;
+MPRINT(EMADVISECOLUMNS):   proc contents data=EMWS1.Clus6_TRAIN out=_tempAdvisor noprint;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):   options validvarname=V7;
+MPRINT(EMADVISECOLUMNS):    data _null_;
+MPRINT(EMADVISECOLUMNS):   dsid = open('EMWS1.Clus6_TRAIN');
+MPRINT(EMADVISECOLUMNS):   call symput('_dsidTable', strip(put(dsid, best.)));
+MPRINT(EMADVISECOLUMNS):   if dsid then do;
+MPRINT(EMADVISECOLUMNS):   call symput('_engineTable', attrc(dsid, 'ENGINE'));
+MPRINT(EMADVISECOLUMNS):   dsid = close(dsid);
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    proc contents data=EMWS1.Clus6_TRAIN out=WORK.M31CCVGE noprint;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M31CCVGE;
+MPRINT(EMADVISECOLUMNS):   length NAME $ 64 TYPE $ 1 LABEL $ 200 FORMAT $ 36 INFORMAT $36 INDEX 
+$ 1 INDEXTYPE $ 9;
+MPRINT(EMADVISECOLUMNS):   label NAME =;
+MPRINT(EMADVISECOLUMNS):   set WORK.M31CCVGE(keep=name type length label format formatl formatd 
+informat informl informd idxusage rename=(type=itype));
+MPRINT(EMADVISECOLUMNS):   if itype = 1 then type = 'N';
+MPRINT(EMADVISECOLUMNS):   else type = 'C';
+MPRINT(EMADVISECOLUMNS):   if formatl > 0 then do;
+MPRINT(EMADVISECOLUMNS):   if format ne '' then do;
+MPRINT(EMADVISECOLUMNS):   if type='N' then format = strip(format)!!strip(put(formatl, 
+best12.))!!'.'!!strip(put(formatd, best12.));
+MPRINT(EMADVISECOLUMNS):   else format = strip(format)!!strip(put(formatl, best12.))!!'.';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else format = strip(put(formatl, best12.))!!'.'!!strip(put(formatd, 
+best12.));
+The SAS System
+
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if format ne '' then format = strip(format)!!'.';
+MPRINT(EMADVISECOLUMNS):   if informl > 0 then do;
+MPRINT(EMADVISECOLUMNS):   if informat ne ' ' then do;
+MPRINT(EMADVISECOLUMNS):   if type='N' then informat = strip(informat)!!strip(put(informl, 
+best12.))!!'.'!!strip(put(informd, best12.));
+MPRINT(EMADVISECOLUMNS):   else informat = strip(informat)!!strip(put(informl, best12.))!!'.';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else informat = strip(put(informl, 
+best12.))!!'.'!!strip(put(informd, best12.));
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if informat ne '' then informat = strip(informat)!!'.';
+MPRINT(EMADVISECOLUMNS):   if idxusage = 'NONE' then index ="N";
+MPRINT(EMADVISECOLUMNS):   else index = "Y";
+MPRINT(EMADVISECOLUMNS):   indextype = idxusage;
+MPRINT(EMADVISECOLUMNS):   drop idxusage itype formatl formatd informl informd;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M31CCVGE;
+MPRINT(EMADVISECOLUMNS):   length UNAME $64;
+MPRINT(EMADVISECOLUMNS):   set WORK.M31CCVGE;
+MPRINT(EMADVISECOLUMNS):   UNAME = upcase(NAME);
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    proc sort data=WORK.M2V8E8SH NOTHREADS;
+MPRINT(EMADVISECOLUMNS):   by UNAME;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M2V8E8SH;
+MPRINT(EMADVISECOLUMNS):   drop UNAME;
+MPRINT(EMADVISECOLUMNS):   set WORK.M2V8E8SH;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M09AOFGS(keep=NAME ATTR);
+MPRINT(EMADVISECOLUMNS):   length ATTR $ 20;
+MPRINT(EMADVISECOLUMNS):   set WORK.M2V8E8SH;
+MPRINT(EMADVISECOLUMNS):   if level ne "INTERVAL" then do;
+MPRINT(EMADVISECOLUMNS):   if order = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'ORDER';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if format ne ' ' and formattype = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'FORMATTYPE';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if role = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'ROLE';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if level = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'LEVEL';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if type = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'TYPE';
+MPRINT(EMADVISECOLUMNS):   output;
+The SAS System
+
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if index = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'INDEX';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if report = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'REPORT';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):   proc sort NOTHREADS;
+MPRINT(EMADVISECOLUMNS):   by attr;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M2V8E8SH;
+MPRINT(EMADVISECOLUMNS):   length NAME $64 ROLE $ 32 LEVEL $ 10 ORDER $ 8 CREATOR $32 
+FORMATTYPE $ 10 FAMILY $ 10 LOWERLIMIT 8 UPPERLIMIT 8 REPORT $1 DISTRIBUTION $ 20 COMMENT $64;
+MPRINT(EMADVISECOLUMNS):   length levelAssigned 8 roleAssigned 8 PRICE 8;
+MPRINT(EMADVISECOLUMNS):   set WORK.M2V8E8SH;
+MPRINT(EMADVISECOLUMNS):   if formattype = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   if format ne ' ' then do;
+MPRINT(EMADVISECOLUMNS):   if type = 'N' then do;
+MPRINT(EMADVISECOLUMNS):   pos = indexc(format,'.1234567890');
+MPRINT(EMADVISECOLUMNS):   if pos > 1 then tempfmt = substr(format,1, pos-1);
+MPRINT(EMADVISECOLUMNS):   else tempfmt = ' ';
+MPRINT(EMADVISECOLUMNS):   flen = length(tempfmt);
+MPRINT(EMADVISECOLUMNS):   select;
+MPRINT(EMADVISECOLUMNS):   when(tempfmt in ("DATE" "DAY" "DDMMYY" "DOWNAME" "JULDAY" "JULIAN" 
+"MMDDYY" "MMDDYYD" "MMDDYYC" "MMDDYYN" "MMDDYYP" "MMDDYYS" "MONNAME" "MONTH" "MONYY" "NENGO" 
+"QTR" "QTRR" "WEEKDATE" "WEEKDATX" "WEEKDAY" "WORDDATE" "WORDDATX" "YEAR" "YYMMDD" "YYMON" 
+"YYMMDDC" "YYMMDDD" "YYMMDDN" "YYMMDDP" "YYMMDDS" "EURDFDE" "NJDATE" "NLDATE" "EURDFDD" 
+"EURDFDWN" "EURDFMN" "EURDFMY" "EURDFWK" "EURDFWKX" "EURDFWDX" "EURDFDN" "EURDFDE" )) 
+formattype = 'DATE';
+MPRINT(EMADVISECOLUMNS):   when(tempfmt in ("DATETIME" "EURDFDT" "TOD" )) formattype = 
+"DATETIME";
+MPRINT(EMADVISECOLUMNS):   when(tempfmt in ("HHMM" "HOUR" "MMSS" "TIME" "TIMEAMPM" )) 
+formattype = "TIME";
+MPRINT(EMADVISECOLUMNS):   when(tempfmt in ("COMMA" "COMMAX" "DOLLAR" "DOLLARX" "E" "FRACT" 
+"NEGPAREN" "PERCENT")) formattype="QUANTITY";
+MPRINT(EMADVISECOLUMNS):   when(tempfmt in ("BINARY" "HEX" "IB" "OCTAL" "PD" "PIB" "PK" "RB" 
+"SSN" "Z" "ZD")) formattype = "CODING";
+MPRINT(EMADVISECOLUMNS):   otherwise do;
+MPRINT(EMADVISECOLUMNS):   formattype = "USER";
+MPRINT(EMADVISECOLUMNS):   if compress(tempfmt, '0123456789.', '') = '' then formattype='NUM';
+MPRINT(EMADVISECOLUMNS):   else if substr(tempfmt, 1, 6)='NLDATE' then formattype = "DATE";
+MPRINT(EMADVISECOLUMNS):   else if substr(tempfmt, 1, 6)='NLDATM' then formattype = "DATETIME";
+MPRINT(EMADVISECOLUMNS):   else if substr(tempfmt, 1, 4)='NLTIM' then formattype = "TIME";
+MPRINT(EMADVISECOLUMNS):   else if flen >= 4 then do;
+MPRINT(EMADVISECOLUMNS):   str = substr(tempfmt,1,4);
+MPRINT(EMADVISECOLUMNS):   if str in ("MMYY" "YYMM" "YYQR") then formattype ="DATE";
+MPRINT(EMADVISECOLUMNS):   else if str = "S370" then formattype = "CODING";
+MPRINT(EMADVISECOLUMNS):   else if str = "BEST" then formattype = "NUM";
+MPRINT(EMADVISECOLUMNS):   drop str;
+MPRINT(EMADVISECOLUMNS):   end;
+The SAS System
+
+MPRINT(EMADVISECOLUMNS):   else if flen >=3 and substr(tempfmt,1,3) = "YYQ" then formatType = 
+"DATE";
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   drop flen tempfmt pos;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else do;
+MPRINT(EMADVISECOLUMNS):   formatType = "CATEGORY";
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if formatType = "NUM" then do;
+MPRINT(EMADVISECOLUMNS):   if index = "Y" then formatType = "DISCRETE";
+MPRINT(EMADVISECOLUMNS):   else formatType = "QUANTITY";
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if level = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   if formatType in ("CATEGORY", "CODING", "ID") or type = "C" then 
+level = "NOMINAL";
+MPRINT(EMADVISECOLUMNS):   else level = "INTERVAL";
+MPRINT(EMADVISECOLUMNS):   levelAssigned = 1;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else level = upcase(level);
+MPRINT(EMADVISECOLUMNS):   if role = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   length name_prefix $8 _uname $64;
+MPRINT(EMADVISECOLUMNS):   drop name_prefix _uname _freqflag;
+MPRINT(EMADVISECOLUMNS):   retain _freqflag;
+MPRINT(EMADVISECOLUMNS):   if LENGTH> 80 then ROLE = 'TEXT';
+MPRINT(EMADVISECOLUMNS):   _uname = upcase(NAME);
+MPRINT(EMADVISECOLUMNS):   select(_uname);
+MPRINT(EMADVISECOLUMNS):   when('_PARTIND_') do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'ID';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   when('_WARN_') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('EM_SEGMENT') do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'SEGMENT';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   when('_NODE_') do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'SEGMENT';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   when('EM_CLASSTARGET') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('EM_VALUETARGET') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('EM_PREDICTION') ROLE = 'PREDICT';
+MPRINT(EMADVISECOLUMNS):   when('EM_PROBABILITY') ROLE = 'PREDICT';
+MPRINT(EMADVISECOLUMNS):   when('EM_EVENTPROBABILITY') ROLE = 'PREDICT';
+MPRINT(EMADVISECOLUMNS):   when('EM_CLASSIFICATION') ROLE = 'CLASSIFICATION';
+MPRINT(EMADVISECOLUMNS):   when('EM_DECISION') ROLE = 'DECISION';
+MPRINT(EMADVISECOLUMNS):   when('EM_PROFIT') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('EM_LOSS') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('EM_ROI') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('URI') ROLE = 'URL';
+The SAS System
+
+MPRINT(EMADVISECOLUMNS):   when('FILTERED') ROLE = 'TEXTLOC';
+MPRINT(EMADVISECOLUMNS):   otherwise do;
+MPRINT(EMADVISECOLUMNS):   if upcase(NAME) =: 'ZIP' then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'REJECTED';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   COMMENT = 'Rejected by: Exceed the maximum class level of %s';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if upcase(NAME) in('FREQ', 'FREQUENCY') then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'FREQ';
+MPRINT(EMADVISECOLUMNS):   if TYPE = 'C' then ROLE = 'INPUT';
+MPRINT(EMADVISECOLUMNS):   else if _freqflag =1 then ROLE='REJECTED';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else do;
+MPRINT(EMADVISECOLUMNS):   name_prefix = scan(_uname, 1, '_');
+MPRINT(EMADVISECOLUMNS):   if scan(_uname, 2, '_') = '' then name_prefix='';
+MPRINT(EMADVISECOLUMNS):   if name_prefix in('F', 'I', 'U') then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'CLASSIFICATION';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if name_prefix in('Q') then ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   else if name_prefix in('P', 'V') then ROLE = 'PREDICT';
+MPRINT(EMADVISECOLUMNS):   else if name_prefix in('R', 'RS', 'RT', 'RD', 'RDS', 'RDT', 'RA', 
+'RAS', 'RAT') then ROLE = 'RESIDUAL';
+MPRINT(EMADVISECOLUMNS):   else if name_prefix ='D' then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'DECISION';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if name_prefix ='B' then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'SEGMENT';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if name_prefix in('EP', 'BP', 'CP', 'EL', 'CL', 'BL', 'ROI', 
+'IC') then ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   else do;
+MPRINT(EMADVISECOLUMNS):   array _ROLE_ (19) $32 _TEMPORARY_ 
+('ASSESS','CLASSIFICATION','CENSOR', 'COST', 'CROSSID', 'DECISION', 'ID','INPUT', 'LABEL', 
+'MISSING','PREDICT','REFERRER','REJECTED', 'RESIDUAL','SEGMENT', 'SEQUENCE','TARGET', 'TEXT', 
+'TIMEID');
+MPRINT(EMADVISECOLUMNS):   drop _found_ i;
+MPRINT(EMADVISECOLUMNS):   _found_=0;
+MPRINT(EMADVISECOLUMNS):   do i=1 to 19 until(_found_=1);
+MPRINT(EMADVISECOLUMNS):   if index(_uname, trim(_ROLE_{i}))=1 then do;
+MPRINT(EMADVISECOLUMNS):   ROLE=_ROLE_{i};
+MPRINT(EMADVISECOLUMNS):   if ROLE = 'ID' then LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   else if ROLE = 'SEGMENT' then LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   else if ROLE = 'TIMEID' and TYPE='N' then LEVEL = 'INTERVAL';
+MPRINT(EMADVISECOLUMNS):   _found_=1;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if length(_uname)>2 then do;
+MPRINT(EMADVISECOLUMNS):   if substr(reverse(trim(_uname)), 1, 3) = 'DI_' then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'ID';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+The SAS System
+
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if ROLE='FREQ' then _freqflag=1;
+MPRINT(EMADVISECOLUMNS):   else if ROLE = 'CLASSIFICATION' then LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   if symexist('RATEMKG_ROLE') then do;
+MPRINT(EMADVISECOLUMNS):   if upcase(symget('RATEMKG_ROLE')) in('Y', 'YES') then do;
+MPRINT(EMADVISECOLUMNS):   if _uname =: 'POLICY' then ROLE = 'POLICYID';
+MPRINT(EMADVISECOLUMNS):   else if _uname in ('PARTITION', '_PARTIND_') then ROLE = 'PARTITION';
+MPRINT(EMADVISECOLUMNS):   else if type = 'N' then do;
+MPRINT(EMADVISECOLUMNS):   if _uname = 'EXPOSURE' then ROLE = 'EXPOSURE';
+MPRINT(EMADVISECOLUMNS):   else if _uname = 'YEAR' then ROLE = 'YEAR';
+MPRINT(EMADVISECOLUMNS):   else if _uname = 'WEIGHT' then ROLE = 'WEIGHT';
+MPRINT(EMADVISECOLUMNS):   else if _uname = 'OFFSET' then ROLE = 'OFFSET';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if role = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   if formattype in('DATE', 'DATETIME', 'TIME') then role = 'TIMEID';
+MPRINT(EMADVISECOLUMNS):   else role = 'INPUT';
+MPRINT(EMADVISECOLUMNS):   roleAssigned = 1;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else role = upcase(role);
+MPRINT(EMADVISECOLUMNS):   if REPORT = '' then REPORT = 'N';
+MPRINT(EMADVISECOLUMNS):   if symexist('dmwb_product') then do;
+MPRINT(EMADVISECOLUMNS):   if upcase(symget('dmwb_product')) = 'FACTORYMINER_DATASOURCE' then 
+do;
+MPRINT(EMADVISECOLUMNS):   if ROLE ^in('INPUT', 'TARGET', 'REJECTED', 'SEGMENT', 'FREQ', 'ID', 
+'KEY') then ROLE='REJECTED';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M2V8E8SH;
+MPRINT(EMADVISECOLUMNS):   set WORK.M2V8E8SH;
+MPRINT(EMADVISECOLUMNS):   label NAME = "Variable Name" TYPE = "Type" ROLE = "Role" LEVEL= 
+"Measurement Level" ORDER= "Order" CREATOR= "Creator" FORMATTYPE= "Format Type" FAMILY= 
+"Family" DISTRIBUTION= "Distribution" PRICE= "Price" LOWERLIMIT= "Lower limit" UPPERLIMIT= 
+"Upper Limit" REPORT= "Report" COMMENT= "Comment" INDEX= "Index" INDEXTYPE= "IndexType" LABEL= 
+"Label" LENGTH= "Length";
+MPRINT(EMADVISECOLUMNS):   drop levelAssigned roleAssigned;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):   
+MPRINT(EM_DIAGRAM):  ;
+MPRINT(EM_DIAGRAM):   proc sort data=WORK.COLUMNMETA;
+MPRINT(EM_DIAGRAM):   by NAME;
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   * &nodeid: Merge incoming metadata;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+The SAS System
+
+MPRINT(EM_DIAGRAM):   proc contents data=EMWS1.Smpl_DATA noprint out=_temp2(keep=NAME);
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   proc sort data=_temp2;
+MPRINT(EM_DIAGRAM):   by NAME;
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   proc sort data=EMWS1.Smpl_CMeta_DATA out=_temp;
+MPRINT(EM_DIAGRAM):   by NAME;
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   data EMWS1.Clus6_CMeta_TRAIN;
+MPRINT(EM_DIAGRAM):   merge WORK.COLUMNMETA(in=_a) _temp2(in=_b) _temp(drop=FORMAT INFORMAT 
+LENGTH INDEX INDEXTYPE in=_c) end=_eof_;
+MPRINT(EM_DIAGRAM):   by NAME;
+MPRINT(EM_DIAGRAM):   if (^_a and _b) or (^_c and _a and _b) then delete;
+MPRINT(EM_DIAGRAM):   if ^_b then CREATOR = "Clus6";
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   * Clus6: Apply Delta Code;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   retain _segFlag_ 0;
+MPRINT(EM_DIAGRAM):   drop _segFlag_;
+MPRINT(EM_DIAGRAM):   if upcase(name) = '_SEGMENT_' then do;
+MPRINT(EM_DIAGRAM):   _segFlag_ = 1;
+MPRINT(EM_DIAGRAM):   role = 'SEGMENT';
+MPRINT(EM_DIAGRAM):   level = 'NOMINAL';
+MPRINT(EM_DIAGRAM):   label = 'Segment Variable';
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else if upcase(name) = '_SEGMENT_LABEL_' then do;
+MPRINT(EM_DIAGRAM):   role = 'REJECTED';
+MPRINT(EM_DIAGRAM):   level = 'NOMINAL';
+MPRINT(EM_DIAGRAM):   label = 'Segment Description';
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else if upcase(NAME) = 'DISTANCE' then do;
+MPRINT(EM_DIAGRAM):   role = 'REJECTED';
+MPRINT(EM_DIAGRAM):   level = 'INTERVAL';
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   else if upcase(NAME) = '_IMPUTE_' then do;
+MPRINT(EM_DIAGRAM):   role = 'REJECTED';
+MPRINT(EM_DIAGRAM):   level = 'INTERVAL';
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   output;
+MPRINT(EM_DIAGRAM):   if ^_segFlag_ and _eof_ then do;
+MPRINT(EM_DIAGRAM):   type = 'N';
+MPRINT(EM_DIAGRAM):   index = 'N';
+MPRINT(EM_DIAGRAM):   indexType = 'NONE';
+MPRINT(EM_DIAGRAM):   format = '';
+MPRINT(EM_DIAGRAM):   informat = '';
+MPRINT(EM_DIAGRAM):   name = '_SEGMENT_';
+MPRINT(EM_DIAGRAM):   role = 'SEGMENT';
+MPRINT(EM_DIAGRAM):   level = 'NOMINAL';
+MPRINT(EM_DIAGRAM):   label = 'Segment Variable';
+MPRINT(EM_DIAGRAM):   output;
+MPRINT(EM_DIAGRAM):   name = '_SEGMENT_LABEL_';
+MPRINT(EM_DIAGRAM):   role = 'REJECTED';
+MPRINT(EM_DIAGRAM):   level = 'NOMINAL';
+The SAS System
+
+MPRINT(EM_DIAGRAM):   label = 'Segment Description';
+MPRINT(EM_DIAGRAM):   output;
+MPRINT(EM_DIAGRAM):   name = 'Distance';
+MPRINT(EM_DIAGRAM):   role = 'REJECTED';
+MPRINT(EM_DIAGRAM):   level = 'INTERVAL';
+MPRINT(EM_DIAGRAM):   label = 'Distance to Cluster Seed';
+MPRINT(EM_DIAGRAM):   output;
+MPRINT(EM_DIAGRAM):   name = '_Impute_';
+MPRINT(EM_DIAGRAM):   role = 'REJECTED';
+MPRINT(EM_DIAGRAM):   level = 'INTERVAL';
+MPRINT(EM_DIAGRAM):   label = '';
+MPRINT(EM_DIAGRAM):   output;
+MPRINT(EM_DIAGRAM):   end;
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   filename _delta;
+NOTE: View EMWS1.CLUS6_TRAIN.VIEW used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.03 seconds
+      
+MPRINT(EM_DIAGRAM):    proc printto;
+MPRINT(EM_DIAGRAM):   run;
